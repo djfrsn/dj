@@ -4986,7 +4986,7 @@ a.nav-expander.fixed {
   right: 20em; }
 
 nav {
-  background: #2d2f33;
+  background: #56FF4D;
   display: block;
   height: 100%;
   overflow: auto;
@@ -5021,13 +5021,13 @@ body.nav-expanded {
   padding-top: 12px; }
 
 .main-menu li {
-  border-bottom: 1px solid #323949;
+  border-bottom: 1px solid gray;
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 36px;
   padding: 12px; }
 
 .main-menu li a {
-  color: #6F7D8C;
+  color: #333333;
   text-decoration: none; }
 
 .main-menu li a:hover {
