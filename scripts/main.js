@@ -41,5 +41,28 @@ $(document).ready(function(){
                 easing: 'swing'
             }
         });
- 
-      });
+});
+
+// Inititialize texiilate
+$(window).bind("load", function() {
+
+    // define our text handler
+  var t0 = $('.dynamic_text0'),
+      t1 = $('.dynamic_text1'),
+      t2 = $('.dynamic_text2'),
+      ts = $('.dynamic_text span');
+
+      // init call to textillate
+      t0.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+
+  // calls to remove and textillate new text
+  setTimeout(function() {
+      t0.remove();
+      t1.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+  }, 3550);
+
+  setTimeout(function() {
+      t1.remove();
+      t2.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+  }, 7500);
+}); 
