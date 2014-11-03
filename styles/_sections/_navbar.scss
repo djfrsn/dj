@@ -8,9 +8,10 @@
 */
 #brand
 {
-	color: black; 
+	color: $black; 
 	padding-left: 5rem;
 	font-size: 3.5rem;
+	font-weight: 500;
 }
 
 /* Paper Plane
@@ -22,13 +23,13 @@
 #paper-plane_link
 {
   margin-right: 0;
+  display: block;
   position: absolute;
   right: 0;
   text-decoration: none;
   top: 0;
   transition: right 0.3s ease-in-out 0s;
   z-index: 12;
-  display: block;
   
   transition: right 0.3s ease-in-out 0s;
   -webkit-transition: right 0.3s ease-in-out 0s;
