@@ -11,5 +11,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "_main/_starter";
 
 // Styles by section type
+@import "_sections/_navbar";
 @import "_sections/_intro";
 
+// Modules
+@import "_modules/_off-canvas";

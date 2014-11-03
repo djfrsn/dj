@@ -31,26 +31,46 @@
     <div class="main container">
         
         <!-- Begin fixed navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">DJ</a>
-                </div>
-                <i class="fa fa-paper-plane"></i>
-            </div>
-        </nav>
+<nav>
+  <ul class="list-unstyled main-menu">
+ 
+    <!--Include your navigation here-->
+    <li class="text-right"><a href="#" id="nav-close">X</a></li>
+    <li><a href="#">Home <span class="icon"></span></a></li>
+    <li><a href="#">Work<span class="icon"></span></a></li>
+    <li><a href="#">About<span class="icon"></span></a></li>
+    <li><a href="#">Process <span class="icon"></span></a></li>
+    <li><a href="#">Resume<span class="icon"></span></a></li>
+    <li><a href="#">Contact<span class="icon"></span></a></li>
+  </ul>
+</nav>
+ 
+<div class="navbar navbar-fixed-top">      
+ 
+    <!--Include your brand here-->
+    <a id='brand' class="navbar-brand" href="#">DJ</a>
+    <div class="navbar-header pull-right">
+        <a id='paper-plane_link nav-expander' class='nav-expander fixed' href="mailto:dj@dennisjefferson.com">
+            <i id='paper-plane' class="fa fa-paper-plane fa-2x"></i>
+        </a> 
+        <a id="nav-expander" class="nav-expander fixed">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </div>
+</div>
+        <!-- End fixed navbar -->
         
         <!-- Begin intro section -->
         <div class="intro table">
             <div class="table__cell">    
                 <h1 id="main__title">Dennis Jefferson</h1>
-                <h3 id="sub__title">[ Aspiring Web Consultant ]</h3>
+                <h4 id="sub__title">[ Aspiring Web Consultant ]</h4>
                 <p id="main__title_description">Hand-crafted web experiences for the modern business & individual.</p>
             </div>  
         </div>
+        <!-- End intro section -->
 
     </div>
-    
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -70,11 +90,18 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- Begin custom styles -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- End custom styles -->
+
+    <!-- Begin custom scripts -->
+    <script src="scripts/jquery.navgoco.js"></script>
+    <!-- end custom scripts -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
