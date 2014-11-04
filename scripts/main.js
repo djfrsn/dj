@@ -43,26 +43,54 @@ $(document).ready(function(){
         });
 });
 
-// Inititialize texiilate
+// Run code on window load
 $(window).bind("load", function() {
 
-    // define our text handler
+  
+  // Initiliaze variables
   var t0 = $('.dynamic_text0'),
       t1 = $('.dynamic_text1'),
       t2 = $('.dynamic_text2'),
-      ts = $('.dynamic_text span');
+      t3 = $('.dynamic_text3'),
+      t4 = $('.dynamic_text4'),
+      t5 = $('.dynamic_text5');
+ 
+  
 
-      // init call to textillate
-      t0.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+  // define our text handler
+  (function(){
+  function txtl(obj) {
+        obj.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+      }      
+      // first call to textillate
+      txtl(t0);
 
-  // calls to remove and textillate new text
-  setTimeout(function() {
-      t0.remove();
-      t1.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
-  }, 3550);
+      // sequential calls to textillate new text
+      setTimeout(function() {
+        t0.addClass('hidden');
+        txtl(t1);
+      }, 3550);
+  
+      setTimeout(function() {
+        t1.addClass('hidden');
+        txtl(t2);
+      }, 7500);
 
-  setTimeout(function() {
-      t1.remove();
-      t2.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
-  }, 7500);
+      setTimeout(function() {
+        t2.addClass('hidden');
+        txtl(t3);
+      }, 12000);
+
+      setTimeout(function() {
+        t3.addClass('hidden');
+        txtl(t4);
+      }, 17000);
+
+      setTimeout(function() {
+        t5.removeClass('invisible').addClass('animated fadeIn');
+      }, 18300);
+})();
+
+
+
 }); 
