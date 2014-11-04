@@ -46,8 +46,9 @@ $(document).ready(function(){
 // Run code on window load
 $(window).bind("load", function() {
 
+  setTimeout(function() {
   $('.intro').removeClass('hidden').addClass('animated fadeIn');
-
+  }, 300);
   // Initiliaze variables
   var t0 = $('.dynamic_text0'),
       t1 = $('.dynamic_text1'),
@@ -56,42 +57,45 @@ $(window).bind("load", function() {
       t4 = $('.dynamic_text4'),
       t5 = $('.dynamic_text5');
 
-  // define our text handler
+  // create anon function for our text handler
   (function(){
-  function txtl(obj) {
+
+      // create function to run texillate animation
+      function txtl(obj) {
         obj.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
-      }      
+      }
+
       // first call to textillate
       setTimeout(function() {
       txtl(t0);
-    }, 700);
+      }, 1000);
+
 
       // sequential calls to textillate new text
       setTimeout(function() {
         t0.addClass('hidden');
         txtl(t1);
-      }, 3550);
+      }, 3850);
   
       setTimeout(function() {
         t1.addClass('hidden');
         txtl(t2);
-      }, 7500);
+      }, 7800);
 
       setTimeout(function() {
         t2.addClass('hidden');
         txtl(t3);
-      }, 12000);
+      }, 12500);
 
       setTimeout(function() {
         t3.addClass('hidden');
         txtl(t4);
-      }, 17000);
+      }, 17500);
 
       setTimeout(function() {
         t5.removeClass('invisible').addClass('animated fadeIn');
-      }, 18300);
-})();
+      }, 18800);
 
-
+  })();
 
 }); 
