@@ -14,7 +14,7 @@ $(window).resize(function() {
 
 // Call functions on document.ready
 $(document).ready(function(){												
- 
+
        //Navigation Menu Slider
         $('#nav-expander').on('click',function(e){
       		e.preventDefault();
@@ -46,7 +46,8 @@ $(document).ready(function(){
 // Run code on window load
 $(window).bind("load", function() {
 
-  
+  $('.intro').removeClass('hidden').addClass('animated fadeIn');
+
   // Initiliaze variables
   var t0 = $('.dynamic_text0'),
       t1 = $('.dynamic_text1'),
@@ -54,8 +55,6 @@ $(window).bind("load", function() {
       t3 = $('.dynamic_text3'),
       t4 = $('.dynamic_text4'),
       t5 = $('.dynamic_text5');
- 
-  
 
   // define our text handler
   (function(){
@@ -63,7 +62,9 @@ $(window).bind("load", function() {
         obj.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
       }      
       // first call to textillate
+      setTimeout(function() {
       txtl(t0);
+    }, 700);
 
       // sequential calls to textillate new text
       setTimeout(function() {
