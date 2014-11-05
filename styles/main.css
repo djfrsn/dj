@@ -4938,7 +4938,11 @@ body {
 #brand {
   padding: 2rem 0 0 5rem;
   font-size: 3.4rem;
-  font-family: 'montserratbold'; }
+  font-family: 'montserratbold';
+  transition: color 0.5s ease; }
+
+a.navbar-brand:hover {
+  color: #FF6600; }
 
 /* Paper Plane
 */
