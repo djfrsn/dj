@@ -4984,6 +4984,9 @@ a.navbar-brand:hover {
 .table {
   display: table; }
 
+.intro.table {
+  margin-bottom: 0; }
+
 .table__cell {
   display: table-cell;
   vertical-align: middle;
@@ -4999,7 +5002,8 @@ a.navbar-brand:hover {
 /* #sub__title
 */
 #sub__title {
-  font-size: 2rem; }
+  font-size: 2rem;
+  transition: all 0.5s ease; }
 
 /* #main__title_description
 */
