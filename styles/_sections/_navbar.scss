@@ -8,7 +8,6 @@
 */
 #brand
 {
-	color: $black; 
 	padding: 2rem 0 0 5rem;
 	font-size: 3.4rem;
   font-family: 'montserratbold';
@@ -19,6 +18,7 @@
 #paper-plane
 {
 	padding-right: 5rem;
+  color: $quadrant;
 }
 #paper-plane_link
 {
@@ -35,4 +35,12 @@
   -webkit-transition: right 0.3s ease-in-out 0s;
   -moz-transition: right 0.3s ease-in-out 0s;
   -o-transition: right 0.3s ease-in-out 0s;
+}
+
+/* fa-bars
+*/
+
+.fa-bars
+{
+  color: $quadrant;
 }
