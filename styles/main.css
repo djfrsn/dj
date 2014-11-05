@@ -4897,7 +4897,8 @@ button.close {
 body {
   font-family: 'Open Sans';
   background-color: #F5EDE3;
-  color: #104386; }
+  color: #104386;
+  text-shadow: 0 0.02em #fff; }
 
 .underline {
   text-decoration: underline; }
@@ -4939,7 +4940,8 @@ body {
   padding: 2rem 0 0 5rem;
   font-size: 3.4rem;
   font-family: 'montserratbold';
-  transition: color 0.5s ease; }
+  transition: color 0.5s ease;
+  text-shadow: 0 0.02em #fff; }
 
 a.navbar-brand:hover {
   color: #FF6600; }
