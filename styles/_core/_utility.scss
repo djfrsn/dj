@@ -4,7 +4,29 @@
 **
 */
 
-// Utility
+// Positioning
+
+/* Center intro content w/ Tables
+*/
+.table
+{
+	display: table;
+}
+
+.intro.table
+{
+	margin-bottom: 0;
+}
+
+.table__cell
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+}
+
+// Text
 .underline
 {
     text-decoration: underline;

@@ -4938,6 +4938,20 @@ body {
 *** Utility Styles
 **
 */
+/* Center intro content w/ Tables
+*/
+.table {
+  display: table; }
+
+.intro.table {
+  margin-bottom: 0; }
+
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%; }
+
 .underline {
   text-decoration: underline; }
 
@@ -5009,20 +5023,6 @@ i.fa-bars:hover {
 */
 #main__title, #sub__title, #main__title_description {
   text-align: center; }
-
-/* Center intro content w/ Tables
-*/
-.table {
-  display: table; }
-
-.intro.table {
-  margin-bottom: 0; }
-
-.table__cell {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  height: 100%; }
 
 /* #main__title
 */
