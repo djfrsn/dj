@@ -54,9 +54,21 @@ $(window).bind("load", function() {
       $('.second.hidden').removeClass('hidden').fadeIn();
   }, 1000);
 
+  // Center intro content horizontally
+  function inwi() {
+      var introWidth = $('.intro').width();
+      $('.table__cell').css('width', introWidth + 'px');
+  } 
+
+  // Run inwi() on resize
+  $(window).resize(function() {
+      inwi();
+  });
+
   // Fade in intro content on load
   setTimeout(function() {
   $('.intro').removeClass('hidden').addClass('animated fadeIn');
+  inwi();
   }, 300);
 
   // Initiliaze variables
