@@ -4902,8 +4902,7 @@ button.close {
 body {
   font-family: 'Open Sans';
   background-color: #F5EDE3;
-  color: #104386;
-  text-shadow: 0 0.02em #fff; }
+  color: #104386; }
 
 .underline {
   text-decoration: underline; }
@@ -4955,6 +4954,12 @@ body {
 .underline {
   text-decoration: underline; }
 
+.text-shadow-light {
+  text-shadow: 0 0.02em #fff; }
+
+.text-shadow-dark {
+  text-shadow: 0 0.02em #333333; }
+
 /*
 **
 *** Misc Styles
@@ -4977,8 +4982,7 @@ body {
   padding: 2rem 0 0 5rem;
   font-size: 3.4rem;
   font-family: 'montserratbold';
-  transition: color 0.5s ease;
-  text-shadow: 0 0.02em #fff; }
+  transition: color 0.5s ease; }
 
 a.navbar-brand:hover {
   color: #FF6600; }
@@ -5019,6 +5023,9 @@ i.fa-bars:hover {
 *** Intro Styles
 **
 */
+.intro {
+  text-shadow: 0 0.02em #fff; }
+
 /* Shared 
 */
 #main__title, #sub__title, #main__title_description {

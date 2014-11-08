@@ -4,6 +4,11 @@
 **
 */
 
+// Global
+.intro
+{
+	@include text-shadow();
+}
 
 /* Shared 
 */
