@@ -15,6 +15,9 @@ $(window).resize(function() {
 // Call functions on document.ready
 $(document).ready(function(){												
 
+      $('#fullpage').fullpage();
+
+
        //Navigation Menu Slider
         $('#nav-expander').on('click',function(e){
       		e.preventDefault();
@@ -46,9 +49,16 @@ $(document).ready(function(){
 // Run code on window load
 $(window).bind("load", function() {
 
+  // Reveal sections after page load to avoid FOUC
+  setTimeout(function() {
+      $('.second.hidden').removeClass('hidden').fadeIn();
+  }, 1000);
+
+  // Fade in intro content on load
   setTimeout(function() {
   $('.intro').removeClass('hidden').addClass('animated fadeIn');
   }, 300);
+
   // Initiliaze variables
   var t0 = $('.dynamic_text0'),
       t1 = $('.dynamic_text1'),

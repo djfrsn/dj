@@ -4969,6 +4969,9 @@ body {
 a.navbar-brand:hover {
   color: #FF6600; }
 
+.second {
+  background-color: blue; }
+
 /* #paper-plane
 */
 #paper-plane {
