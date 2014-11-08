@@ -5062,10 +5062,12 @@ a.nav-expander.fixed {
   right: 20em; }
 
 nav {
-  background: #56FF4D;
+  background: #F5EDE3;
   font-family: 'fira';
+  color: #6699FF;
   display: block;
   height: 100%;
+  opacity: 0.83;
   overflow: auto;
   position: fixed;
   right: -20em;
@@ -5095,20 +5097,23 @@ body.nav-expanded {
   padding-right: 10px; }
 
 .main-menu {
-  padding-top: 12px; }
+  padding-top: 12px;
+  border-left: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+  border-radius: 2px; }
 
 .main-menu li {
-  border-bottom: 1px solid gray;
   margin-left: 20px;
   font-size: 36px;
   padding: 12px; }
 
 .main-menu li a {
   color: #333333;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.5s ease; }
 
 .main-menu li a:hover {
-  color: #FFFFFF;
+  color: #FF6600;
   text-decoration: none; }
 
 .main-menu li .sub-nav {

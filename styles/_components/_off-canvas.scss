@@ -31,10 +31,12 @@ a.nav-expander.fixed {
 }
 
 nav {
-  background: #56FF4D;
+  background: $secondary;
   font-family: 'fira';
+  color: $primary;
   display: block;
   height: 100%;
+  opacity: 0.83;
   overflow: auto;
   position: fixed;
   right: -20em;
@@ -70,10 +72,12 @@ body.nav-expanded {
 
 .main-menu {
   padding-top: 12px;
+  border-left: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+  border-radius: 2px;
 }
 
 .main-menu li {
-  border-bottom: 1px solid gray;
   margin-left: 20px;
   font-size: 36px;
   padding: 12px;
@@ -82,10 +86,11 @@ body.nav-expanded {
 .main-menu li a {
   color: $black;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .main-menu li a:hover {
-  color: #FFFFFF;
+  color: $fracture;
   text-decoration: none;
 }
 
