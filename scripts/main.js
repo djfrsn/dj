@@ -16,7 +16,7 @@ $(window).resize(function() {
 $(document).ready(function(){												
 
       $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        sectionsColor: ['#F5EDE3', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
         menu: '#menu'
       });
@@ -55,7 +55,7 @@ $(window).bind("load", function() {
 
   // Reveal sections after page load to avoid FOUC
   setTimeout(function() {
-      $('.second.hidden').removeClass('hidden').fadeIn();
+      $('.reveal.hidden').removeClass('hidden').fadeIn();
   }, 1000);
 
   // Center intro content horizontally

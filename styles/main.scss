@@ -20,3 +20,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 // Modules
 @import "_components/_off-canvas";
+
+// Overrides
+@import "_core/_overrides";

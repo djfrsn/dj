@@ -5171,3 +5171,12 @@ body.nav-expanded {
   float: right;
   margin: 0.1em 0.8em -0.1em 0;
   opacity: 1; }
+
+/*
+**
+*** BootStrap Overrides Styles
+**
+*/
+.container {
+  width: 100%;
+  padding: 0; }
