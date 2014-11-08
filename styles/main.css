@@ -4957,7 +4957,7 @@ body {
 *** NavBar Styles
 **
 */
-/* Brand
+/* #brand
 */
 #brand {
   padding: 2rem 0 0 5rem;
@@ -4969,7 +4969,7 @@ body {
 a.navbar-brand:hover {
   color: #FF6600; }
 
-/* Paper Plane
+/* #paper-plane
 */
 #paper-plane {
   padding-right: 5rem;
@@ -4982,17 +4982,20 @@ a.navbar-brand:hover {
   right: 0;
   text-decoration: none;
   top: 0;
-  transition: right 0.3s ease-in-out 0s;
   z-index: 12;
   transition: right 0.3s ease-in-out 0s;
   -webkit-transition: right 0.3s ease-in-out 0s;
   -moz-transition: right 0.3s ease-in-out 0s;
   -o-transition: right 0.3s ease-in-out 0s; }
 
-/* fa-bars
+/* .fa-bars
 */
 .fa-bars {
-  color: #104386; }
+  color: #104386;
+  transition: color 0.5s ease; }
+
+i.fa-bars:hover {
+  color: #FF6600; }
 
 /*
 **

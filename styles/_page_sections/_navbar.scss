@@ -4,7 +4,7 @@
 **
 */
 
-/* Brand
+/* #brand
 */
 #brand
 {
@@ -15,12 +15,14 @@
   text-shadow: 0 0.02em #fff;
 }
 
-a.navbar-brand:hover 
+a.navbar-brand:hover
 {
   color: $fracture;
 }
 
-/* Paper Plane
+
+
+/* #paper-plane
 */
 #paper-plane
 {
@@ -35,7 +37,6 @@ a.navbar-brand:hover
   right: 0;
   text-decoration: none;
   top: 0;
-  transition: right 0.3s ease-in-out 0s;
   z-index: 12;
   
   transition: right 0.3s ease-in-out 0s;
@@ -44,10 +45,16 @@ a.navbar-brand:hover
   -o-transition: right 0.3s ease-in-out 0s;
 }
 
-/* fa-bars
+/* .fa-bars
 */
 
 .fa-bars
 {
   color: $quadrant;
+  transition: color 0.5s ease;
+}
+
+i.fa-bars:hover 
+{
+  color: $fracture;
 }
