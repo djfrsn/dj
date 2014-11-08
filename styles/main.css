@@ -4891,7 +4891,12 @@ button.close {
 
 /*
 **
-*** Colors
+*** Variables
+**
+*/
+/*
+**
+*** General Styles
 **
 */
 body {
@@ -4903,6 +4908,11 @@ body {
 .underline {
   text-decoration: underline; }
 
+/*
+**
+*** Fonts
+**
+*/
 @font-face {
   font-family: 'mathletebulky_slant';
   src: url('fonts/mathlete-bulkyslant-webfont.eot');
@@ -4923,6 +4933,19 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+/*
+**
+*** Utility Styles
+**
+*/
+.underline {
+  text-decoration: underline; }
+
+/*
+**
+*** Misc Styles
+**
+*/
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -5040,6 +5063,7 @@ a.nav-expander.fixed {
 
 nav {
   background: #56FF4D;
+  font-family: 'fira';
   display: block;
   height: 100%;
   overflow: auto;

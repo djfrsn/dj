@@ -1,18 +1,8 @@
-
-// General
- body
- {
-     font-family: 'Open Sans';
-     background-color: $secondary;
-     color: $quadrant;
-     text-shadow: 0 0.02em #fff;
- }
-
-// Utility
-.underline
-{
-    text-decoration: underline;
-}
+/*
+**
+*** Fonts
+**
+*/
 
 // Fonts
 @font-face {
@@ -45,11 +35,3 @@
     font-style: normal;
 
 }
-
-// Misc
-.browsehappy {
-     margin: 0.2em 0;
-     background: #ccc;
-     color: #000;
-     padding: 0.2em 0;
- }

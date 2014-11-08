@@ -8,12 +8,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 // Begin Imports
 
 // Essential styles
-@import "_main/_variables";
-@import "_main/_misc";
+@import "_core/_variables";
+@import "_core/_general";
+@import "_core/_fonts";
+@import "_core/_utility";
+@import "_core/_misc";
 
 // Styles by section type
-@import "_sections/_navbar";
-@import "_sections/_intro";
+@import "_page_sections/_navbar";
+@import "_page_sections/_intro";
 
 // Modules
-@import "_modules/_off-canvas";
+@import "_components/_off-canvas";
