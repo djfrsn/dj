@@ -4940,9 +4940,7 @@ body {
 /* Center intro content w/ Tables
 */
 .table {
-  display: table; }
-
-.intro.table {
+  display: table;
   margin-bottom: 0; }
 
 .table__cell {
