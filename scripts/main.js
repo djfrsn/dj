@@ -11,8 +11,14 @@ $(window).resize(function() {
  setTableHeight();
 });
 
+// Disable scrolling
+$('#fullpage').on('scroll touchmove mousewheel', function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+})
 
-// Call functions on document.ready
+// Run code on document.ready
 $(document).ready(function(){												
 
       $('#fullpage').fullpage({
@@ -20,7 +26,6 @@ $(document).ready(function(){
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
         menu: '#menu'
       });
-
 
        //Navigation Menu Slider
         $('#nav-expander').on('click',function(e){
@@ -53,9 +58,12 @@ $(document).ready(function(){
 // Run code on window load
 $(window).bind("load", function() {
 
-  // Reveal sections after page load to avoid FOUC
+  // This code runs after 1 second
   setTimeout(function() {
+      // Reveal sections after page load to avoid FOUC
       $('.reveal.hidden').removeClass('hidden').fadeIn();
+      // Turn scroll back on
+      $('#fullpage').off('scroll touchmove mousewheel');
   }, 1000);
 
   // Center intro content horizontally
@@ -96,8 +104,7 @@ $(window).bind("load", function() {
       txtl(t0);
       }, 1000);
 
-
-      // sequential calls to textillate new text
+      // sequential calls to run txtl on new text
       setTimeout(function() {
         t0.addClass('hidden');
         txtl(t1);
@@ -118,6 +125,7 @@ $(window).bind("load", function() {
         txtl(t4);
       }, 17500);
 
+      // run txtl on 'i create' description
       setTimeout(function() {
         t5.removeClass('invisible').addClass('animated fadeIn');
       }, 18800);
