@@ -12,11 +12,12 @@ $overlap   : 50px;
 
 
 .content {
-      position: absolute;
+  position: absolute;
   bottom: 40px;
+  z-index: 99;
   left: 50%;
+  margin-left: -225px;
   width: ($size - $overlap) * $rings + $overlap;
-  padding-left: $overlap;
 }
 
 .ring {

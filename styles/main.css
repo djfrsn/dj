@@ -5054,9 +5054,10 @@ i.fa-bars:hover {
 .content {
   position: absolute;
   bottom: 40px;
+  z-index: 99;
   left: 50%;
-  width: 550px;
-  padding-left: 50px; }
+  margin-left: -225px;
+  width: 550px; }
 
 .ring {
   position: relative;
