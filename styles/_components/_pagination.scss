@@ -5,29 +5,18 @@
 */
 
 // Dots pagination
-$rings     : 10; // must match HTML
+$rings     : 5; // must match HTML
 $size      : 150px;
 $thickness : 20px;
 $overlap   : 50px;
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  background: #000 radial-gradient(#2f434e, #000);
-}
 
 .content {
-  position: absolute;
-  top: 50%;
+      position: absolute;
+  bottom: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
+   left: 50%;
   width: ($size - $overlap) * $rings + $overlap;
   padding-left: $overlap;
 }
@@ -41,11 +30,11 @@ body {
   animation: float 3s infinite;
   
   &:nth-child(2n + 1) {
-    color: #be427b;
+    color: $primary;
   }
 
   &:nth-child(2n) {
-    color: #fff;
+    color: $quadrant;
   }
   
   @for $i from 1 through $rings {

@@ -5051,22 +5051,13 @@ i.fa-bars:hover {
 *** Pagination Styles
 **
 */
-*, *::before, *::after {
-  box-sizing: border-box; }
-
-html {
-  height: 100%; }
-
-body {
-  margin: 0;
-  background: #000 radial-gradient(#2f434e, #000); }
-
 .content {
   position: absolute;
-  top: 50%;
+  bottom: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1050px;
+  left: 50%;
+  width: 550px;
   padding-left: 50px; }
 
 .ring {
@@ -5077,48 +5068,28 @@ body {
   margin-left: -50px;
   animation: float 3s infinite; }
   .ring:nth-child(2n+1) {
-    color: #be427b; }
+    color: #6699FF; }
   .ring:nth-child(2n) {
-    color: #fff; }
+    color: #104386; }
   .ring:nth-child(1) {
     animation-delay: -0.25s; }
   .ring:nth-child(1)::after {
-    z-index: 10; }
+    z-index: 5; }
   .ring:nth-child(2) {
     animation-delay: -0.5s; }
   .ring:nth-child(2)::after {
-    z-index: 9; }
+    z-index: 4; }
   .ring:nth-child(3) {
     animation-delay: -0.75s; }
   .ring:nth-child(3)::after {
-    z-index: 8; }
+    z-index: 3; }
   .ring:nth-child(4) {
     animation-delay: -1s; }
   .ring:nth-child(4)::after {
-    z-index: 7; }
+    z-index: 2; }
   .ring:nth-child(5) {
     animation-delay: -1.25s; }
   .ring:nth-child(5)::after {
-    z-index: 6; }
-  .ring:nth-child(6) {
-    animation-delay: -1.5s; }
-  .ring:nth-child(6)::after {
-    z-index: 5; }
-  .ring:nth-child(7) {
-    animation-delay: -1.75s; }
-  .ring:nth-child(7)::after {
-    z-index: 4; }
-  .ring:nth-child(8) {
-    animation-delay: -2s; }
-  .ring:nth-child(8)::after {
-    z-index: 3; }
-  .ring:nth-child(9) {
-    animation-delay: -2.25s; }
-  .ring:nth-child(9)::after {
-    z-index: 2; }
-  .ring:nth-child(10) {
-    animation-delay: -2.5s; }
-  .ring:nth-child(10)::after {
     z-index: 1; }
   .ring::before, .ring::after {
     content: '';
