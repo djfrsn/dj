@@ -15,8 +15,6 @@ $overlap   : 50px;
       position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translate(-50%, -50%);
-   left: 50%;
   width: ($size - $overlap) * $rings + $overlap;
   padding-left: $overlap;
 }
@@ -82,7 +80,7 @@ $overlap   : 50px;
    position: fixed;
    z-index: 100;
    margin-top: -32px;
-   margin-left: -140px;
+   margin-left: -70px;
    bottom: 4%;
    opacity: 1;
    left: 50%;
