@@ -5,46 +5,172 @@
 */
 
 // Dots pagination
-.dots{
-  list-style-type:none;
-  background:white;
-  -webkit-filter:blur(5px) contrast(10);
-  padding:0;
-  margin:0;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-left:20px;
-  margin-left:-10px;
-  padding-right:10px;
-  position:relative;
-  left:100px;
-  top:30px;
+$rings     : 10; // must match HTML
+$size      : 150px;
+$thickness : 20px;
+$overlap   : 50px;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-.dot{
-  display:inline-block;
-  vertical-align:middle;
-  border-radius:100%;
-  width:30px;
-  height:30px;
-  background:black;
-  margin-left:5px;
-  margin-right:5px;
-  cursor:pointer;
-  color:white;
-  position:relative;
-  z-index:2;
+
+html {
+  height: 100%;
 }
-.select{
-  display:block;
-  border-radius:100%;
-  width:40px;
-  height:40px;
-  background:black;
-  //opacity:0.6;
-  //transition:transform 300ms ease-in-out;
-  position:absolute;
-  z-index:3;
-  top:15px;
-  left:0px;
-  pointer-events:none;
-} 
+
+body {
+  margin: 0;
+  background: #000 radial-gradient(#2f434e, #000);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: ($size - $overlap) * $rings + $overlap;
+  padding-left: $overlap;
+}
+
+.ring {
+  position: relative;
+  float: left;
+  height: $size;
+  width: $size;
+  margin-left: -$overlap;
+  animation: float 3s infinite;
+  
+  &:nth-child(2n + 1) {
+    color: #be427b;
+  }
+
+  &:nth-child(2n) {
+    color: #fff;
+  }
+  
+  @for $i from 1 through $rings {
+    &:nth-child(#{$i}) {
+      animation-delay: -#{$i * .25}s;
+    }
+    
+    &:nth-child(#{$i})::after {
+      z-index: $rings + 1 - $i;
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: solid $thickness;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
+@keyframes float {
+  50% {
+    // Would normally animate transform, but
+    // that creates a new z-index stacking
+    // context which breaks the interlocked
+    // layout. Uncomment this line to see:
+    //transform: translate(0px);
+    margin-top: -$thickness;
+    margin-left: -$overlap * 1.2;
+  }
+}
+
+
+// Fullpage Pagination
+#fp-nav {
+   position: fixed;
+   z-index: 100;
+   margin-top: -32px;
+   margin-left: -140px;
+   bottom: 4%;
+   opacity: 1;
+   left: 50%;
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav li,
+.fp-slidesNav li {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav li {
+    display: inline-block;
+}
+#fp-nav li a,
+.fp-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav li .active span,
+.fp-slidesNav .active span {
+    background: #333;
+}
+#fp-nav span,
+.fp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.fp-tooltip {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+}
+.fp-tooltip.right {
+    right: 20px;
+}
+.fp-tooltip.left {
+    left: 20px;
+}
+

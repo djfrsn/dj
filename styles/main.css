@@ -5051,46 +5051,171 @@ i.fa-bars:hover {
 *** Pagination Styles
 **
 */
-.dots {
-  list-style-type: none;
-  background: white;
-  -webkit-filter: blur(5px) contrast(10);
-  padding: 0;
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  margin-left: -10px;
-  padding-right: 10px;
-  position: relative;
-  left: 100px;
-  top: 30px; }
+  background: #000 radial-gradient(#2f434e, #000); }
 
-.dot {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  background: black;
-  margin-left: 5px;
-  margin-right: 5px;
-  cursor: pointer;
-  color: white;
-  position: relative;
-  z-index: 2; }
-
-.select {
-  display: block;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  background: black;
+.content {
   position: absolute;
-  z-index: 3;
-  top: 15px;
-  left: 0px;
-  pointer-events: none; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1050px;
+  padding-left: 50px; }
+
+.ring {
+  position: relative;
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-left: -50px;
+  animation: float 3s infinite; }
+  .ring:nth-child(2n+1) {
+    color: #be427b; }
+  .ring:nth-child(2n) {
+    color: #fff; }
+  .ring:nth-child(1) {
+    animation-delay: -0.25s; }
+  .ring:nth-child(1)::after {
+    z-index: 10; }
+  .ring:nth-child(2) {
+    animation-delay: -0.5s; }
+  .ring:nth-child(2)::after {
+    z-index: 9; }
+  .ring:nth-child(3) {
+    animation-delay: -0.75s; }
+  .ring:nth-child(3)::after {
+    z-index: 8; }
+  .ring:nth-child(4) {
+    animation-delay: -1s; }
+  .ring:nth-child(4)::after {
+    z-index: 7; }
+  .ring:nth-child(5) {
+    animation-delay: -1.25s; }
+  .ring:nth-child(5)::after {
+    z-index: 6; }
+  .ring:nth-child(6) {
+    animation-delay: -1.5s; }
+  .ring:nth-child(6)::after {
+    z-index: 5; }
+  .ring:nth-child(7) {
+    animation-delay: -1.75s; }
+  .ring:nth-child(7)::after {
+    z-index: 4; }
+  .ring:nth-child(8) {
+    animation-delay: -2s; }
+  .ring:nth-child(8)::after {
+    z-index: 3; }
+  .ring:nth-child(9) {
+    animation-delay: -2.25s; }
+  .ring:nth-child(9)::after {
+    z-index: 2; }
+  .ring:nth-child(10) {
+    animation-delay: -2.5s; }
+  .ring:nth-child(10)::after {
+    z-index: 1; }
+  .ring::before, .ring::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 20px;
+    transform: rotate(45deg); }
+  .ring::after {
+    border-right-color: transparent;
+    border-bottom-color: transparent; }
+
+@keyframes float {
+  50% {
+    margin-top: -20px;
+    margin-left: -60px; } }
+
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  margin-left: -140px;
+  bottom: 4%;
+  opacity: 1;
+  left: 50%; }
+
+#fp-nav.right {
+  right: 17px; }
+
+#fp-nav.left {
+  left: 17px; }
+
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1; }
+
+.fp-slidesNav.bottom {
+  bottom: 17px; }
+
+.fp-slidesNav.top {
+  top: 17px; }
+
+#fp-nav ul, .fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+
+#fp-nav li, .fp-slidesNav li {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative; }
+
+.fp-slidesNav li {
+  display: inline-block; }
+
+#fp-nav li a, .fp-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none; }
+
+#fp-nav li .active span, .fp-slidesNav .active span {
+  background: #333; }
+
+#fp-nav span, .fp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1; }
+
+.fp-tooltip {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px; }
+
+.fp-tooltip.right {
+  right: 20px; }
+
+.fp-tooltip.left {
+  left: 20px; }
 
 a.nav-expander {
   color: #333333;

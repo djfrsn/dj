@@ -24,7 +24,10 @@ $(document).ready(function(){
       $('#fullpage').fullpage({
         sectionsColor: ['#F5EDE3', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu'
+        menu: '#menu',
+        navigation: true,
+        navigationPosition: 'bottom',
+        navigationTooltips: ['firstSlide', 'secondSlide', '3', '4', '5']
       });
 
        //Navigation Menu Slider
