@@ -26,8 +26,8 @@ $(document).ready(function(){
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
         menu: '#menu',
         navigation: true,
-        navigationPosition: 'bottom',
-        navigationTooltips: ['firstSlide', 'secondSlide', '3', '4', '5']
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'Process', 'Projects', 'About', 'Contact']
       });
 
        //Navigation Menu Slider
@@ -56,33 +56,6 @@ $(document).ready(function(){
                 easing: 'swing'
             }
         });
-
-        $(".dot").hover(function(){
-    var cur=$(this);
-    var dest=cur.position().left;
-    var t=0.6;
-    TweenMax.to($(".select"),t,{x:dest,ease:Back.easeOut})
-  });
-  var lastPos=$(".select").position().left;
-  function updateScale(){
-    var pos=$(".select").position().left;
-    
-    var speed=Math.abs(pos-lastPos);
-    var d=44;
-    var offset=-20;
-    var hd=d/2;
-    var scale=(offset+pos)%d;
-    if(scale>hd){
-      scale=hd-(scale-hd);
-    }
-    scale=1-((scale/hd)*0.35);
-    TweenMax.to($(".select"),0.1,{scaleY:scale,scaleX:1+(speed*0.06)})
-    
-    lastPos=pos;
-    requestAnimationFrame(updateScale);
-  }
-  requestAnimationFrame(updateScale);
-  $(".dot:eq(0)").trigger("mouseover");
   
 });
 
@@ -96,6 +69,10 @@ $(window).bind("load", function() {
       // Turn scroll back on
       $('#fullpage').off('scroll touchmove mousewheel');
   }, 1000);
+
+      // Reveal Nav
+      $('.circle a').removeClass('hidden').addClass('animated fadeIn');
+
 
   // Center intro content horizontally
   function inwi() {
@@ -124,6 +101,7 @@ $(window).bind("load", function() {
 
   // create anon function for our text handler
   (function(){
+      
 
       // create function to run texillate animation
       function txtl(obj) {

@@ -4,87 +4,13 @@
 **
 */
 
-// Dots pagination
-$rings     : 5; // must match HTML
-$size      : 150px;
-$thickness : 20px;
-$overlap   : 50px;
 
-
-.content {
-  position: absolute;
-  bottom: 40px;
-  z-index: 99;
-  left: 50%;
-  margin-left: -225px;
-  width: ($size - $overlap) * $rings + $overlap;
-}
-
-.ring {
-  position: relative;
-  float: left;
-  height: $size;
-  width: $size;
-  margin-left: -$overlap;
-  animation: float 3s infinite;
-  
-  &:nth-child(2n + 1) {
-    color: $primary;
-  }
-
-  &:nth-child(2n) {
-    color: $quadrant;
-  }
-  
-  @for $i from 1 through $rings {
-    &:nth-child(#{$i}) {
-      animation-delay: -#{$i * .25}s;
-    }
-    
-    &:nth-child(#{$i})::after {
-      z-index: $rings + 1 - $i;
-    }
-  }
-
-  &::before, &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: $size;
-    height: $size;
-    border-radius: 50%;
-    border: solid $thickness;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-  }
-}
-
-@keyframes float {
-  50% {
-    // Would normally animate transform, but
-    // that creates a new z-index stacking
-    // context which breaks the interlocked
-    // layout. Uncomment this line to see:
-    //transform: translate(0px);
-    margin-top: -$thickness;
-    margin-left: -$overlap * 1.2;
-  }
-}
-
-
-// Fullpage Pagination
 #fp-nav {
-   position: fixed;
-   z-index: 100;
-   margin-top: -32px;
-   margin-left: -70px;
-   bottom: 4%;
-   opacity: 1;
-   left: 50%;
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
 }
 #fp-nav.right {
     right: 17px;
@@ -111,10 +37,11 @@ $overlap   : 50px;
 }
 #fp-nav li,
 .fp-slidesNav li {
-    display: inline-block;
+    display: block;
     width: 14px;
     height: 13px;
     margin: 7px;
+    display: none;
     position:relative;
 }
 .fp-slidesNav li {
@@ -132,7 +59,7 @@ $overlap   : 50px;
 }
 #fp-nav li .active span,
 .fp-slidesNav .active span {
-    background: #333;
+    background: $quadrant;
 }
 #fp-nav span,
 .fp-slidesNav span {
@@ -140,7 +67,7 @@ $overlap   : 50px;
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
+    border: 1px solid $quadrant;
     background: rgba(0, 0, 0, 0);
     border-radius: 50%;
     position: absolute;
@@ -148,8 +75,8 @@ $overlap   : 50px;
 }
 .fp-tooltip {
     position: absolute;
-    bottom: 20px;
-    color: #fff;
+    top: -2px;
+    color: $quadrant;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -161,4 +88,3 @@ $overlap   : 50px;
 .fp-tooltip.left {
     left: 20px;
 }
-

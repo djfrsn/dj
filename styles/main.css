@@ -5051,71 +5051,12 @@ i.fa-bars:hover {
 *** Pagination Styles
 **
 */
-.content {
-  position: absolute;
-  bottom: 40px;
-  z-index: 99;
-  left: 50%;
-  margin-left: -225px;
-  width: 550px; }
-
-.ring {
-  position: relative;
-  float: left;
-  height: 150px;
-  width: 150px;
-  margin-left: -50px;
-  animation: float 3s infinite; }
-  .ring:nth-child(2n+1) {
-    color: #6699FF; }
-  .ring:nth-child(2n) {
-    color: #104386; }
-  .ring:nth-child(1) {
-    animation-delay: -0.25s; }
-  .ring:nth-child(1)::after {
-    z-index: 5; }
-  .ring:nth-child(2) {
-    animation-delay: -0.5s; }
-  .ring:nth-child(2)::after {
-    z-index: 4; }
-  .ring:nth-child(3) {
-    animation-delay: -0.75s; }
-  .ring:nth-child(3)::after {
-    z-index: 3; }
-  .ring:nth-child(4) {
-    animation-delay: -1s; }
-  .ring:nth-child(4)::after {
-    z-index: 2; }
-  .ring:nth-child(5) {
-    animation-delay: -1.25s; }
-  .ring:nth-child(5)::after {
-    z-index: 1; }
-  .ring::before, .ring::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: solid 20px;
-    transform: rotate(45deg); }
-  .ring::after {
-    border-right-color: transparent;
-    border-bottom-color: transparent; }
-
-@keyframes float {
-  50% {
-    margin-top: -20px;
-    margin-left: -60px; } }
-
 #fp-nav {
   position: fixed;
   z-index: 100;
   margin-top: -32px;
-  margin-left: -70px;
-  bottom: 4%;
-  opacity: 1;
-  left: 50%; }
+  top: 50%;
+  opacity: 1; }
 
 #fp-nav.right {
   right: 17px; }
@@ -5140,10 +5081,11 @@ i.fa-bars:hover {
   padding: 0; }
 
 #fp-nav li, .fp-slidesNav li {
-  display: inline-block;
+  display: block;
   width: 14px;
   height: 13px;
   margin: 7px;
+  display: none;
   position: relative; }
 
 .fp-slidesNav li {
@@ -5159,14 +5101,14 @@ i.fa-bars:hover {
   text-decoration: none; }
 
 #fp-nav li .active span, .fp-slidesNav .active span {
-  background: #333; }
+  background: #104386; }
 
 #fp-nav span, .fp-slidesNav span {
   top: 2px;
   left: 2px;
   width: 8px;
   height: 8px;
-  border: 1px solid #000;
+  border: 1px solid #104386;
   background: rgba(0, 0, 0, 0);
   border-radius: 50%;
   position: absolute;
@@ -5174,8 +5116,8 @@ i.fa-bars:hover {
 
 .fp-tooltip {
   position: absolute;
-  bottom: 20px;
-  color: #fff;
+  top: -2px;
+  color: #104386;
   font-size: 14px;
   font-family: arial, helvetica, sans-serif;
   white-space: nowrap;
