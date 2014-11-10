@@ -70,8 +70,13 @@ $(window).bind("load", function() {
       $('#fullpage').off('scroll touchmove mousewheel');
   }, 1000);
 
-      // Reveal Nav
-      $('.circle a').removeClass('hidden').addClass('animated fadeIn');
+  // Reveal Nav
+  $('.circle a').removeClass('hidden').addClass('animated fadeIn');
+
+  $('.circle a').on('click', function() {
+    $(this).addClass("hidden");
+    $('#fp-nav').show();
+  });
 
 
   // Center intro content horizontally
