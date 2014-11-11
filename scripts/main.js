@@ -73,9 +73,9 @@ $(window).bind("load", function() {
   // Reveal Nav
   $('.circle a').removeClass('hidden').addClass('animated fadeIn');
 
-  $('.circle a').on('click', function() {
+  $('.circle a').on("click", function() {
     $(this).addClass("hidden");
-    $('#fp-nav').show();
+    $('#fp-nav').addClass('animated fadeIn');
   });
 
 
