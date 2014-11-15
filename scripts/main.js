@@ -24,10 +24,7 @@ $(document).ready(function(){
       $('#fullpage').fullpage({
         sectionsColor: ['#F5EDE3', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu',
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'Process', 'Projects', 'About', 'Contact']
+        menu: '.main-menu',
       });
 
        //Navigation Menu Slider
@@ -73,8 +70,8 @@ $(window).bind("load", function() {
   // Reveal Nav
   $('.circle a').removeClass('hidden').addClass('animated fadeIn');
 
-  $('.circle a').on("click", function() {
-    $(this).addClass("hidden");
+  $('.circle a').on("hover", function() {
+    $(this).toggle("hidden");
     $('#fp-nav').addClass('animated fadeIn');
   });
 
