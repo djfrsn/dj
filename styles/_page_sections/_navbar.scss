@@ -16,20 +16,16 @@
 
 a.navbar-brand:hover
 {
-  color: $fracture;
+  color: themeColor(4);
 }
 
-.second
-{
-  background-color: blue;
-}
 
 /* #paper-plane
 */
 #paper-plane
 {
 	padding-right: 5rem;
-  color: $quadrant;
+  color: themeColor(4);
 }
 #paper-plane_link
 {
@@ -52,11 +48,11 @@ a.navbar-brand:hover
 
 .fa-bars
 {
-  color: $quadrant;
+  color: themeColor(4);
   transition: color 0.5s ease;
 }
 
 i.fa-bars:hover 
 {
-  color: $fracture;
+  color: themeColor(4);
 }
