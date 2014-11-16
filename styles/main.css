@@ -4983,13 +4983,13 @@ body {
   transition: color 0.5s ease; }
 
 a.navbar-brand:hover {
-   }
+  color: #FF6600; }
 
 /* #paper-plane
 */
 #paper-plane {
   padding-right: 5rem;
-   }
+  color: #104386; }
 
 #paper-plane_link {
   margin-right: 0;
@@ -5007,11 +5007,11 @@ a.navbar-brand:hover {
 /* .fa-bars
 */
 .fa-bars {
-  
+  color: #104386;
   transition: color 0.5s ease; }
 
 i.fa-bars:hover {
-   }
+  color: #104386; }
 
 /*
 **
