@@ -110,37 +110,34 @@ $(window).bind("load", function() {
         obj.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
       }
 
-      // first call to textillate
-      setTimeout(function() {
-      txtl(t0);
-      }, 1000);
+      // 
+      var loop = jQuery.runloop();
 
-      // sequential calls to run txtl on new text
-      setTimeout(function() {
+      // Note: only use 5% intervals (10% for <500ms durations)!
+      loop.addKey('5%', function() { 
+        txtl(t0); 
+      });
+      loop.addKey('20%', function() { 
         t0.addClass('hidden');
         txtl(t1);
-      }, 3850);
-  
-      setTimeout(function() {
+      });
+      loop.addKey('40%', function() { 
         t1.addClass('hidden');
         txtl(t2);
-      }, 7800);
-
-      setTimeout(function() {
+      });
+      loop.addKey('60%', function() { 
         t2.addClass('hidden');
         txtl(t3);
-      }, 12500);
-
-      setTimeout(function() {
+      });
+      loop.addKey('80%', function() { 
         t3.addClass('hidden');
         txtl(t4);
-      }, 17500);
-
-      // run txtl on 'i create' description
-      setTimeout(function() {
+      });
+      loop.addKey('90%', function() { 
         t5.removeClass('invisible').addClass('animated fadeIn');
-      }, 18800);
-
+      });
+      loop.play(20000);
+// 18.8s
   })();
 
 }); 
