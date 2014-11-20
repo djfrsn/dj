@@ -39,3 +39,30 @@
 {
 	font-size: 1.5rem;
 }
+
+/* .wip
+*/
+.wip
+{
+	font-size: 2.8rem;
+	color: themeColor(three);
+	@include text-shadow();
+	text-transform: uppercase;
+	font-family: 'fira';
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+}
