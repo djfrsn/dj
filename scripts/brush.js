@@ -99,7 +99,8 @@ $(window).bind("load", function() {
       t2 = $('.dynamic_text2'),
       t3 = $('.dynamic_text3'),
       t4 = $('.dynamic_text4'),
-      t5 = $('.dynamic_text5');
+      t5 = $('.dynamic_text5'),
+      wip = $('.wip');
 
   // create anon function for our text handler
   (function(){
@@ -107,6 +108,10 @@ $(window).bind("load", function() {
       // create function to run texillate animation
       function txtl(obj) {
         obj.removeClass('hidden').textillate({ in: { effect: 'flipInY' }});
+      }
+
+      function invFade(obj) {
+        obj.removeClass('invisible').addClass('animated fadeIn')
       }
 
       // Create runloop for animation timing
@@ -134,7 +139,10 @@ $(window).bind("load", function() {
       });
       // Run final paragraph text
       loop.addKey('90%', function() { 
-        t5.removeClass('invisible').addClass('animated fadeIn');
+        invFade(t5);
+      });
+      loop.addKey('100%', function() { 
+        invFade(wip);
       });
       loop.play(20000);
   })();
