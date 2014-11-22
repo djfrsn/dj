@@ -5067,6 +5067,13 @@ body {
   /* Set the fixed height of the footer here */
   height: 70px; }
 
+/*
+**
+*** Off_Canvas-Menu Styles
+**
+*/
+/* .nav-expander
+*/
 a.nav-expander {
   color: #333333;
   display: block;
@@ -5093,6 +5100,8 @@ a.nav-expander.fixed {
 .nav-expanded a.nav-expander.fixed {
   right: 20em; }
 
+/* nav
+*/
 nav {
   background: #F5EDE3;
   font-family: 'fira';
@@ -5112,6 +5121,8 @@ nav {
   -moz-transition: right 0.3s ease-in-out 0s;
   -o-transition: right 0.3s ease-in-out 0s; }
 
+/* .nav-expanded 
+*/
 .nav-expanded nav {
   right: 0; }
 
@@ -5122,12 +5133,16 @@ body.nav-expanded {
   -moz-transition: right 0.4s ease-in-out 0s;
   -o-transition: right 0.4s ease-in-out 0s; }
 
+/* #nav-close
+*/
 #nav-close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 24px;
   padding-right: 10px; }
 
+/* .main-menu
+*/
 .main-menu {
   padding-top: 12px;
   border-left: 1px dotted gray;
@@ -5175,15 +5190,6 @@ body.nav-expanded {
 .main-menu li.open > a:hover > .caret {
   border-bottom-color: #4f5963; }
 
-.icon:before {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-transform: none;
-  content: '\f105'; }
-
 .main-menu li > a > span.icon {
   float: right;
   margin: 0.1em 1.7em -0.1em 0;
@@ -5197,6 +5203,17 @@ body.nav-expanded {
   float: right;
   margin: 0.1em 0.8em -0.1em 0;
   opacity: 1; }
+
+/* .icon
+*/
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105'; }
 
 /*
 **
