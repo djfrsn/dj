@@ -4988,6 +4988,7 @@ a.navbar-brand:hover {
 /* #paper-plane
 */
 #paper-plane {
+  padding-right: 5rem;
   color: #104386; }
 
 #paper-plane_link {
