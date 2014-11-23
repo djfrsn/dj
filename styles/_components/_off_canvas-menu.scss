@@ -25,7 +25,6 @@ a.nav-expander {
   -webkit-transition: right 0.3s ease-in-out 0s;
   -moz-transition: right 0.3s ease-in-out 0s;
   -o-transition: right 0.3s ease-in-out 0s;
-
 }
 
 a.nav-expander:hover {
@@ -40,17 +39,15 @@ a.nav-expander.fixed {
     right: 20em;
 }
 
-
 /* nav
 */
 
 nav {
-  background: $secondary;
+  background: themeColor(three);
   font-family: 'fira';
-  color: $primary;
+  color: themeColor(four);
   display: block;
   height: 100%;
-  opacity: 0.83;
   overflow: auto;
   position: fixed;
   right: -20em;
@@ -88,7 +85,6 @@ body.nav-expanded {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 24px;
-  padding-right: 10px;
 }
 
 /* .main-menu
@@ -96,25 +92,22 @@ body.nav-expanded {
 
 .main-menu {
   padding-top: 12px;
-  border-left: 1px dotted gray;
-  border-bottom: 1px dotted gray;
-  border-radius: 2px;
 }
 
 .main-menu li {
-  margin-left: 20px;
+  text-align: center;
   font-size: 36px;
   padding: 12px;
 }
 
 .main-menu li a {
-  color: $black;
+  color: themeColor(four);
   text-decoration: none;
   transition: all 0.5s ease;
 }
 
 .main-menu li a:hover {
-  color: $fracture;
+  color: themeColor(five);
   text-decoration: none;
 }
 

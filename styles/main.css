@@ -5103,12 +5103,11 @@ a.nav-expander.fixed {
 /* nav
 */
 nav {
-  background: #F5EDE3;
+  background: #E1D4C0;
   font-family: 'fira';
-  color: #6699FF;
+  color: #104386;
   display: block;
   height: 100%;
-  opacity: 0.83;
   overflow: auto;
   position: fixed;
   right: -20em;
@@ -5138,24 +5137,20 @@ body.nav-expanded {
 #nav-close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px;
-  padding-right: 10px; }
+  font-size: 24px; }
 
 /* .main-menu
 */
 .main-menu {
-  padding-top: 12px;
-  border-left: 1px dotted gray;
-  border-bottom: 1px dotted gray;
-  border-radius: 2px; }
+  padding-top: 12px; }
 
 .main-menu li {
-  margin-left: 20px;
+  text-align: center;
   font-size: 36px;
   padding: 12px; }
 
 .main-menu li a {
-  color: #333333;
+  color: #104386;
   text-decoration: none;
   transition: all 0.5s ease; }
 
