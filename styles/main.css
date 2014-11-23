@@ -831,7 +831,7 @@ td, th {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
@@ -4970,18 +4970,26 @@ body {
 /* #brand
 */
 #brand {
-  padding: 2rem 0 0 5rem;
-  font-size: 3.4rem;
+  padding: 60px 0 0 50px;
+  padding: 3.75rem 0 0 3.125rem;
+  font-size: 84px;
+  font-size: 5.25rem;
   font-family: 'montserratbold';
   transition: color 0.5s ease; }
 
 a.navbar-brand:hover {
   color: #FF6600; }
 
+/* .fa
+*/
+.fa {
+  font-size: 6em !important; }
+
 /* #paper-plane
 */
 #paper-plane {
-  padding-right: 5rem;
+  padding-right: 130px;
+  padding-right: 8.125rem;
   color: #104386; }
 
 #paper-plane_link {
@@ -5023,23 +5031,27 @@ i.fa-bars:hover {
 */
 #main__title {
   font-family: 'fira';
-  font-size: 7rem; }
+  font-size: 7px;
+  font-size: 0.4375rem; }
 
 /* #sub__title
 */
 #sub__title {
-  font-size: 2rem;
+  font-size: 2px;
+  font-size: 0.125rem;
   transition: all 0.5s ease; }
 
 /* #main__title_description
 */
 #main__title_description {
-  font-size: 1.5rem; }
+  font-size: 2px;
+  font-size: 0.09375rem; }
 
 /* .wip
 */
 .wip {
-  font-size: 2.8rem;
+  font-size: 3px;
+  font-size: 0.175rem;
   color: #E1D4C0;
   text-shadow: 0 0.02em #fff;
   text-transform: uppercase;
@@ -5051,14 +5063,16 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  margin-bottom: 4.375rem; }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px; }
+  height: 70px;
+  height: 4.375rem; }
 
 /*
 **
