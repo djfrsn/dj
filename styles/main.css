@@ -5085,8 +5085,10 @@ a.nav-expander {
   color: #333333;
   display: block;
   font-size: 15px;
+  font-size: 0.9375rem;
   margin-right: 0;
-  padding: 1rem 2rem 0 0;
+  padding: 10px 20px 0 0;
+  padding: 0.625rem 1.25rem 0 0;
   position: absolute;
   right: 0;
   text-decoration: none;
@@ -5105,7 +5107,7 @@ a.nav-expander.fixed {
   position: fixed; }
 
 .nav-expanded a.nav-expander.fixed {
-  right: 20em; }
+  right: 10em; }
 
 /* nav
 */
@@ -5119,8 +5121,10 @@ nav {
   position: fixed;
   right: -20em;
   font-size: 15px;
+  font-size: 0.9375rem;
   top: 0;
-  width: 20em;
+  width: 150px;
+  width: 9.375rem;
   z-index: 2000;
   transition: right 0.3s ease-in-out 0s;
   -webkit-transition: right 0.3s ease-in-out 0s;
@@ -5144,7 +5148,8 @@ body.nav-expanded {
 #nav-close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px; }
+  font-size: 17px;
+  font-size: 1.0625rem; }
 
 /* .main-menu
 */
@@ -5153,8 +5158,9 @@ body.nav-expanded {
 
 .main-menu li {
   text-align: center;
-  font-size: 36px;
-  padding: 12px; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 10px; }
 
 .main-menu li a {
   color: #104386;
@@ -5192,20 +5198,6 @@ body.nav-expanded {
 
 .main-menu li.open > a:hover > .caret {
   border-bottom-color: #4f5963; }
-
-.main-menu li > a > span.icon {
-  float: right;
-  margin: 0.1em 1.7em -0.1em 0;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-
-.main-menu li > a:hover > span.icon {
-  float: right;
-  margin: 0.1em 0.8em -0.1em 0;
-  opacity: 1; }
 
 /* .icon
 */
