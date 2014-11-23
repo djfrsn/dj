@@ -1,4 +1,4 @@
-
+  
 // Set height for vertically centered tables
 function setTableHeight() {
 var winHeight = $(window).height();
@@ -16,7 +16,8 @@ $('html').on('scroll touchmove mousewheel', function(e){
   e.preventDefault();
   e.stopPropagation();
   return false;
-})
+});
+
 
 // Run code on document.ready
 $(document).ready(function(){												
@@ -28,6 +29,10 @@ $(document).ready(function(){
     menu: '.main-menu',
   });
 
+  function closeNav() {
+      $('body').removeClass('nav-expanded');
+  }
+
    //Navigation Menu Slider
     $('#nav-expander').on('click',function(e){
   		e.preventDefault();
@@ -35,7 +40,7 @@ $(document).ready(function(){
   	});
   	$('#nav-close').on('click',function(e){
   		e.preventDefault();
-  		$('body').removeClass('nav-expanded');
+  		closeNav();
   	});
 
   	// Initialize navgoco with default options
@@ -53,6 +58,33 @@ $(document).ready(function(){
             duration: 300,
             easing: 'swing'
         }
+    });
+
+    // Set Navigation Links
+    $('.main-menu-home').on('click', function(e){
+      e.preventDefault();
+      closeNav();
+      $.fn.fullpage.moveTo(1);
+    });
+    $('.main-menu-about').on('click', function(e){
+      e.preventDefault();
+      closeNav();
+      $.fn.fullpage.moveTo(2);
+    });
+    $('.main-menu-work').on('click', function(e){
+      e.preventDefault();
+      closeNav();
+      $.fn.fullpage.moveTo(3);
+    });
+    $('.main-menu-process').on('click', function(e){
+      e.preventDefault();
+      closeNav();
+      $.fn.fullpage.moveTo(4);
+    }); 
+    $('.main-menu-contact').on('click', function(e){
+      e.preventDefault();
+      closeNav();
+      $.fn.fullpage.moveTo(5);
     }); 
 });
 

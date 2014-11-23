@@ -5146,7 +5146,8 @@ body.nav-expanded {
 .main-menu li a {
   color: #104386;
   text-decoration: none;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  cursor: pointer; }
 
 .main-menu li a:hover {
   color: #FF6600;
