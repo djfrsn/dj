@@ -46,6 +46,12 @@ $dark: 0 0.02em $black;
 	@include text-shadow($dark);
 }
 
+@mixin paper-shadow() {
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
 // Rem <-> Px conversion 
 @mixin rem($property, $values) {
   // Create a couple of empty lists as output buffers.
