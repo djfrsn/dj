@@ -4970,26 +4970,21 @@ body {
 /* #brand
 */
 #brand {
-  padding: 60px 0 0 50px;
-  padding: 3.75rem 0 0 3.125rem;
-  font-size: 84px;
-  font-size: 5.25rem;
+  padding: 20px 0 0 20px;
+  padding: 1.25rem 0 0 1.25rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: 'montserratbold';
   transition: color 0.5s ease; }
 
 a.navbar-brand:hover {
   color: #FF6600; }
 
-/* .fa
-*/
-.fa {
-  font-size: 6em !important; }
-
 /* #paper-plane
 */
 #paper-plane {
-  padding-right: 130px;
-  padding-right: 8.125rem;
+  padding-right: 40px;
+  padding-right: 2.5rem;
   color: #104386; }
 
 #paper-plane_link {
@@ -5007,6 +5002,9 @@ a.navbar-brand:hover {
 
 /* .fa-bars
 */
+.fa {
+  font-size: 25px !important; }
+
 .fa-bars {
   color: #104386;
   transition: color 0.5s ease; }
@@ -5031,27 +5029,29 @@ i.fa-bars:hover {
 */
 #main__title {
   font-family: 'fira';
-  font-size: 7px;
-  font-size: 0.4375rem; }
+  font-size: 35px;
+  font-size: 2.1875rem; }
 
 /* #sub__title
 */
 #sub__title {
-  font-size: 2px;
-  font-size: 0.125rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   transition: all 0.5s ease; }
 
 /* #main__title_description
 */
 #main__title_description {
-  font-size: 2px;
-  font-size: 0.09375rem; }
+  font-size: 11px;
+  font-size: 0.6875rem;
+  padding: 0 40px;
+  padding: 0 2.5rem; }
 
 /* .wip
 */
 .wip {
-  font-size: 3px;
-  font-size: 0.175rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   color: #E1D4C0;
   text-shadow: 0 0.02em #fff;
   text-transform: uppercase;
@@ -5086,7 +5086,7 @@ a.nav-expander {
   display: block;
   font-size: 15px;
   margin-right: 0;
-  padding: 1rem 5rem 0 0;
+  padding: 1rem 2rem 0 0;
   position: absolute;
   right: 0;
   text-decoration: none;

@@ -8,8 +8,8 @@
 */
 #brand
 {
-	@include rem(padding, 60px 0 0 50px);
-	@include rem(font-size, 84px);
+	@include rem(padding, 20px 0 0 20px);
+	@include rem(font-size, 25px);
   font-family: 'montserratbold';
   transition: color 0.5s ease;
 }
@@ -19,19 +19,12 @@ a.navbar-brand:hover
   color: themeColor(five);
 }
 
-/* .fa
-*/
-
-.fa
-{
-  font-size: 6em !important;
-}
 
 /* #paper-plane
 */
 #paper-plane
 {
-	@include rem(padding-right, 130px);
+	@include rem(padding-right, 40px);
   color: themeColor(four);
 }
 #paper-plane_link
@@ -52,6 +45,12 @@ a.navbar-brand:hover
 
 /* .fa-bars
 */
+
+.fa
+{
+  font-size: 25px !important;
+}
+
 .fa-bars
 {
   color: themeColor(four);
