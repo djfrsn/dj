@@ -5022,12 +5022,12 @@ i.fa-bars:hover {
 
 /* Shared 
 */
-#main__header, #sub__header, #main__header_description {
+#intro__header, #sub__header, #intro__header_description {
   text-align: center; }
 
-/* #main__header
+/* #intro__header
 */
-#main__header {
+#intro__header {
   font-family: 'fira';
   font-size: 46px;
   font-size: 2.875rem; }
@@ -5039,9 +5039,9 @@ i.fa-bars:hover {
   font-size: 0.9375rem;
   transition: all 0.5s ease; }
 
-/* #main__header_description
+/* #intro__header_description
 */
-#main__header_description {
+#intro__header_description {
   font-size: 15px;
   font-size: 0.9375rem;
   padding: 0 40px;
@@ -5073,6 +5073,16 @@ body {
   /* Set the fixed height of the footer here */
   height: 70px;
   height: 4.375rem; }
+
+/*
+**
+*** About Styles
+**
+*/
+/* #about__description
+*/
+#about__description {
+  padding: 0 40px; }
 
 /*
 **

@@ -12,14 +12,14 @@
 
 /* Shared 
 */
-#main__header, #sub__header, #main__header_description
+#intro__header, #sub__header, #intro__header_description
 {
 	text-align: center;
 }
 
-/* #main__header
+/* #intro__header
 */
-#main__header
+#intro__header
 {
 	font-family: 'fira';
 	@include rem(font-size, 46px);
@@ -33,9 +33,9 @@
 	transition: all 0.5s ease;
 }
 
-/* #main__header_description
+/* #intro__header_description
 */
-#main__header_description
+#intro__header_description
 {
 	@include rem(font-size, 15px);
 	@include rem(padding, 0 40px);
