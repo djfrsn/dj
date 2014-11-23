@@ -35,7 +35,7 @@
 
           // Mobile FullPageJS setup
           $('#fullpage').fullpage({
-              sectionsColor: ['#F5EDE3', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3'],
               anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
               menu: '.main-menu',
               css3: true,
