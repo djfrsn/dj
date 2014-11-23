@@ -12,32 +12,32 @@
 
 /* Shared 
 */
-#main__title, #sub__title, #main__title_description
+#main__header, #sub__header, #main__header_description
 {
 	text-align: center;
 }
 
-/* #main__title
+/* #main__header
 */
-#main__title
+#main__header
 {
 	font-family: 'fira';
-	@include rem(font-size, 35px);
+	@include rem(font-size, 46px);
 }
 
-/* #sub__title
+/* #sub__header
 */
-#sub__title
+#sub__header
 {
-	@include rem(font-size, 12px);
+	@include rem(font-size, 15px);
 	transition: all 0.5s ease;
 }
 
-/* #main__title_description
+/* #main__header_description
 */
-#main__title_description
+#main__header_description
 {
-	@include rem(font-size, 11px);
+	@include rem(font-size, 15px);
 	@include rem(padding, 0 40px);
 }
 
