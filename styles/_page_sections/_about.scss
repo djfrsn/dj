@@ -25,4 +25,7 @@
 #about__description 
 {
 	padding: 0 40px;
+	font-family: 'fira';
+	@include text-shadow();
+	@include rem(font-size, 18px);
 }

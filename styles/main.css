@@ -5091,7 +5091,11 @@ body {
 /* #about__description
 */
 #about__description {
-  padding: 0 40px; }
+  padding: 0 40px;
+  font-family: 'fira';
+  text-shadow: 0 0.02em #fff;
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 /*
 **
