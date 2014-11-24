@@ -64,6 +64,7 @@
           e.preventDefault();
           $('body').toggleClass('nav-expanded');
       });
+
       $('#nav-close').on('click', function(e) {
           e.preventDefault();
           closeNav();
@@ -106,6 +107,10 @@
           e.preventDefault();
           closeNav();
           $.fn.fullpage.moveTo(4);
+      });
+      $('.main-menu-resume').on('click', function(e) {
+          e.preventDefault();
+          closeNav();
       });
       $('.main-menu-contact').on('click', function(e) {
           e.preventDefault();
