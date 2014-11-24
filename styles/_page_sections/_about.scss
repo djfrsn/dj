@@ -4,9 +4,58 @@
 **
 */
 
+/* .about
+*/
+
+
+
+/* #about__header
+*/
+
+#about__header 
+{
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	font-family: 'montserratbold', sans-serif;
+}
+
 /* #about__description
 */
 
-#about__description {
+#about__description 
+{
 	padding: 0 40px;
+}
+
+/* #about__triangle
+*/
+
+#about__triangle, #about__triangle div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+#about__triangle {
+  transform: rotate(45deg) translateY(10px);
+}
+
+#about__triangle #triangle {
+  width: 245px;
+  height: 245px;
+  transform: rotate(-45deg) translateY(-74px);
+}
+
+#about__triangle #triangle img {
+  width: 100%;
+  height: auto;
+}
+
+#about__triangle
+{
+	position: relative;
+	top: 30px;
+	background: url(../images/avatar.jpeg);
 }
