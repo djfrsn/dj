@@ -1,5 +1,5 @@
 node_modules
 dist
-
+README.md
 bower_components/
 .sass-cache
