@@ -5102,9 +5102,15 @@ body {
 *** Process Styles
 **
 */
-/* .process__header-block
+/* .process__header_block
 */
+.process__header_block {
+  background-color: #6699FF;
+  width: 100%; }
+
 /* .process__list
+*/
+/* .process__list_title
 */
 /* .process__list_item
 */
