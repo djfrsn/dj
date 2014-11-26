@@ -5022,7 +5022,7 @@ i.fa-bars:hover {
 
 /* Shared 
 */
-#intro__header, #sub__header, #intro__header_description {
+#intro__header, #intro__sub_header, #intro__header_description {
   text-align: center; }
 
 /* #intro__header
@@ -5032,9 +5032,9 @@ i.fa-bars:hover {
   font-size: 46px;
   font-size: 2.875rem; }
 
-/* #sub__header
+/* #intro__sub_header
 */
-#sub__header {
+#intro__sub_header {
   font-size: 15px;
   font-size: 0.9375rem;
   transition: all 0.5s ease; }
@@ -5102,15 +5102,35 @@ body {
 *** Process Styles
 **
 */
+/* .process__header-block
+*/
+/* .process__list
+*/
+/* .process__list_item
+*/
 /*
 **
 *** Work Styles
 **
 */
+/* #work__header
+*/
+/* .work__project
+*/
+/* .work__project_title
+*/
+/* .work_project_paragraph
+*/
 /*
 **
 *** Contact Styles
 **
+*/
+/* #contact__header
+*/
+/* #contact__header_text
+*/
+/* Form
 */
 /*
 **
