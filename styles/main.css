@@ -5105,15 +5105,45 @@ body {
 /* .process__header_block
 */
 .process__header_block {
-  background-color: #6699FF;
-  width: 100%; }
+  width: 275px;
+  width: 17.1875rem;
+  margin: 0 auto;
+  font-family: 'fira';
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  padding: 0.625rem 0; }
 
 /* .process__list
 */
+.process__list {
+  width: 225px;
+  margin: 0 auto;
+  padding: 0; }
+
 /* .process__list_title
 */
+.process__list_title {
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
+/* .process__list_title_border
+*/
+.process__list_title_border {
+  width: 20px;
+  border-bottom: 2px solid #6699FF; }
+
 /* .process__list_item
 */
+.process__list_item {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0; }
+
 /*
 **
 *** Work Styles
@@ -5125,7 +5155,7 @@ body {
 */
 /* .work__project_title
 */
-/* .work_project_paragraph
+/* .work__project_description
 */
 /*
 **
