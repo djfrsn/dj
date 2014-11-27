@@ -5151,12 +5151,32 @@ body {
 */
 /* #work__header
 */
+#work__header {
+  font-size: 35px;
+  font-size: 2.1875rem;
+  text-transform: capitalize; }
+
 /* .work__project
 */
 /* .work__project_title
 */
+.work__project_title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  text-align: left;
+  color: #FF6600; }
+
 /* .work__project_description
 */
+.work__project_description {
+  padding: 0 20px;
+  padding: 0 1.25rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: left; }
+
 /*
 **
 *** Contact Styles

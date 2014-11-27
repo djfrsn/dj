@@ -8,7 +8,8 @@
 */
 #work__header
 {
-	
+	@include rem(font-size, 35px);
+	text-transform: capitalize;
 }
 
 /* .work__project
@@ -22,12 +23,17 @@
 */
 .work__project_title
 {
-	
+	@include rem(font-size, 20px);
+	@include rem(padding-left, 20px);
+	text-align: left;	
+	color: themeColor(five);
 }
 
 /* .work__project_description
 */
 .work__project_description
 {
-	
+	@include rem(padding, 0 20px);
+	@include rem(font-size, 15px);
+	text-align: left;
 }
