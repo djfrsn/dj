@@ -50,7 +50,6 @@
               sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3'],
               anchors: ['intro', 'about', 'process', 'work', 'contact'],
               menu: '.main-menu',
-              animateAnchor: true,
               easing: 'easeOutExpo',
           });
 
@@ -58,8 +57,8 @@
 
       // Reset URL Hash
       history.pushState('', document.title, window.location.pathname);
-      
-      // create function to off-canvas-menu
+
+     // create function to off-canvas-menu
       function closeNav() {
           $('body').removeClass('nav-expanded');
       }
