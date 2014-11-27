@@ -36,9 +36,10 @@
           // Mobile FullPageJS setup
           $('#fullpage').fullpage({
               sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3'],
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              anchors: ['intro', 'about', 'process', 'work', 'contact'],
               menu: '.main-menu',
               css3: true,
+              animateAnchor: true,
               easingcss3: 'ease-in-out',
           });
 
@@ -47,8 +48,9 @@
           // Desktop FullPageJS setup
           $('#fullpage').fullpage({
               sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3'],
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              anchors: ['intro', 'about', 'process', 'work', 'contact'],
               menu: '.main-menu',
+              animateAnchor: true,
               easing: 'easeOutExpo',
           });
 
