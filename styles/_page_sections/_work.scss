@@ -26,6 +26,7 @@
 	@include rem(font-size, 20px);
 	@include rem(padding-left, 20px);
 	text-align: left;	
+	text-decoration: underline;
 	color: themeColor(five);
 }
 
