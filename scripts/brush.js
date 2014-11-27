@@ -56,6 +56,9 @@
 
       }
 
+      // Reset URL Hash
+      history.pushState('', document.title, window.location.pathname);
+      
       // create function to off-canvas-menu
       function closeNav() {
           $('body').removeClass('nav-expanded');
