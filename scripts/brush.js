@@ -6,6 +6,7 @@
   }
   setTableHeight();
 
+
   // Reset table height on window resize
   $(window).resize(function() {
       setTableHeight();
@@ -21,6 +22,23 @@
 
   // Run code on document.ready
   $(document).ready(function() {
+
+ 
+
+      // load text in active__page text
+      function loadAPText(obj) {
+        
+      // set APText vars
+      var ap = $('#active__page'); 
+        // clear text 
+        ap.text('');
+        // load text
+        ap.addClass('animated fadeIn').text(obj);
+        // reset AP classes
+        setTimeout(function(){
+          ap.removeClass('animated fadeIn');
+        }, 600);
+      };
 
       /**
        * jQuery.browser.mobile (http://detectmobilebrowser.com/)
@@ -41,6 +59,43 @@
               css3: true,
               animateAnchor: true,
               easingcss3: 'ease-in-out',
+              afterLoad: function(anchorLink, index){
+                // fadeIn the page title in on anchor load
+                if(anchorLink == 'intro'){
+                  alert("Section 1 ended loading");
+                }
+
+                if(anchorLink == 'about'){
+                  loadAPText("About");
+                  alert("Section 2 ended loading");
+                }
+
+                if(anchorLink == 'process'){
+                  loadAPText("Process");
+                  alert("Section 3 ended loading");
+                }
+
+                if(anchorLink == 'work'){
+                  loadAPText("Work");
+                  alert("Section 4 ended loading");
+                }
+
+                if(anchorLink == 'contact'){
+                  loadAPText("Contact");
+                  alert("Section 5 ended loading");
+                }
+
+              },
+              onLeave: function(index, nextIndex, direction){
+                // fadeOut the page title when going 'up' or 'down'
+                if(direction =='down'){
+                    alert("Going down!");
+                }
+
+                else if(direction == 'up'){
+                    alert("Going up!");
+                }
+              }
           });
 
       } else {
@@ -102,12 +157,12 @@
           closeNav();
           $.fn.fullpage.moveTo(2);
       });
-      $('.main-menu-work').on('click', function(e) {
+      $('.main-menu-process').on('click', function(e) {
           e.preventDefault();
           closeNav();
           $.fn.fullpage.moveTo(3);
       });
-      $('.main-menu-process').on('click', function(e) {
+      $('.main-menu-work').on('click', function(e) {
           e.preventDefault();
           closeNav();
           $.fn.fullpage.moveTo(4);
@@ -129,9 +184,27 @@
       // This code runs after 1 second
       setTimeout(function() {
           // Reveal sections after page load to avoid FOUC
-          $('.reveal.hidden').removeClass('hidden').fadeIn();
+          $('.reveal.hidden').removeClass('hidden').addClass('animated fadeIn');
           // Turn scroll back on
           $('html').off('scroll touchmove mousewheel');
+          
+          /*
+          // Calc active__page_container width
+          function setAPWidth() {
+          var brand = $('#brand').width() + 14;
+          var paperPlane = $('#paper-plane').width();
+          var navBars = $('.fa-bars').width();
+          var winWidth = $(window).width();
+          var apWidth = winWidth - (brand + paperPlane + navBars + 30);
+          $('#active__page_container').css('width', apWidth + 'px');
+          console.log(brand, (paperPlane + navBars + 30), winWidth, apWidth);
+          } setAPWidth();
+
+          $(window).resize(function() {
+            setAPWidth();
+          });
+          */
+          
       }, 1000);
 
       // Reveal Nav

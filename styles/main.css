@@ -5024,6 +5024,23 @@ body {
 a.navbar-brand:hover {
   color: #FF6600; }
 
+/* #active__page_container
+*/
+#active__page_container {
+  color: #FF6600;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 48%; }
+
+/* #active__page
+*/
+#active__page {
+  color: #6699FF; }
+
 /* #paper-plane
 */
 #paper-plane {

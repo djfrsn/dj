@@ -28,6 +28,25 @@ a.navbar-brand:hover
   color: themeColor(five);
 }
 
+/* #active__page_container
+*/
+#active__page_container
+{
+  color: themeColor(five);
+  @include rem(padding-top, 20px);
+  display: inline-block;  
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 48%;
+}
+
+/* #active__page
+*/
+#active__page
+{
+  color: themeColor(one);
+}
 
 /* #paper-plane
 */
