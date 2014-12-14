@@ -9,6 +9,8 @@
 .navbar
 {
   @include rem(font-size, 16px);
+  background: themeColor(four);
+  box-shadow:  0px 2px 5px -1px rgba(0, 0, 0, 0.55);
 }
 
 /* #brand
@@ -32,7 +34,7 @@ a.navbar-brand:hover
 #paper-plane
 {
 	@include rem(padding-right, 40px);
-  color: themeColor(four);
+  color: themeColor(one);
 }
 #paper-plane_link
 {
@@ -60,11 +62,11 @@ a.navbar-brand:hover
 
 .fa-bars
 {
-  color: themeColor(four);
+  color: themeColor(one);
   transition: color 0.5s ease;
 }
 
 i.fa-bars:hover 
 {
-  color: themeColor(four);
+  color: themeColor(five);
 }
