@@ -32,6 +32,10 @@
 {
 	font-size: em(17);
 	transition: all 0.5s ease;
+	@include media(max-width, 291px)
+	{
+		font-size: em(16);
+	}
 }
 
 /* #intro__header_description
