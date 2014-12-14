@@ -1,50 +1,78 @@
+/*
+**
+*** Water
+**
+*/
+
+/* Water
+*/
 @mixin respond-to($media) {
-	@if $media == palm-max { /* 360px */
-		@media (max-width: 22.4em) { @content; }		
-	}
-	@if $media == palm { /* 360px */
-		@media (min-width: 22.5em) { @content; }		
-	}
-	@if $media == palm-bridge { /* 450px */
-		@media (min-width: 28.13em) { @content; }		
-	}
-	@if $media == large-palm { /* 480 px */
+	@if $media == sxs { /* 480px */
 		@media (min-width: 30em) { @content; }		
 	}
-	@if $media == large-palm-max { /* 480 px */
-		@media (min-width: 30em) and (max-width: 48em) { @content; }		
-	}
-	@if $media == large-palm-bridge { /* 600px */
-		@media (min-width: 37.50em) { @content; }		
-	}
-	@if $media == large-palm-jet { /* 600px */
-		@media (min-width: 40em) { @content; }		
-	}
-	@if $media == large-palm-bridge-max { /* 600px */
-		@media (min-width: 37.50em) and (max-width: 60.063em) { @content; }		
-	}
-	@if $media == blog_page { /* 768px */
-		@media (max-width: 48em) { @content; }		
-	}
-	@if $media == small-lap-bridge { /* 655px */
-		@media (min-width: 40.94em) { @content; }		
-	}
-	@if $media == small-lap { /* 768px */
+	@if $media == xs { /* 768 px */
 		@media (min-width: 48em) { @content; }		
 	}
-	@if $media == small-lap-bridge { /* 768px */
-		@media (min-width: 48em) and (max-width: 50rem) { @content; }		
+	@if $media == sm { /* 992px */
+		@media (min-width: 62em) { @content; }		
 	}
-	@if $media == small-lap-squall { /* 860px */
-		@media (min-width: 54.69em) { @content; }		
+	@if $media == md { /* 1200px */
+		@media (min-width: 75em) { @content; }		
 	}
-	@if $media == large-lap { /* 1024px */
-		@media (min-width: 64em) { @content; }		
-	}
-	@if $media == large-lap-bridge { /* 1164px */
-		@media (min-width: 72.75em) { @content; }		
-	}
-	@if $media == desk { /* 1280px */
-		@media (min-width: 80em) { @content; }		
+	@if $media == xlg { /* 1440px */
+		@media (min-width: 90em) { @content; }		
 	}
 }
+
+/* Custom Media Queries(CMQ)
+*/
+@mixin media($type: '', $max-width: '', $min-width: '')
+{
+	@if $type == max-width 
+	{
+		@media (max-width: $max-width) 
+		{ 
+			@content;
+		}
+	}
+	@if $type == min-width 
+	{
+		@media (min-width: $min-width)
+			{
+				@content;
+			}
+	}
+	@if $type == minMax-width 
+	{
+		@media (min-width: $min-width) and (max-width: $max-width)
+			{ 
+				@content;
+			}
+	}
+}
+
+/* CMQ Usage
+
+
+==== Max-Width
+@include media(max-width, 275px)
+	{
+		color: red;
+	}
+
+==== Min-Width
+@include media(min-width, 0px, 275px)
+	{
+		color: white;
+	}
+
+==== minMax-Width
+@include media(minMax-width, 275px, 320px)
+	{
+		color: blue;
+	}
+
+
+*/
+
+

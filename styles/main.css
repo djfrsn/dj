@@ -4968,6 +4968,38 @@ body {
 
 /*
 **
+*** Water
+**
+*/
+/* Water
+*/
+/* Custom Media Queries(CMQ)
+*/
+/* CMQ Usage
+
+
+==== Max-Width
+@include media(max-width, 275px)
+	{
+		color: red;
+	}
+
+==== Min-Width
+@include media(min-width, 0px, 275px)
+	{
+		color: white;
+	}
+
+==== minMax-Width
+@include media(minMax-width, 275px, 320px)
+	{
+		color: blue;
+	}
+
+
+*/
+/*
+**
 *** NavBar Styles
 **
 */
@@ -5091,10 +5123,15 @@ body {
 .about {
   font-size: 16px;
   font-size: 1rem; }
+  @media (max-width: 275px) {
+    .about {
+      font-size: 11px;
+      font-size: 0.6875rem; } }
 
 /* #about__header
 */
 #about__header {
+  font-size: 2.25em;
   padding-bottom: 1.25em;
   text-transform: uppercase;
   font-family: 'montserratbold', sans-serif; }
@@ -5105,8 +5142,7 @@ body {
   padding: 0 1.875em;
   font-family: 'fira';
   text-shadow: 0 0.02em #fff;
-  font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125em; }
 
 /*
 **
