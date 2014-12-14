@@ -9,10 +9,6 @@
 .about
 {
 	@include rem(font-size, 16px);
-	@include media(max-width, 275px)
-	{
-		@include rem(font-size, 11px);
-	}
 }
 
 

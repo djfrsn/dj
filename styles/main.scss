@@ -9,11 +9,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 // Essential styles
 @import "_core/_variables";
-@import "_core/_general";
 @import "_core/_fonts";
 @import "_core/_utility";
 @import "_core/_misc";
 @import "_core/_water";
+@import "_core/_general";
 
 // Styles by section type
 @import "_page_sections/_navbar";

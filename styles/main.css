@@ -4895,23 +4895,6 @@ button.close {
 */
 /*
 **
-*** General Styles
-**
-*/
-html {
-  /* Document level font adjustments */
-  font-size: 16px; }
-
-body {
-  font-family: 'Open Sans';
-  background-color: #F5EDE3;
-  color: #104386; }
-
-.underline {
-  text-decoration: underline; }
-
-/*
-**
 *** Fonts
 **
 */
@@ -4998,6 +4981,24 @@ body {
 
 
 */
+/*
+**
+*** General Styles
+**
+*/
+html {
+  /* Document level font adjustments */
+  /* Mobile First @ 320px-480px */
+  font-size: 12px; }
+
+body {
+  font-family: 'Open Sans';
+  background-color: #F5EDE3;
+  color: #104386; }
+
+.underline {
+  text-decoration: underline; }
+
 /*
 **
 *** NavBar Styles
@@ -5123,10 +5124,6 @@ body {
 .about {
   font-size: 16px;
   font-size: 1rem; }
-  @media (max-width: 275px) {
-    .about {
-      font-size: 11px;
-      font-size: 0.6875rem; } }
 
 /* #about__header
 */
@@ -5392,3 +5389,16 @@ body.nav-expanded {
 .container {
   width: 100%;
   padding: 0; }
+
+/* Document level font adjustments 
+*/
+.navbar, .about, .intro, .work, .process, .contact {
+  /* 480px */ }
+  @media (max-width: 275px) {
+    .navbar, .about, .intro, .work, .process, .contact {
+      font-size: 11px;
+      font-size: 0.6875rem; } }
+  @media (min-width: 30em) {
+    .navbar, .about, .intro, .work, .process, .contact {
+      font-size: 16px;
+      font-size: 1rem; } }

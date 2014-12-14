@@ -9,3 +9,17 @@
 	width: 100%;
 	padding: 0;
 }
+
+/* Document level font adjustments 
+*/
+.navbar, .about, .intro, .work, .process, .contact
+{
+	@include media(max-width, 275px) // Super Small Devices
+	{
+		@include rem(font-size, 11px);
+	}
+	@include respond-to(sxs)
+	{
+		@include rem(font-size, 16px);
+	}
+}
