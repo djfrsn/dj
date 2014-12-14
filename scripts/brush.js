@@ -24,12 +24,22 @@
   $(document).ready(function() {
 
  
+      // set APText vars
+      var ap = $('#active__page'); 
+
+      function clearAPText() {
+        if (ap.text() != '') {
+        ap.addClass('animated fadeOut').text('');
+        // reset AP classes
+        setTimeout(function(){
+          ap.removeClass('animated fadeOut');
+        }, 600);
+        }
+      }
 
       // load text in active__page text
       function loadAPText(obj) {
         
-      // set APText vars
-      var ap = $('#active__page'); 
         // clear text 
         ap.text('');
         // load text
@@ -89,10 +99,12 @@
               onLeave: function(index, nextIndex, direction){
                 // fadeOut the page title when going 'up' or 'down'
                 if(direction =='down'){
+                  clearAPText()
                     alert("Going down!");
                 }
 
                 else if(direction == 'up'){
+                  clearAPText()
                     alert("Going up!");
                 }
               }
