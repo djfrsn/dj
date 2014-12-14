@@ -6,7 +6,10 @@
 
 /* .about
 */
-
+.about
+{
+	@include rem(font-size, 16px);
+}
 
 
 /* #about__header
@@ -14,7 +17,7 @@
 
 #about__header 
 {
-	padding-bottom: 40px;
+	padding-bottom: em(20);
 	text-transform: uppercase;
 	font-family: 'montserratbold', sans-serif;
 }
@@ -24,7 +27,7 @@
 
 #about__description 
 {
-	padding: 0 40px;
+	padding: 0 em(30);
 	font-family: 'fira';
 	@include text-shadow();
 	@include rem(font-size, 18px);

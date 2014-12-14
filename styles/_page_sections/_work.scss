@@ -4,11 +4,18 @@
 **
 */
 
+/* .work
+*/
+.work
+{
+	@include rem(font-size, 16px);
+}
+
 /* #work__header
 */
 #work__header
 {
-	@include rem(font-size, 35px);
+	font-size: em(35);
 	text-transform: capitalize;
 }
 
@@ -23,8 +30,8 @@
 */
 .work__project_title
 {
-	@include rem(font-size, 20px);
-	@include rem(padding-left, 20px);
+	font-size: em(20);
+	padding-left: em(20);
 	text-align: left;	
 	text-decoration: underline;
 	color: themeColor(five);
@@ -34,7 +41,7 @@
 */
 .work__project_description
 {
-	@include rem(padding, 0 20px);
-	@include rem(font-size, 15px);
+	padding: 0 em(20);
+	font-size: em(15);
 	text-align: left;
 }

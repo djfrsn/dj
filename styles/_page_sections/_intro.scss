@@ -8,6 +8,7 @@
 .intro
 {
 	@include text-shadow();
+	@include rem(font-size, 16px);
 }
 
 /* Shared 
@@ -22,14 +23,14 @@
 #intro__header
 {
 	font-family: 'fira';
-	@include rem(font-size, 46px);
+	font-size: em(46);
 }
 
 /* #intro__sub_header
 */
 #intro__sub_header
 {
-	@include rem(font-size, 15px);
+	font-size: em(15);
 	transition: all 0.5s ease;
 }
 
@@ -37,7 +38,7 @@
 */
 #intro__header_description
 {
-	@include rem(font-size, 15px);
+	font-size: em(15);
 	@include rem(padding, 0 40px);
 }
 
@@ -45,7 +46,7 @@
 */
 .wip
 {
-	@include rem(font-size, 20px);
+	font-size: em(20);
 	color: themeColor(three);
 	@include text-shadow();
 	text-transform: uppercase;

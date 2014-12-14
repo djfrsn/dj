@@ -5,12 +5,18 @@
 */
 
 // General
- body
- {
-     font-family: 'Open Sans';
-     background-color: themeColor(bg);
-     color: themeColor(txt);
- }
+html
+{
+	/* Document level font adjustments */
+	font-size: 16px;
+}
+
+body
+{
+    font-family: 'Open Sans';
+    background-color: themeColor(bg);
+    color: themeColor(txt);
+}
 
 // Utility
 .underline
