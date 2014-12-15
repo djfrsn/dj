@@ -25,29 +25,51 @@
 
  
       // set APText vars
-      var ap = $('#active__page'); 
+      var apc = $('#active__page_container'), 
+          ap = $('#active__page'),
+          hidden = 'hidden',
+          inactiveHiddenClass = '.inactive.hidden',
+          inactiveHidden = 'inactive hidden',
+          fadeIn = 'animated fadeIn',
+          fadeOut = 'animated fadeOut',
+          fadeTime = 600; 
 
-      function clearAPText() {
-        if (ap.text() != '') {
-        ap.addClass('animated fadeOut').text('');
-        // reset AP classes
-        setTimeout(function(){
-          ap.removeClass('animated fadeOut');
-        }, 600);
-        }
+      // Function to: fade in div.active__page_container brackets
+      function loadAPBrackets() {
+        $(inactiveHiddenClass).removeClass(hidden).addClass(fadeIn);
       }
 
-      // load text in active__page text
-      function loadAPText(obj) {
-        
-        // clear text 
-        ap.text('');
-        // load text
-        ap.addClass('animated fadeIn').text(obj);
-        // reset AP classes
+      // Function to: clear div.active__page_container brackets
+      function clearAPBrackets() {
+        apc.addClass(fadeOut);
+        // Reset div.active__page_container
         setTimeout(function(){
-          ap.removeClass('animated fadeIn');
-        }, 600);
+          apc.removeClass(fadeOut);
+          apc.addClass(inactiveHidden);
+        }, fadeTime);
+      }
+
+      // Function to: clear text in span.active__page 
+      function clearAPText() {
+        // check if ap has text
+        if ( ap.text() != '' ) {
+        // clear & fade out ap text
+        ap.addClass(fadeOut).text('');
+        // reset AP classes after animation runs
+        setTimeout(function(){
+          ap.removeClass(fadeOut);
+        }, fadeTime);
+        }
+      };
+
+      // Function to: load text in span.active__page 
+      function loadAPText(obj) {
+        // load text
+        ap.addClass(fadeIn).text(obj);
+        // reset AP classes after animation runs
+        setTimeout(function(){
+          ap.removeClass(fadeIn);
+        }, fadeTime);
       };
 
       /**
@@ -72,40 +94,41 @@
               afterLoad: function(anchorLink, index){
                 // fadeIn the page title in on anchor load
                 if(anchorLink == 'intro'){
-                  alert("Section 1 ended loading");
+                  clearAPBrackets()
                 }
 
                 if(anchorLink == 'about'){
                   loadAPText("About");
-                  alert("Section 2 ended loading");
                 }
 
                 if(anchorLink == 'process'){
                   loadAPText("Process");
-                  alert("Section 3 ended loading");
                 }
 
                 if(anchorLink == 'work'){
                   loadAPText("Work");
-                  alert("Section 4 ended loading");
                 }
 
                 if(anchorLink == 'contact'){
                   loadAPText("Contact");
-                  alert("Section 5 ended loading");
                 }
 
               },
               onLeave: function(index, nextIndex, direction){
+                
+                // Load active__page brackets onLeave from intro
+                if( index == 1 && direction =='down'){
+                  clearAPText();
+                  loadAPBrackets();
+                }
+
                 // fadeOut the page title when going 'up' or 'down'
                 if(direction =='down'){
-                  clearAPText()
-                    alert("Going down!");
+                  clearAPText();
                 }
 
                 else if(direction == 'up'){
-                  clearAPText()
-                    alert("Going up!");
+                  clearAPText();
                 }
               }
           });
