@@ -188,25 +188,36 @@
       // Reset URL Hash for fullpage.js bug
       history.pushState('', document.title, window.location.pathname);
 
-     // create function to off-canvas-menu
+      // create function to off-canvas-menu
       function closeNav() {
           $('body').removeClass('nav-expanded');
+      }
+
+      // fadeIn APC after closeNav()
+      function apcFadeIn() {
           apc.addClass('fadeIn');
           setTimeout(function() {
             apc.removeClass("animated fadeOut fadeIn");
           }, 800);
       }
 
-      //Navigation Menu Slider
+      // fadeOut APC after navExpanded
+      function apcFadeOut() {
+        $('#active__page_container').addClass('animated fadeOut');
+      }
+
+      //Navigation Menu Slider Open
       $('#nav-expander').on('click', function(e) {
           e.preventDefault();
           $('body').toggleClass('nav-expanded');
-          $('#active__page_container').addClass('animated fadeOut');
+          apcFadeOut(); // fadeout APC on navOpen
       });
 
+      //Navigation Menu Slider Close
       $('#nav-close').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn(); // fadeIn APC on navClose
       });
 
       // Initialize navgoco with default options
@@ -235,25 +246,30 @@
       $('.main-menu-about').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn();
           $.fn.fullpage.moveTo(2);
       });
       $('.main-menu-process').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn();
           $.fn.fullpage.moveTo(3);
       });
       $('.main-menu-work').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn();
           $.fn.fullpage.moveTo(4);
       });
       $('.main-menu-resume').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn();
       });
       $('.main-menu-contact').on('click', function(e) {
           e.preventDefault();
           closeNav();
+          apcFadeIn();
           $.fn.fullpage.moveTo(5);
       });
   });
