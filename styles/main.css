@@ -5192,6 +5192,9 @@ body {
   margin-bottom: 0;
   padding: 0.625em 0; }
 
+.process__header_block.one {
+  padding-top: 3.125em; }
+
 /* .process__list
 */
 .process__list {
@@ -5239,6 +5242,9 @@ body {
 
 /* .work__project
 */
+.work__project.one {
+  padding-top: 30px; }
+
 /* .work__project_title
 */
 .work__project_title {
