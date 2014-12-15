@@ -4,13 +4,19 @@
 **
 */
 
+/* #nav__main-menu
+*/
+#nav__main-menu
+{
+  border: none;
+}
 /* .navbar
 */
 .navbar
 {
   @include rem(font-size, 16px);
   background: themeColor(four);
-  box-shadow:  0px 2px 5px -1px rgba(0, 0, 0, 0.55);
+  border: none;
 }
 
 /* #brand

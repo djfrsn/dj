@@ -4,143 +4,10 @@
 **
 */
 
-/**
- * Default border for card effect
- * http://codepen.io/HugoGiraudel/pen/qBgoh
- * @type List
- */
-$paper-card-border: 1px solid #eee !default;
+// Import external utils
+@import "_utils/_paper";
+@import "_utils/_frame";
 
-/**
- * Clamp `$value` between `$min` and `$max`
- * 
- * @param {Number} $value
- * @param {Number} $min
- * @param {Number} $max
- *
- * @return {Number}
- */
-@function clamp($value, $min, $max) {
-  @return if($value > $max, $max, if($value < $min, $min, $value));
-}
-
-/**
- * Return a paper bottom-shadow
- *
- * @param {Number} $level - depth level
- *
- * @return {List}
- */
-@function paper-shadow-bottom($level) {
-  $primary-offset: nth(2 8 12 16 27, $level) * 1px;
-  $blur: nth(5 17 15 28 24, $level) * 1px;
-  $color: rgba(black, nth(.26 .20 .24 .22 .20, $level));
-   
-  @return 0 $primary-offset $blur $color;
-}
-
-/**
- * Return a paper top-shadow
- *
- * @param {Number} $level - depth level
- *
- * @return {List}
- */
-@function paper-shadow-top($level) {
-  $primary-offset: nth(2 6 17 25 40, $level) * 1px;
-  $blur: nth(10 20 50 55 77, $level) * 1px;
-  $color: rgba(black, nth(.16 .19 .19 .21 .22, $level));
-  
-  @return 0 $primary-offset $blur $color;
-}
-
-/**
- * Define a paper-like shadow
- *
- * @param {Number} $level (0) - depth level
- *
- * @requires {function} clamp
- * @requires {function} paper-shadow-top
- * @requires {function} paper-shadow-bottom
- */
-@mixin paper-shadow($level: 0) {
-  @if $level != 0 {
-    $level: clamp($level, 1, 5);
-    box-shadow: paper-shadow-top($level), paper-shadow-bottom($level);
-  }
-} 
-
-/**
- * Define a paper border
- *
- * @param {List} $sides (())
- *
- * @requires {variable} $paper-card-border
- */
-@mixin paper-border($sides: ()) {
-  @if length($sides) > 0 and length($sides) < 4 {
-    @each $side in $sides {
-      @if index('top' 'right' 'bottom' 'left', $side) {
-        border-#{$side}: $paper-card-border;
-      }
-    }
-  }
-  
-  @else {
-    border: $paper-card-border;
-  }
-}
-
-/**
- * Create a card effect
- *
- * @param {Number} $level - depth level
- * @param {List} $sides - border sides
- */
-@mixin card($level: 0, $sides: null) {
-  @include paper-shadow($level);
-  @include paper-border();
-}
-
-/**
- * Size an element
- * 
- * @param {Number} $width
- * @param {Number} $height ($width)
- */
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
-
-/**
- * Example
- */
-.card {
-  @include size(15em);
-  margin: 2em;
-  background: white;
-  display: inline-block;
-}
-
-.card--z-0 { @include card(0); }
-.card--z-1 { @include card(1); }
-.card--z-2 { @include card(2); }
-.card--z-3 { @include card(3); }
-.card--z-4 { @include card(4); }
-.card--z-5 { @include card(5); }
-
-.card--animated {
-  animation: paper-card 5s infinite alternate;
-}
-
-@keyframes paper-card {
-  20%  { @include paper-shadow(1); }
-  40%  { @include paper-shadow(2); }
-  60%  { @include paper-shadow(3); }
-  80%  { @include paper-shadow(4); }
-  100% { @include paper-shadow(5); }
-}
 
 // Positioning
 
@@ -160,44 +27,6 @@ $paper-card-border: 1px solid #eee !default;
 	height: 100%;
 }
 
-// Text
-.underline
-{
-    text-decoration: underline;
-}
-
-// Mixins
-$light: 0 0.02em #fff;
-$dark: 0 0.02em $black;
-
-@mixin text-shadow($ts-style: $light) {
-	text-shadow: $ts-style;
-}
-
-.text-shadow-light
-{
-	@include text-shadow();
-}
-
-.text-shadow-dark
-{
-	@include text-shadow($dark);
-}
-
-@mixin paper-shadow() 
-{
-  -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
-  box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
-}
-
-// paper-card
-@mixin paper-card($bg: themeColor(three), $box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.55)) 
-{
-  background: $bg;
-  box-shadow:  $box-shadow;
-}
-
 // Vertical Align
 @mixin vertical-align {
   position: relative;
@@ -207,50 +36,28 @@ $dark: 0 0.02em $black;
   transform: translateY(-50%);
 }
 
-// Rem <-> Px conversion 
-@mixin rem($property, $values) {
-  // Create a couple of empty lists as output buffers.
-  $font-size: 16px;
-  $px-values: ();
-  $rem-values: ();
+// Text
 
-  // Loop through the $values list
-  @each $value in $values {
-    // For each property value, if it's in rem or px, derive both rem and
-    // px values for it and add those to the end of the appropriate buffer.
-    // Ensure all pixel values are rounded to the nearest pixel.
-    @if $value == 0 or $value == 0px {
-      // 0 -- use it without a unit
-      $px-values: join($px-values, 0);
-      $rem-values: join($rem-values, 0);
-    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
-      // px value given - calculate rem value from font-size
-      $new-rem-value: $value / $font-size;
-      $px-values: join($px-values, round($value));
-      $rem-values: join($rem-values, #{$new-rem-value}rem);
-    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
-      // % value given - don't add px or rem
-      $px-values: join($px-values, #{$value});
-      $rem-values: join($rem-values, #{$value});
-    } @else if $value == auto {
-      // auto - don't add px or rem
-      $px-values: join($px-values, auto);
-      $rem-values: join($rem-values, auto);
-    } @else {
-      // unitless value - use those directly as rem and calculate the px-fallback
-      $px-values: join($px-values, round($value * $font-size));
-      $rem-values: join($rem-values, #{$value}rem);
-    }
-  }
-
-  // output the converted rules
-  #{$property}: $px-values;
-  #{$property}: $rem-values;
+// Underline
+.underline
+{
+    text-decoration: underline;
 }
 
-// Convert px to em
-$browser-context: 16; // Default
+// Text-shadow Mixins
+$light: 0 0.02em #fff;
+$dark: 0 0.02em $black;
 
-@function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em
+@mixin text-shadow($ts-style: $light) {
+  text-shadow: $ts-style;
+}
+
+.text-shadow-light
+{
+  @include text-shadow();
+}
+
+.text-shadow-dark
+{
+  @include text-shadow($dark);
 }

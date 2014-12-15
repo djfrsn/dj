@@ -5112,13 +5112,18 @@ body {
 *** NavBar Styles
 **
 */
+/* #nav__main-menu
+*/
+#nav__main-menu {
+  border: none; }
+
 /* .navbar
 */
 .navbar {
   font-size: 16px;
   font-size: 1rem;
   background: #104386;
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.55); }
+  border: none; }
 
 /* #brand
 */
@@ -5461,10 +5466,7 @@ nav {
   transition: right 0.3s ease-in-out 0s;
   -webkit-transition: right 0.3s ease-in-out 0s;
   -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
-  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.25); }
+  -o-transition: right 0.3s ease-in-out 0s; }
 
 /* .nav-expanded 
 */
