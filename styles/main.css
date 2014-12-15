@@ -5164,8 +5164,12 @@ body {
 #about__description {
   padding: 0 1.875em;
   font-family: 'fira';
-  text-shadow: 0 0.02em #fff;
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  background: #E1D4C0;
+  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.55);
+  padding: 0.625em;
+  width: 16.875em;
+  margin: 0 auto; }
 
 /*
 **

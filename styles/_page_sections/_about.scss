@@ -30,6 +30,9 @@
 {
 	padding: 0 em(30);
 	font-family: 'fira';
-	@include text-shadow();
 	font-size: em(18);
+	@include paper-card(themeColor(three), 0px 2px 5px -1px rgba(0, 0, 0, 0.55));
+	padding: em(10);
+	width: em(270);
+	margin: 0 auto;
 }

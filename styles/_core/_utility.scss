@@ -46,10 +46,18 @@ $dark: 0 0.02em $black;
 	@include text-shadow($dark);
 }
 
-@mixin paper-shadow() {
+@mixin paper-shadow() 
+{
   -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
   -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
   box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+// paper-card
+@mixin paper-card($bg: themeColor(three), $box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.55)) 
+{
+  background: $bg;
+  box-shadow:  $box-shadow;
 }
 
 // Vertical Align
