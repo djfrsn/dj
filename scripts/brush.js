@@ -185,7 +185,7 @@
 
       }
 
-      // Reset URL Hash
+      // Reset URL Hash for fullpage.js bug
       history.pushState('', document.title, window.location.pathname);
 
      // create function to off-canvas-menu
@@ -221,7 +221,7 @@
           }
       });
 
-      // Set Navigation Links
+      // Set Scrolling Navigation Links
       $('.main-menu-home').on('click', function(e) {
           e.preventDefault();
           closeNav();
