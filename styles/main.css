@@ -4917,6 +4917,114 @@ button.close {
 *** Utility Styles
 **
 */
+/**
+ * Default border for card effect
+ * http://codepen.io/HugoGiraudel/pen/qBgoh
+ * @type List
+ */
+/**
+ * Clamp `$value` between `$min` and `$max`
+ * 
+ * @param {Number} $value
+ * @param {Number} $min
+ * @param {Number} $max
+ *
+ * @return {Number}
+ */
+/**
+ * Return a paper bottom-shadow
+ *
+ * @param {Number} $level - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Return a paper top-shadow
+ *
+ * @param {Number} $level - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Define a paper-like shadow
+ *
+ * @param {Number} $level (0) - depth level
+ *
+ * @requires {function} clamp
+ * @requires {function} paper-shadow-top
+ * @requires {function} paper-shadow-bottom
+ */
+/**
+ * Define a paper border
+ *
+ * @param {List} $sides (())
+ *
+ * @requires {variable} $paper-card-border
+ */
+/**
+ * Create a card effect
+ *
+ * @param {Number} $level - depth level
+ * @param {List} $sides - border sides
+ */
+/**
+ * Size an element
+ * 
+ * @param {Number} $width
+ * @param {Number} $height ($width)
+ */
+/**
+ * Example
+ */
+.card {
+  width: 15em;
+  height: 15em;
+  margin: 2em;
+  background: white;
+  display: inline-block; }
+
+.card--z-0 {
+  border: 1px solid #eee; }
+
+.card--z-1 {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+  border: 1px solid #eee; }
+
+.card--z-2 {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+  border: 1px solid #eee; }
+
+.card--z-3 {
+  box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19), 0 12px 15px rgba(0, 0, 0, 0.24);
+  border: 1px solid #eee; }
+
+.card--z-4 {
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21), 0 16px 28px rgba(0, 0, 0, 0.22);
+  border: 1px solid #eee; }
+
+.card--z-5 {
+  box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid #eee; }
+
+.card--animated {
+  animation: paper-card 5s infinite alternate; }
+
+@keyframes paper-card {
+  20% {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+  40% {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2); }
+
+  60% {
+    box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19), 0 12px 15px rgba(0, 0, 0, 0.24); }
+
+  80% {
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21), 0 16px 28px rgba(0, 0, 0, 0.22); }
+
+  100% {
+    box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2); } }
+
 /* Center intro content w/ Tables
 */
 .table {
@@ -5165,8 +5273,6 @@ body {
   padding: 0 1.875em;
   font-family: 'fira';
   font-size: 1.125em;
-  background: #E1D4C0;
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.55);
   padding: 0.625em;
   width: 16.875em;
   margin: 0 auto; }
