@@ -32,7 +32,7 @@
           inactiveHidden = 'inactive hidden',
           fadeIn = 'animated fadeIn',
           fadeOut = 'animated fadeOut',
-          fadeTime = 600; 
+          fadeTime = 1000; 
 
       // Function to: fade in div.active__page_container brackets
       function loadAPBrackets() {
@@ -191,12 +191,17 @@
      // create function to off-canvas-menu
       function closeNav() {
           $('body').removeClass('nav-expanded');
+          apc.addClass('fadeIn');
+          setTimeout(function() {
+            apc.removeClass("animated fadeOut fadeIn");
+          }, 800);
       }
 
       //Navigation Menu Slider
       $('#nav-expander').on('click', function(e) {
           e.preventDefault();
           $('body').toggleClass('nav-expanded');
+          $('#active__page_container').addClass('animated fadeOut');
       });
 
       $('#nav-close').on('click', function(e) {
