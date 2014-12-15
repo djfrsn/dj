@@ -52,6 +52,37 @@
 	color: themeColor(five);
 }
 
+/* .work__project_tab-list
+*/
+.work__project_tab-list
+{
+	text-align: left;
+	li
+	{
+		display: inline;
+		padding: em(10);
+	}
+}
+
+.work__project_tab-list_0
+{
+	background: #FFF;	
+}
+.work__project_tab-list_1
+{
+	background: red;	
+}
+.work__project_tab-list_2
+{
+	background: blue;	
+}
+
+/* .tech_ul
+*/
+.tech_ul
+{
+	list-style: none;
+}
 /* .work__project_description
 */
 .work__project_description

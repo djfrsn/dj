@@ -5254,6 +5254,28 @@ body {
   text-decoration: underline;
   color: #FF6600; }
 
+/* .work__project_tab-list
+*/
+.work__project_tab-list {
+  text-align: left; }
+  .work__project_tab-list li {
+    display: inline;
+    padding: 0.625em; }
+
+.work__project_tab-list_0 {
+  background: #FFF; }
+
+.work__project_tab-list_1 {
+  background: red; }
+
+.work__project_tab-list_2 {
+  background: blue; }
+
+/* .tech_ul
+*/
+.tech_ul {
+  list-style: none; }
+
 /* .work__project_description
 */
 .work__project_description {
