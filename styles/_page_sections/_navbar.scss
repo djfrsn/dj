@@ -10,6 +10,7 @@
 {
   border: none;
 }
+
 /* .navbar
 */
 .navbar
@@ -39,7 +40,10 @@ a.navbar-brand:hover
 #active__page_container
 {
   color: themeColor(five);
-  @include rem(padding-top, 20px);
+  background: themeColor(four);
+  border: none;
+  @include rem(margin-top, 10px);
+  @include rem(padding, 5px 10px);
   position: absolute;
   top: 35%;
   left: 50%;
