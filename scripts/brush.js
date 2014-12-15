@@ -141,6 +141,46 @@
               anchors: ['intro', 'about', 'process', 'work', 'contact'],
               menu: '.main-menu',
               easing: 'easeOutExpo',
+              afterLoad: function(anchorLink, index){
+                // fadeIn the page title in on anchor load
+                if(anchorLink == 'intro'){
+                  clearAPBrackets()
+                }
+
+                if(anchorLink == 'about'){
+                  loadAPText("About");
+                }
+
+                if(anchorLink == 'process'){
+                  loadAPText("Process");
+                }
+
+                if(anchorLink == 'work'){
+                  loadAPText("Work");
+                }
+
+                if(anchorLink == 'contact'){
+                  loadAPText("Contact");
+                }
+
+              },
+              onLeave: function(index, nextIndex, direction){
+                
+                // Load active__page brackets onLeave from intro
+                if( index == 1 && direction =='down'){
+                  clearAPText();
+                  loadAPBrackets();
+                }
+
+                // fadeOut the page title when going 'up' or 'down'
+                if(direction =='down'){
+                  clearAPText();
+                }
+
+                else if(direction == 'up'){
+                  clearAPText();
+                }
+              }
           });
 
       }
