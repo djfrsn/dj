@@ -59,39 +59,36 @@ a.navbar-brand:hover
 
 /* #paper-plane
 */
-#paper-plane
+a#paper-plane_link nav-expander
 {
-	@include rem(padding-right, 40px);
+	
   color: themeColor(one);
-}
-#paper-plane_link
-{
-  margin-right: 0;
-  display: block;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  top: 0;
-  z-index: 12;
-  
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
+  @include rem(margin-right, 40px);
 }
 
 /* .fa-bars
 */
 
-.fa
+.paper-plane
 {
-  font-size: em(25) !important;
+  fill: themeColor(one);
+  transition: color 0.5s ease;
 }
 
-.fa-bars
+path.paper-plane:hover 
 {
-  color: themeColor(one);
+  fill: red;
+}
+
+.nav-expander-bars
+{
+  fill: themeColor(one);
   transition: color 0.5s ease;
+}
+
+path.nav-expander-bars:hover
+{
+  fill: themeColor(one);
 }
 
 i.fa-bars:hover 
