@@ -11,6 +11,30 @@
     width: em(400);
     margin: 0 auto;
 }
+.toolbar.card--z-1
+{
+    border: none;
+}
+.tabs.card--z-1
+{
+    border: none;
+}
+.toolbar.card--z-2
+{
+    border: none;
+}
+.tabs.card--z-2
+{
+    border: none;
+}
+.toolbar.card--z-3
+{
+    border: none;
+}
+.tabs.card--z-3
+{
+    border: none;
+}
 .tabs ul
 {
     list-style: none;
@@ -74,12 +98,16 @@
 }
 .content
 {
-    height: em(120);
+    height: em(110);
     position: relative;
     top: 0px;
     overflow: hidden;
     width: em(400);
     margin: 0 auto;
+}
+.content.card--z-1
+{
+    border: none;
 }
 .item
 {

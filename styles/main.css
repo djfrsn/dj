@@ -5224,6 +5224,24 @@ body.nav-expanded {
   width: 25em;
   margin: 0 auto; }
 
+.toolbar.card--z-1 {
+  border: none; }
+
+.tabs.card--z-1 {
+  border: none; }
+
+.toolbar.card--z-2 {
+  border: none; }
+
+.tabs.card--z-2 {
+  border: none; }
+
+.toolbar.card--z-3 {
+  border: none; }
+
+.tabs.card--z-3 {
+  border: none; }
+
 .tabs ul {
   list-style: none;
   margin: 0;
@@ -5282,12 +5300,15 @@ body.nav-expanded {
   border-bottom: 0.125em solid #E1D4C0; }
 
 .content {
-  height: 7.5em;
+  height: 6.875em;
   position: relative;
   top: 0px;
   overflow: hidden;
   width: 25em;
   margin: 0 auto; }
+
+.content.card--z-1 {
+  border: none; }
 
 .item {
   padding: 0.9375em 0.9375em;
