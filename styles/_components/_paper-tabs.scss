@@ -4,9 +4,6 @@
 **
 */
 
-
-@import url(http://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,300);
-body {margin:0;background:#E5E5E5;font-weight:300;color:#404040;font-family: "RobotoDraft", Helvetica, Arial, sans-serif;letter-spacing:.1px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 .toolbar {height:64px;background:#03A9F4}
 .tabs {padding-top:14px}
 .tabs ul {list-style:none;margin:0;width:100%;overflow:hidden;padding:0;margin-left:16px;}
@@ -26,10 +23,6 @@ body {margin:0;background:#E5E5E5;font-weight:300;color:#404040;font-family: "Ro
 .item p:first-of-type {margin-top:0}
 .item p {padding:0px 30px;font-size:19px;line-height:26px;margin:0;margin-top:1em;}
 .item a {text-decoration:none;color:#00bcd4;font-weight:500;font-size:0.8em;}
-
-.heart:hover {box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.1)}
-.heart #favorite {fill:#636363}
-.heart.active #favorite {fill:#DA4336;}
 
 .box {display:none;overflow:auto;position:relative;overflow-x:hidden;}
 .box.show {display:block;}

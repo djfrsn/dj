@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,300);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5219,16 +5218,6 @@ body.nav-expanded {
 *** Paper-Tab Styles
 **
 */
-body {
-  margin: 0;
-  background: #E5E5E5;
-  font-weight: 300;
-  color: #404040;
-  font-family: "RobotoDraft", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.1px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
 .toolbar {
   height: 64px;
   background: #03A9F4; }
@@ -5344,15 +5333,6 @@ body {
   color: #00bcd4;
   font-weight: 500;
   font-size: 0.8em; }
-
-.heart:hover {
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.1); }
-
-.heart #favorite {
-  fill: #636363; }
-
-.heart.active #favorite {
-  fill: #DA4336; }
 
 .box {
   display: none;

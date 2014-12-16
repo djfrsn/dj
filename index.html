@@ -139,37 +139,26 @@
             <!-- work links will fade in once a user hovers over a work__project -->
             <div class='section work table reveal hidden' data-anchor='work'>
                 <div class="table__cell">
-                    <div class="work__project one">
-                        <ul class="work__project_tab-list">
-                            <li class='work__project_tab-list_0'>Project</li>
-                            <li class='work__project_tab-list_1'>Descrip</li>
-                            <li class='work__project_tab-list_2'>Tech</li>
-                        </ul>
-                        <div class="work__project_info">
-                            <ul class='tech_ul'>
-                                <li>Scaffolding:</li>
-                                <li>Design:</li>
-                                <li>Tooling:</li>
-                                <li>Features:</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="work__project two">
-                        <ul class="work__project_tab-list">
-                            <li class='work__project_tab-list_0'>Project</li>
-                            <li class='work__project_tab-list_1'>Descrip</li>
-                            <li class='work__project_tab-list_2'>Tech</li>
-                        </ul>    
-                        <div class="work__project_info"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus vero.</p></div>
-                    </div>
-                    <div class="work__project three">
-                        <ul class="work__project_tab-list">
-                            <li class='work__project_tab-list_0'>Project</li>
-                            <li class='work__project_tab-list_1'>Descrip</li>
-                            <li class='work__project_tab-list_2'>Tech</li>
-                        </ul>
-                        <div class="work__project_info"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus, expedita corporis.</p></div>
-                    </div>
+                        <div class="toolbar">
+        <div class="tabs">
+            <ul>
+                <li class="tabitem active"><a href="#box1">ALL<span></span></a></li>
+                <li class="tabitem"><a href="#box2">FAVORITES<span></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div id="box1" class="box show">
+            <div class="item">
+              <p>Have you heard about the Web Components revolution?</p><p>Click to tabs!</p>
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <div class="item">
+              <p>Loving this Polymer thing. This tab app from Polymer projects.</p><p><a href="http://www.polymer-project.org/samples/tutorial/finished/index.html" target="_blank">YOU CAN SEE IT ON THIS LINK</a></p>
+            </div>
+        </div>
+    </div>
                 </div>
             </div>
             <!-- end new section -->
@@ -220,6 +209,13 @@
     <script src='bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js'></script>
     <script src='bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js'></script>
     <script src='bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js'></script>
+    <script src='scripts/lettering.js'></script>
+    <script src='scripts/textillate.js'></script>
+    <script src='scripts/jquery.navgoco.js'></script>
+    <script src='scripts/fullpage.js'></script>
+    <script src='scripts/runloop.js'></script>
+    <script src='scripts/paper-tabs.js'></script>
+    <script src='scripts/jquery.ui.js'></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -228,12 +224,6 @@
     <!-- End custom styles -->
 
     <!-- Begin custom scripts -->
-    <script src='scripts/lettering.js'></script>
-    <script src='scripts/textillate.js'></script>
-    <script src='scripts/jquery.navgoco.js'></script>
-    <script src='scripts/fullpage.js'></script>
-    <script src='scripts/runloop.js'></script>
-    <script src='scripts/jquery.ui.js'></script>
     <script src='scripts/brush.js'></script>
     <!-- end custom scripts -->
 
