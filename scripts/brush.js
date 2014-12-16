@@ -314,14 +314,6 @@
           
       }, 1000);
 
-      // Reveal Nav
-      $('.circle a').removeClass('hidden').addClass('animated fadeIn');
-
-      $('.circle a').on("hover", function() {
-          $(this).toggle("hidden");
-          $('#fp-nav').addClass('animated fadeIn');
-      });
-
       // Multi-color highlight paper-plane on mouseover
       var ppTwo = $('.two.paper-plane');
 
