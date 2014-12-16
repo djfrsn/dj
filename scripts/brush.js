@@ -290,71 +290,13 @@
 
       // This code runs after 1 second
       setTimeout(function() {
-          // Reveal sections after page load to avoid FOUC
-          $('.reveal.hidden').removeClass('hidden').addClass('animated fadeIn');
-          // Turn scroll back on
-          $('html').off('scroll touchmove mousewheel');
-          
-          /*
-          // Calc active__page_container width
-          function setAPWidth() {
-          var brand = $('#brand').width() + 14;
-          var paperPlane = $('#paper-plane').width();
-          var navBars = $('.fa-bars').width();
-          var winWidth = $(window).width();
-          var apWidth = winWidth - (brand + paperPlane + navBars + 30);
-          $('#active__page_container').css('width', apWidth + 'px');
-          console.log(brand, (paperPlane + navBars + 30), winWidth, apWidth);
-          } setAPWidth();
 
-          $(window).resize(function() {
-            setAPWidth();
-          });
-          */
-          
+        // Reveal sections after page load to avoid FOUC
+        $('.reveal.hidden').removeClass('hidden').addClass('animated fadeIn');
+        // Turn scroll back on
+        $('html').off('scroll touchmove mousewheel');
+
       }, 1000);
-
-      // Multi-color highlight paper-plane on mouseover
-      var ppTwo = $('.two.paper-plane');
-
-      function igniteEngine() {
-        ppTwo.css('fill', '#FF6600');
-      }
-      function killEngine() {
-        ppTwo.css('fill', '#F5EDE3');
-      }
-
-      function takeOff() {
-      var loop = jQuery.runloop();
-
-          // Note: only use 5% intervals (10% for <500ms durations)!
-          loop.addKey('5%', function() {
-              txtl(t0);
-          });
-          loop.addKey('20%', function() {
-              t0.addClass('hidden');
-              txtl(t1);
-          });
-          loop.addKey('40%', function() {
-              t1.addClass('hidden');
-              txtl(t2);
-          });
-          loop.addKey('60%', function() {
-              t2.addClass('hidden');
-              txtl(t3);
-          });
-          loop.addKey('80%', function() {
-              t3.addClass('hidden');
-              txtl(t4);
-          });
-          loop.addKey('90%', function() {
-              invFade(t5);
-          });
-          loop.addKey('100%', function() {
-              invFade(wip);
-          });
-          loop.play(7000);
-      } takeOff();
 
       // Center intro content horizontally
       function inwi() {
@@ -382,22 +324,77 @@
           t5 = $('.dynamic_text5'),
           wip = $('.wip');
 
-      // create anon function for our text handler
+      // create anon function for our into animation handler
       (function() {
 
-          // create function to run texillate animation
-          function txtl(obj) {
-              obj.removeClass('hidden').textillate({ in : {
-                      effect: 'flipInY'
-                  }
-              });
-          }
+        // create function to run texillate animation
+        function txtl(obj) {
+            obj.removeClass('hidden').textillate({ in : {
+                    effect: 'flipInY'
+                }
+            });
+        }
 
-          function invFade(obj) {
-              obj.removeClass('invisible').addClass('animated fadeIn')
-          }
+        // create function to fadeIn invisible object
+        function invFade(obj) {
+            obj.removeClass('invisible').addClass('animated fadeIn')
+        }
 
-          // Create runloop for animation timing
+        // Build engine for paper-plane & fly
+        var engine = $('.two.paper-plane');
+
+        function igniteEngine() {
+          engine.css('fill', '#FF6600');
+        }
+        function killEngine() {
+          engine.css('fill', '#F5EDE3');
+        }
+
+        function takeOff() {
+        //        \ / 
+        //  --=_/( . )\_=--  F-18 HORNET
+
+        // Create runloop for paper-plane animation timing
+        var loop = jQuery.runloop();
+
+            // Note: only use 5% intervals (10% for <500ms durations)!
+            loop.addKey('5%', function() {
+              igniteEngine()
+            });
+            loop.addKey('15%', function() {
+              killEngine()
+            });
+            loop.addKey('25%', function() {
+              igniteEngine()
+            });
+            loop.addKey('35%', function() {
+              killEngine()
+            });
+            loop.addKey('45%', function() {
+              igniteEngine()
+            });
+            loop.addKey('55%', function() {
+              killEngine()
+            });
+            loop.addKey('65%', function() {
+              igniteEngine()
+            });
+            loop.addKey('75%', function() {
+              killEngine()
+            });
+            loop.addKey('85%', function() {
+              igniteEngine()
+            });
+            loop.addKey('95%', function() {
+              killEngine()
+            });
+            loop.addKey('100%', function() {
+              igniteEngine()
+            });
+            loop.play(1900);
+        } 
+
+          // Create runloop for text animation timing
           var loop = jQuery.runloop();
 
           // Note: only use 5% intervals (10% for <500ms durations)!
@@ -411,6 +408,7 @@
           loop.addKey('40%', function() {
               t1.addClass('hidden');
               txtl(t2);
+              takeOff();
           });
           loop.addKey('60%', function() {
               t2.addClass('hidden');
