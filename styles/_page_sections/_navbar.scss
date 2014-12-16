@@ -98,28 +98,16 @@ a.navbar-brand:hover
 
 /* #paper-plane
 */
-
 .paper-plane
 {
   fill: themeColor(one);
-  transition: color 0.5s ease;
-}
-
-path.paper-plane:hover 
-{
-  fill: themeColor(five);
+  transition: fill 0.5s ease;
 }
 
 /* .three-bars
 */
-
 .three-bars
 {
   fill: themeColor(one);
-  transition: color 0.5s ease;
-}
-
-path.three-bars:hover
-{
-  fill: themeColor(five);
+  transition: fill 0.5s ease;
 }

@@ -206,6 +206,32 @@
         $('#active__page_container').addClass('animated fadeOut');
       }
 
+      // Multi-color highlight paper-plane on mouseover
+      var ppa = $('.paper-plane'),
+          ppOne = $('.one.paper-plane'),
+          ppTwo = $('.two.paper-plane');
+
+      ppa.mouseover(function() {
+        ppOne.css('fill', '#F5EDE3');
+        ppTwo.delay(1000).css('fill', '#FF6600');
+      });
+
+      ppa.mouseout(function() {
+        ppOne.css('fill', '#6699FF');
+        ppTwo.css('fill', '#6699FF');
+      });
+
+      // Highlight all bars on mouseover
+      var tba = $('a.three-bars_a'),
+          tb = $('.three-bars');
+
+      tba.mouseover(function() {
+        tb.css('fill', '#FF6600');
+      });
+      tba.mouseout(function() {
+        tb.css('fill', '#6699FF');
+      });
+
       //Navigation Menu Slider Open
       $('#nav-expander').on('click', function(e) {
           e.preventDefault();
