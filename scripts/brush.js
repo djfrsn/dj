@@ -206,21 +206,6 @@
         $('#active__page_container').addClass('animated fadeOut');
       }
 
-      // Multi-color highlight paper-plane on mouseover
-      var ppa = $('.paper-plane'),
-          ppOne = $('.one.paper-plane'),
-          ppTwo = $('.two.paper-plane');
-
-      ppa.mouseover(function() {
-        ppOne.css('fill', '#F5EDE3');
-        ppTwo.delay(1000).css('fill', '#FF6600');
-      });
-
-      ppa.mouseout(function() {
-        ppOne.css('fill', '#6699FF');
-        ppTwo.css('fill', '#6699FF');
-      });
-
       // Highlight all bars on mouseover
       var tba = $('a.three-bars_a'),
           tb = $('.three-bars');
@@ -337,6 +322,47 @@
           $('#fp-nav').addClass('animated fadeIn');
       });
 
+      // Multi-color highlight paper-plane on mouseover
+      var ppTwo = $('.two.paper-plane');
+
+      function igniteEngine() {
+        ppTwo.css('fill', '#FF6600');
+      }
+      function killEngine() {
+        ppTwo.css('fill', '#F5EDE3');
+      }
+
+      function takeOff() {
+      var loop = jQuery.runloop();
+
+          // Note: only use 5% intervals (10% for <500ms durations)!
+          loop.addKey('5%', function() {
+              txtl(t0);
+          });
+          loop.addKey('20%', function() {
+              t0.addClass('hidden');
+              txtl(t1);
+          });
+          loop.addKey('40%', function() {
+              t1.addClass('hidden');
+              txtl(t2);
+          });
+          loop.addKey('60%', function() {
+              t2.addClass('hidden');
+              txtl(t3);
+          });
+          loop.addKey('80%', function() {
+              t3.addClass('hidden');
+              txtl(t4);
+          });
+          loop.addKey('90%', function() {
+              invFade(t5);
+          });
+          loop.addKey('100%', function() {
+              invFade(wip);
+          });
+          loop.play(7000);
+      } takeOff();
 
       // Center intro content horizontally
       function inwi() {
