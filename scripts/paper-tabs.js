@@ -16,7 +16,6 @@
   
  */
 window.onload = function() {
-    var heart = document.getElementsByClassName("heart");
     var classname = document.getElementsByClassName("tabitem");
     var boxitem = document.getElementsByClassName("box");
 
@@ -48,18 +47,5 @@ window.onload = function() {
 
     for(var i=0;i<classname.length;i++){
         classname[i].addEventListener('click', clickFunction, false);
-    }
-    for(var i=0;i<heart.length;i++){
-        heart[i].addEventListener('click', function(e) {
-            var classString = this.className, nameIndex = classString.indexOf("active");
-            if (nameIndex == -1) {
-                classString += ' ' + "active";
-            }
-            else {
-                classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+"active".length);
-            }
-            this.className = classString;
-
-        }, false);
     }
 }

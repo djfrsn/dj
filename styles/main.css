@@ -5220,7 +5220,9 @@ body.nav-expanded {
 */
 .toolbar {
   height: 64px;
-  background: #03A9F4; }
+  background: #6699FF;
+  width: 410px;
+  margin: 0 auto; }
 
 .tabs {
   padding-top: 14px; }
@@ -5230,8 +5232,7 @@ body.nav-expanded {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  padding: 0;
-  margin-left: 16px; }
+  padding: 0; }
 
 .tabs ul li {
   float: left;
@@ -5239,7 +5240,7 @@ body.nav-expanded {
 
 .tabs a {
   position: relative;
-  color: white;
+  color: #104386;
   text-decoration: none;
   display: block;
   width: 100px;
@@ -5252,7 +5253,7 @@ body.nav-expanded {
   overflow: hidden; }
 
 .tabs .active a {
-  color: white; }
+  color: #104386; }
 
 .tabs .active a:after {
   height: 2px;
@@ -5262,7 +5263,7 @@ body.nav-expanded {
   bottom: 0px;
   left: 0px;
   position: absolute;
-  background: #FFFF8D;
+  background: #E1D4C0;
   -webkit-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
   -moz-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
   transition: all 1s cubic-bezier(0.4, 0, 1, 1); }
@@ -5281,15 +5282,16 @@ body.nav-expanded {
 .tabs a span.clicked {
   -webkit-animation: expand 0.6s cubic-bezier(0.4, 0, 0.4, 1) 0s normal;
   -moz-animation: expand 0.6s cubic-bezier(0.4, 0, 0.4, 1) 0s normal;
-  border-bottom: 2px solid #FFFF8D; }
+  border-bottom: 2px solid #E1D4C0; }
 
 .content {
-  box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
-  height: 500px;
-  padding-top: 50px;
+  height: 7.5em;
+  padding-top: 30px;
   position: relative;
   top: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 410px;
+  margin: 0 auto; }
 
 .item {
   background: white;
@@ -5309,14 +5311,6 @@ body.nav-expanded {
 .itemhead h2 {
   float: left;
   margin-left: 20px; }
-
-.itemhead .heart {
-  cursor: pointer;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  padding: 7px;
-  border-radius: 2px; }
 
 .item p:first-of-type {
   margin-top: 0; }
@@ -5348,9 +5342,9 @@ body.nav-expanded {
     background: #ffff8d;
     opacity: 1;
     border-radius: 100%;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0); }
+    transform: scale();
+    -webkit-transform: scale();
+    -moz-transform: scale(); }
 
   50% {
     background: rgba(255, 255, 141, 0.8);
@@ -5369,8 +5363,8 @@ body.nav-expanded {
     background: #ffff8d;
     opacity: 1;
     border-radius: 100%;
-    transform: scale(0);
-    -moz-transform: scale(0); }
+    transform: scale();
+    -moz-transform: scale(); }
 
   50% {
     background: rgba(255, 255, 141, 0.8);
