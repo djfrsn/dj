@@ -23,12 +23,12 @@
 */
 .work__project
 {
-	
+	padding-top: em(30);
 }
 
 .work__project.one
 {
-	padding-top: 30px;
+	padding-top: em(80);
 }
 
 .work__project.two
@@ -57,6 +57,7 @@
 .work__project_tab-list
 {
 	text-align: left;
+	margin-bottom: em(10);
 	li
 	{
 		display: inline;
@@ -83,11 +84,15 @@
 {
 	list-style: none;
 }
-/* .work__project_description
+/* .work__project_info
 */
-.work__project_description
+.work__project_info
 {
-	padding: 0 em(20);
+	padding: em(15) em(15);
 	font-size: em(15);
 	text-align: left;
+	background: themeColor(three);
+	height: em(120);
+	width: em(400);
+	margin: 0 auto;
 }
