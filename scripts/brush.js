@@ -349,7 +349,9 @@
             .addClass('animated fadeIn');
           // Turn scroll back on
           $('html')
-            .off('scroll touchmove mousewheel');
+            .off('scroll touchmove mousewheel');   
+          // dev_mode
+          $.fn.fullpage.moveTo(4);
         }, 1000);
         // Center intro content horizontally
         function inwi()
