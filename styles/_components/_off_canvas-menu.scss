@@ -5,40 +5,6 @@
 */
 
 
-/* .nav-expander
-*/
-
-a.nav-expander {
-  color: $black;
-  display: block;
-  @include rem(font-size, 15px);
-  margin-right: 0;
-  @include rem(padding, 20px 20px 0 0);
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  top: 0;
-  transition: right 0.3s ease-in-out 0s;
-  z-index: 12;
-
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
-}
-
-a.nav-expander:hover {
-  cursor: pointer;
-}
-
-a.nav-expander.fixed {
-  position: fixed;
-}
-
-.nav-expanded a.nav-expander.fixed {
-    right: 10em;
-}
-
 /* nav
 */
 

@@ -4,6 +4,45 @@
 **
 */
 
+/* .nav-expander
+*/
+
+a.nav-expander {
+  color: $black;
+  display: block;
+  @include rem(font-size, 15px);
+  margin-right: 0;
+  @include rem(padding, 12px 20px 0 0);
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  z-index: 12;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+
+a.paper-plane_a.nav-expander
+{
+  @include rem(padding, 15px 70px 0 0);  
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    right: 10em;
+}
+
 /* #nav__main-menu
 */
 #nav__main-menu
@@ -59,15 +98,6 @@ a.navbar-brand:hover
 
 /* #paper-plane
 */
-a#paper-plane_link nav-expander
-{
-	
-  color: themeColor(one);
-  @include rem(margin-right, 40px);
-}
-
-/* .fa-bars
-*/
 
 .paper-plane
 {
@@ -77,21 +107,19 @@ a#paper-plane_link nav-expander
 
 path.paper-plane:hover 
 {
-  fill: red;
+  fill: themeColor(five);
 }
 
-.nav-expander-bars
+/* .three-bars
+*/
+
+.three-bars
 {
   fill: themeColor(one);
   transition: color 0.5s ease;
 }
 
-path.nav-expander-bars:hover
+path.three-bars:hover
 {
-  fill: themeColor(one);
-}
-
-i.fa-bars:hover 
-{
-  color: themeColor(five);
+  fill: themeColor(five);
 }

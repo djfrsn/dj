@@ -5112,36 +5112,6 @@ body {
 *** Off_Canvas-Menu Styles
 **
 */
-/* .nav-expander
-*/
-a.nav-expander {
-  color: #333333;
-  display: block;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  margin-right: 0;
-  padding: 20px 20px 0 0;
-  padding: 1.25rem 1.25rem 0 0;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  top: 0;
-  transition: right 0.3s ease-in-out 0s;
-  z-index: 12;
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s; }
-
-a.nav-expander:hover {
-  cursor: pointer; }
-
-a.nav-expander.fixed {
-  position: fixed; }
-
-.nav-expanded a.nav-expander.fixed {
-  right: 10em; }
-
 /* nav
 */
 nav {
@@ -5248,6 +5218,40 @@ body.nav-expanded {
 *** NavBar Styles
 **
 */
+/* .nav-expander
+*/
+a.nav-expander {
+  color: #333333;
+  display: block;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  margin-right: 0;
+  padding: 12px 20px 0 0;
+  padding: 0.75rem 1.25rem 0 0;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  z-index: 12;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s; }
+
+a.paper-plane_a.nav-expander {
+  padding: 15px 70px 0 0;
+  padding: 0.9375rem 4.375rem 0 0; }
+
+a.nav-expander:hover {
+  cursor: pointer; }
+
+a.nav-expander.fixed {
+  position: fixed; }
+
+.nav-expanded a.nav-expander.fixed {
+  right: 10em; }
+
 /* #nav__main-menu
 */
 #nav__main-menu {
@@ -5295,29 +5299,21 @@ a.navbar-brand:hover {
 
 /* #paper-plane
 */
-a#paper-plane_link nav-expander {
-  color: #6699FF;
-  margin-right: 40px;
-  margin-right: 2.5rem; }
-
-/* .fa-bars
-*/
 .paper-plane {
   fill: #6699FF;
   transition: color 0.5s ease; }
 
 path.paper-plane:hover {
-  fill: red; }
+  fill: #FF6600; }
 
-.nav-expander-bars {
+/* .three-bars
+*/
+.three-bars {
   fill: #6699FF;
   transition: color 0.5s ease; }
 
-path.nav-expander-bars:hover {
-  fill: #6699FF; }
-
-i.fa-bars:hover {
-  color: #FF6600; }
+path.three-bars:hover {
+  fill: #FF6600; }
 
 /*
 **
