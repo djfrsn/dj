@@ -139,25 +139,27 @@
             <!-- work links will fade in once a user hovers over a work__project -->
             <div class='section work table reveal hidden' data-anchor='work'>
                 <div class="table__cell">
-                    <div class="work__toolbar card--z-1">
-                        <paper-tabs>
-                            <paper-tab>TAB 1</paper-tab>
-                            <paper-tab>TAB 2</paper-tab>
-                            <paper-tab>TAB 3</paper-tab>
-                        </paper-tabs>
-                    </div>
-                    <div class="work__content card--z-1">
-                        <core-animated-pages transitions="cross-fade">
-                          <section id="page1">
-                            <div cross-fade>
-                                <h1 class="work__content_title">Variable</h1>
-                            </div>
-                          </section>    
-                          <section id="page2">
-                            <div cross-fade><p>hello</p></div>
-                          </section>
-                        </core-animated-pages>
-                    </div>
+                    <template is='auto-binding'>
+                        <div class="work__toolbar card--z-1">
+                            <paper-tabs selected='{{selected}}' selectedindex='0'>
+                                <paper-tab>TAB 1</paper-tab>
+                                <paper-tab>TAB 2</paper-tab>
+                                <paper-tab>TAB 3</paper-tab>
+                            </paper-tabs>
+                        </div>
+                        <div class="work__content card--z-1">
+                            <core-animated-pages selected='{{selected}}' transitions="cross-fade">
+                              <section id="page1">
+                                <div cross-fade>
+                                    <h1 class="work__content_title">Variable</h1>
+                                </div>
+                              </section>    
+                              <section id="page2">
+                                <div cross-fade><p>hello</p></div>
+                              </section>
+                            </core-animated-pages>
+                        </div>
+                    </template>
                 </div>
             </div>
             <!-- end new section -->
@@ -199,7 +201,6 @@
             </div>
             <!-- end new section -->
         </div>
-
     </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -232,7 +233,16 @@
     <script src='scripts/main.js'></script>
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var tabs = document.querySelector('paper-tabs'),
+        pages = document.querySelector('core-animated-pages');
+
+    tabs.addEventListener('core-select', function() {
+        console.log("Selected: " + tabs.selected);
+        pages.selected = tabs.selected;
+    });
+</script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
     <script>
         (function(b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;
@@ -249,6 +259,7 @@
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
     </script>
+    -->
 </body>
 
 </html>
