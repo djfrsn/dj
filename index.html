@@ -139,11 +139,15 @@
             <!-- work links will fade in once a user hovers over a work__project -->
             <div class='section work table reveal hidden' data-anchor='work'>
                 <div class="table__cell">
-                    <paper-tabs selected="0">
-                        <paper-tab>TAB 1</paper-tab>
-                        <paper-tab>TAB 2</paper-tab>
-                        <paper-tab>TAB 3</paper-tab>
-                    </paper-tabs>
+                    <div class="work__toolbar card--z-1">
+                        <paper-tabs>
+                            <paper-tab>TAB 1</paper-tab>
+                            <paper-tab>TAB 2</paper-tab>
+                            <paper-tab>TAB 3</paper-tab>
+                        </paper-tabs>
+                    </div>
+                    <div class="work__content card--z-1"><h1 class="work__content_title">Variable</h1></div>
+
                 </div>
             </div>
             <!-- end new section -->
@@ -206,6 +210,7 @@
 
     <!-- Begin custom styles -->
     <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="components/core-animated-pages/core-animated-pages.html">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- End custom styles -->
 

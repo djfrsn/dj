@@ -5219,6 +5219,15 @@ body.nav-expanded {
 *** Paper-Tab Styles
 **
 */
+.work__toolbar {
+  height: 4em;
+  background: #6699FF;
+  width: 25em;
+  margin: 0 auto; }
+
+.work__toolbar.card--z-1 {
+  border: none; }
+
 /* selectionBar
 */
 paper-tabs::shadow #selectionBar {
@@ -5228,6 +5237,26 @@ paper-tabs::shadow #selectionBar {
 */
 paper-tabs paper-tab::shadow #ink {
   color: #E1D4C0; }
+
+.work__content {
+  height: 6.875em;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 25em;
+  margin: 0 auto; }
+
+.work__content.card--z-1 {
+  border: none; }
+
+/* .work__content_title
+*/
+.work__content_title {
+  transition: color 0.5s ease;
+  cursor: default; }
+
+.work__content_title:hover {
+  color: #FF6600; }
 
 /*
 **
@@ -5483,7 +5512,8 @@ body {
 */
 .work {
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: 'montserratbold'; }
 
 /* #work__header
 */

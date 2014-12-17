@@ -4,6 +4,18 @@
 **
 */
 
+.work__toolbar
+{
+    height: em(64);
+    background: themeColor(one);
+    width: em(400);
+    margin: 0 auto;
+}
+.work__toolbar.card--z-1
+{
+    border: none;
+}
+
 /* selectionBar
 */
 
@@ -15,4 +27,30 @@ paper-tabs::shadow #selectionBar {
 */
 paper-tabs paper-tab::shadow #ink {
   color: themeColor(three);
+}
+
+.work__content
+{
+    height: em(110);
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    width: em(400);
+    margin: 0 auto;
+}
+.work__content.card--z-1
+{
+    border: none;
+}
+
+/* .work__content_title
+*/
+.work__content_title
+{
+    transition: color 0.5s ease;
+    cursor: default;
+}
+.work__content_title:hover
+{
+    color: themeColor(five);        
 }
