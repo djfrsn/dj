@@ -146,8 +146,18 @@
                             <paper-tab>TAB 3</paper-tab>
                         </paper-tabs>
                     </div>
-                    <div class="work__content card--z-1"><h1 class="work__content_title">Variable</h1></div>
-
+                    <div class="work__content card--z-1">
+                        <core-animated-pages transitions="cross-fade">
+                          <section id="page1">
+                            <div cross-fade>
+                                <h1 class="work__content_title">Variable</h1>
+                            </div>
+                          </section>    
+                          <section id="page2">
+                            <div cross-fade><p>hello</p></div>
+                          </section>
+                        </core-animated-pages>
+                    </div>
                 </div>
             </div>
             <!-- end new section -->
@@ -210,7 +220,7 @@
 
     <!-- Begin custom styles -->
     <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-    <link rel="import" href="components/core-animated-pages/core-animated-pages.html">
+    <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- End custom styles -->
 
