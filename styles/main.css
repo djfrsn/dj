@@ -5239,7 +5239,7 @@ paper-tabs paper-tab::shadow #ink {
   color: #E1D4C0; }
 
 .work__content {
-  height: 6.875em;
+  height: 7.5em;
   position: relative;
   top: 0px;
   overflow: hidden;
@@ -5568,7 +5568,6 @@ body {
   padding: 0.9375em 0.9375em;
   font-size: 0.9375em;
   text-align: left;
-  background: #E1D4C0;
   height: 7.5em;
   width: 25em;
   margin: 0 auto; }

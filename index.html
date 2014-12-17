@@ -148,14 +148,29 @@
                             </paper-tabs>
                         </div>
                         <div class="work__content card--z-1">
-                            <core-animated-pages selected='{{selected}}' transitions="cross-fade">
-                              <section id="page1">
+                        <h1 class="work__content_title">project_1</h1>
+                            <core-animated-pages selectedindex='null' selected='{{selected}}' transitions="cross-fade">
+                              <section class='hidden' id="page1">
                                 <div cross-fade>
-                                    <h1 class="work__content_title">Variable</h1>
+                                    <div class='work__project_info' cross-fade>
+                                        <ul class='tech_ul'>
+                                            <li>Scaffolding:</li>
+                                            <li>Design:</li>
+                                            <li>Tooling:</li>
+                                            <li>Features:</li>
+                                        </ul>
+                                    </div>
                                 </div>
                               </section>    
                               <section id="page2">
-                                <div cross-fade><p>hello</p></div>
+                                <div class='work__project_info' cross-fade>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus vero.</p>
+                                </div>
+                              </section>
+                              <section id="page3">
+                                <div class='work__project_info' cross-fade>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus, expedita corporis.</p>
+                                </div>
                               </section>
                             </core-animated-pages>
                         </div>
@@ -241,6 +256,16 @@
         console.log("Selected: " + tabs.selected);
         pages.selected = tabs.selected;
     });
+    // hide work__content_title
+        var wct = $('.work__content_title');
+        wct.on('click', function(){
+            $('#page1').removeClass('hidden').addClass('animated fadeIn');
+            wct.addClass('hidden');
+        });
+        wct.on('touch', function(){
+            $('#page1').removeClass('hidden').addClass('animated fadeIn');
+            wct.addClass('hidden');
+        });
 </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
     <script>

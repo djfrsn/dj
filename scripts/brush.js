@@ -43,8 +43,7 @@
               .removeClass(hidden)
               .addClass(fadeIn);
           }
-          // Function to: clear div.active__page_container brackets
-
+        // Function to: clear div.active__page_container brackets
         function clearAPBrackets()
           {
             apc.addClass(fadeOut);
@@ -55,8 +54,7 @@
               apc.addClass(inactiveHidden);
             }, fadeTime);
           }
-          // Function to: clear text in span.active__page 
-
+        // Function to: clear text in span.active__page 
         function clearAPText()
         {
           // check if ap has text
@@ -509,4 +507,14 @@
           });
           loop.play(20000);
         })();
+        // hide work__content_title
+        var wct = $('.work__content_title');
+        wct.on('click', function(){
+            $('#page1').removeClass('hidden').addClass('animated fadeIn');
+            wct.addClass('hidden');
+        });
+        wct.on('touch', function(){
+            $('#page1').removeClass('hidden').addClass('animated fadeIn');
+            wct.addClass('hidden');
+        });
       });
