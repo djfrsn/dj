@@ -148,9 +148,9 @@
                             </paper-tabs>
                         </div>
                         <div class="work__content card--z-1">
-                        <h1 class="work__content_title">project_1</h1>
+                        <h1 class="work__content_title hidden">project_1</h1>
                             <core-animated-pages selectedindex='null' selected='{{selected}}' transitions="cross-fade">
-                              <section class='hidden' id="page1">
+                              <section class='' id="page1">
                                 <div cross-fade>
                                     <div class='work__project_info' cross-fade>
                                         <ul class='tech_ul'>
@@ -256,16 +256,6 @@
         console.log("Selected: " + tabs.selected);
         pages.selected = tabs.selected;
     });
-    // hide work__content_title
-        var wct = $('.work__content_title');
-        wct.on('click', function(){
-            $('#page1').removeClass('hidden').addClass('animated fadeIn');
-            wct.addClass('hidden');
-        });
-        wct.on('touch', function(){
-            $('#page1').removeClass('hidden').addClass('animated fadeIn');
-            wct.addClass('hidden');
-        });
 </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
     <script>
