@@ -5220,13 +5220,19 @@ body.nav-expanded {
 **
 */
 .work__toolbar {
-  height: 4em;
+  height: 3.4375em;
   background: #6699FF;
   width: 25em;
   margin: 0 auto; }
 
 .work__toolbar.card--z-1 {
   border: none; }
+
+#paper-tab {
+  height: 2.9375em; }
+
+paper-tabs paper-tab::shadow .tab-content {
+  height: 2.9375em; }
 
 /* selectionBar
 */
@@ -5238,8 +5244,13 @@ paper-tabs::shadow #selectionBar {
 paper-tabs paper-tab::shadow #ink {
   color: #E1D4C0; }
 
+paper-tabs::shadow #selectionBar {
+  width: 33.3333333333%;
+  left: 0%;
+  bottom: 0.535em; }
+
 .work__content {
-  height: 7.5em;
+  height: 6.5625em;
   position: relative;
   top: 0px;
   overflow: hidden;

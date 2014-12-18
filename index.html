@@ -141,35 +141,35 @@
                 <div class="table__cell">
                     <template is='auto-binding'>
                         <div class="work__toolbar card--z-1">
-                            <paper-tabs selected='{{selected}}' selectedindex='0'>
-                                <paper-tab>TAB 1</paper-tab>
-                                <paper-tab>TAB 2</paper-tab>
-                                <paper-tab>TAB 3</paper-tab>
+                            <paper-tabs id="paper-tabs" selected='{{selected}}' selected='0' selectedindex='0'>
+                                <paper-tab id="paper-tab" >About</paper-tab>
+                                <paper-tab id="paper-tab" >Tech</paper-tab>
+                                <paper-tab id="paper-tab" >View</paper-tab>
                             </paper-tabs>
                         </div>
                         <div class="work__content card--z-1">
                         <h1 class="work__content_title hidden">project_1</h1>
-                            <core-animated-pages selectedindex='null' selected='{{selected}}' transitions="cross-fade">
+                            <core-animated-pages selectedindex='null' selected='{{selected}}' selectedindex="0" transitions="cross-fade">
                               <section class='' id="page1">
                                 <div cross-fade>
                                     <div class='work__project_info' cross-fade>
-                                        <ul class='tech_ul'>
-                                            <li>Scaffolding:</li>
-                                            <li>Design:</li>
-                                            <li>Tooling:</li>
-                                            <li>Features:</li>
-                                        </ul>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus.</p>
                                     </div>
                                 </div>
                               </section>    
                               <section id="page2">
                                 <div class='work__project_info' cross-fade>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus vero.</p>
+                                    <ul class='tech_ul'>
+                                            <li>Scaffolding:</li>
+                                            <li>Design:</li>
+                                            <li>Tooling:</li>
+                                            <li>Features:</li>
+                                        </ul>
                                 </div>
                               </section>
                               <section id="page3">
                                 <div class='work__project_info' cross-fade>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus, expedita corporis.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus.</p>
                                 </div>
                               </section>
                             </core-animated-pages>

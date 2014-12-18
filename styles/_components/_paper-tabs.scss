@@ -6,7 +6,7 @@
 
 .work__toolbar
 {
-    height: em(64);
+    height: em(55);
     background: themeColor(one);
     width: em(400);
     margin: 0 auto;
@@ -16,6 +16,14 @@
     border: none;
 }
 
+#paper-tab
+{
+        height: em(47);
+}
+paper-tabs paper-tab::shadow .tab-content
+{
+        height: em(47);
+}
 /* selectionBar
 */
 
@@ -28,10 +36,14 @@ paper-tabs::shadow #selectionBar {
 paper-tabs paper-tab::shadow #ink {
   color: themeColor(three);
 }
-
+paper-tabs::shadow #selectionBar {
+    width: 33.3333333333333%;
+    left: 0%;
+    bottom: em(8.56);
+}
 .work__content
 {
-    height: em(120);
+    height: em(105);
     position: relative;
     top: 0px;
     overflow: hidden;
