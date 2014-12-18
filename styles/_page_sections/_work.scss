@@ -12,17 +12,23 @@
 	font-family: 'montserratbold';
 }
 
-/* .work__project_title
+/* .work__project
 */
-.work__project_title
+.work__project
 {
-	font-size: em(20);
-	padding-left: em(20);
-	text-align: left;	
-	text-decoration: underline;
-	color: themeColor(five);
+	font-size: em(35);
+	font-family: 'fira';
+	text-align: center;	
+	@include text-shadow();
+	color: themeColor(three);
+	transition: color 0.5s ease;
+	cursor: pointer;
 }
 
+h1.work__project:hover
+{
+	color: themeColor(five);
+}
 /* .work__toolbar
 */
 

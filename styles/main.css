@@ -5501,13 +5501,18 @@ body {
   font-size: 1rem;
   font-family: 'montserratbold'; }
 
-/* .work__project_title
+/* .work__project
 */
-.work__project_title {
-  font-size: 1.25em;
-  padding-left: 1.25em;
-  text-align: left;
-  text-decoration: underline;
+.work__project {
+  font-size: 2.1875em;
+  font-family: 'fira';
+  text-align: center;
+  text-shadow: 0 0.02em #fff;
+  color: #E1D4C0;
+  transition: color 0.5s ease;
+  cursor: pointer; }
+
+h1.work__project:hover {
   color: #FF6600; }
 
 /* .work__toolbar
