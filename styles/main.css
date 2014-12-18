@@ -5219,21 +5219,16 @@ body.nav-expanded {
 *** Paper-Tab Styles
 **
 */
-.work__toolbar {
-  height: 3.4375em;
-  background: #6699FF;
-  width: 25em;
-  margin: 0 auto; }
-
-.work__toolbar.card--z-1 {
-  border: none; }
-
-#paper-tab {
-  height: 2.9375em; }
-
-paper-tabs paper-tab::shadow .tab-content {
-  height: 2.9375em; }
-
+/* Save for tiny screens
+#paper-tab
+{
+        height: em(47);
+}
+paper-tabs paper-tab::shadow .tab-content
+{
+        height: em(47);
+}
+*/
 /* selectionBar
 */
 paper-tabs::shadow #selectionBar {
@@ -5248,26 +5243,6 @@ paper-tabs::shadow #selectionBar {
   width: 33.3333333333%;
   left: 0%;
   bottom: 0.535em; }
-
-.work__content {
-  height: 6.6875em;
-  position: relative;
-  top: 0px;
-  overflow: hidden;
-  width: 25em;
-  margin: 0 auto; }
-
-.work__content.card--z-1 {
-  border: none; }
-
-/* .work__content_title
-*/
-.work__content_title {
-  transition: color 0.5s ease;
-  cursor: default; }
-
-.work__content_title:hover {
-  color: #FF6600; }
 
 /*
 **
@@ -5526,20 +5501,6 @@ body {
   font-size: 1rem;
   font-family: 'montserratbold'; }
 
-/* #work__header
-*/
-#work__header {
-  font-size: 2.1875em;
-  text-transform: capitalize; }
-
-/* .work__project
-*/
-.work__project {
-  padding-top: 1.875em; }
-
-.work__project.one {
-  padding-top: 5em; }
-
 /* .work__project_title
 */
 .work__project_title {
@@ -5549,29 +5510,38 @@ body {
   text-decoration: underline;
   color: #FF6600; }
 
-/* .work__project_tab-list
+/* .work__toolbar
 */
-.work__project_tab-list {
-  text-align: left;
-  margin-bottom: 0.625em; }
-  .work__project_tab-list li {
-    display: inline;
-    padding: 0.625em; }
+.work__toolbar {
+  height: 3.4375em;
+  background: #6699FF;
+  width: 25em;
+  margin: 0 auto; }
 
-.work__project_tab-list_0 {
-  background: #FFF; }
+.work__toolbar.card--z-1 {
+  border: none; }
 
-.work__project_tab-list_1 {
-  background: red; }
-
-.work__project_tab-list_2 {
-  background: blue; }
-
-/* .tech_ul
+/* .work__content
 */
-.tech_ul {
-  list-style: none;
-  padding: 0; }
+.work__content {
+  height: 6.6875em;
+  position: relative;
+  top: 0px;
+  overflow: hidden;
+  width: 25em;
+  margin: 0 auto; }
+
+.work__content.card--z-1 {
+  border: none; }
+
+/* .work__content_title
+*/
+.work__content_title {
+  transition: color 0.5s ease;
+  cursor: default; }
+
+.work__content_title:hover {
+  color: #FF6600; }
 
 /* .work__project_info
 */
@@ -5581,7 +5551,14 @@ body {
   text-align: left;
   height: 7.5em;
   width: 25em;
+  font-family: 'fira';
   margin: 0 auto; }
+
+/* .tech_ul
+*/
+.tech_ul {
+  list-style: none;
+  padding: 0; }
 
 /*
 **

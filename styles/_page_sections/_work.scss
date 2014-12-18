@@ -12,36 +12,6 @@
 	font-family: 'montserratbold';
 }
 
-/* #work__header
-*/
-#work__header
-{
-	font-size: em(35);
-	text-transform: capitalize;
-}
-
-/* .work__project
-*/
-.work__project
-{
-	padding-top: em(30);
-}
-
-.work__project.one
-{
-	padding-top: em(80);
-}
-
-.work__project.two
-{
-	
-}
-
-.work__project.three
-{
-	
-}
-
 /* .work__project_title
 */
 .work__project_title
@@ -53,39 +23,49 @@
 	color: themeColor(five);
 }
 
-/* .work__project_tab-list
+/* .work__toolbar
 */
-.work__project_tab-list
+
+.work__toolbar
 {
-	text-align: left;
-	margin-bottom: em(10);
-	li
-	{
-		display: inline;
-		padding: em(10);
-	}
+    height: em(55);
+    background: themeColor(one);
+    width: em(400);
+    margin: 0 auto;
+}
+.work__toolbar.card--z-1
+{
+    border: none;
 }
 
-.work__project_tab-list_0
+/* .work__content
+*/
+.work__content
 {
-	background: #FFF;	
+    height: em(107);
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    width: em(400);
+    margin: 0 auto;
 }
-.work__project_tab-list_1
+.work__content.card--z-1
 {
-	background: red;	
-}
-.work__project_tab-list_2
-{
-	background: blue;	
+    border: none;
 }
 
-/* .tech_ul
+/* .work__content_title
 */
-.tech_ul
+.work__content_title
 {
-	list-style: none;
-	padding: 0;
+    transition: color 0.5s ease;
+    cursor: default;
 }
+.work__content_title:hover
+{
+    color: themeColor(five);        
+}
+
 /* .work__project_info
 */
 .work__project_info
@@ -95,5 +75,14 @@
 	text-align: left;
 	height: em(120);
 	width: em(400);
+	font-family: 'fira';
 	margin: 0 auto;
+}
+
+/* .tech_ul
+*/
+.tech_ul
+{
+	list-style: none;
+	padding: 0;
 }

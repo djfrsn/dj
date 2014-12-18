@@ -4,18 +4,7 @@
 **
 */
 
-.work__toolbar
-{
-    height: em(55);
-    background: themeColor(one);
-    width: em(400);
-    margin: 0 auto;
-}
-.work__toolbar.card--z-1
-{
-    border: none;
-}
-
+/* Save for tiny screens
 #paper-tab
 {
         height: em(47);
@@ -24,9 +13,10 @@ paper-tabs paper-tab::shadow .tab-content
 {
         height: em(47);
 }
-/* selectionBar
 */
 
+/* selectionBar
+*/
 paper-tabs::shadow #selectionBar {
   background-color: themeColor(five);
 }
@@ -40,29 +30,4 @@ paper-tabs::shadow #selectionBar {
     width: 33.3333333333333%;
     left: 0%;
     bottom: em(8.56);
-}
-.work__content
-{
-    height: em(107);
-    position: relative;
-    top: 0px;
-    overflow: hidden;
-    width: em(400);
-    margin: 0 auto;
-}
-.work__content.card--z-1
-{
-    border: none;
-}
-
-/* .work__content_title
-*/
-.work__content_title
-{
-    transition: color 0.5s ease;
-    cursor: default;
-}
-.work__content_title:hover
-{
-    color: themeColor(five);        
 }
