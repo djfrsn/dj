@@ -507,14 +507,54 @@
           });
           loop.play(20000);
         })();
-        // hide work__content_title
-        var wct = $('.work__content_title');
-        wct.on('click', function(){
-            $('#page1').removeClass('hidden').addClass('animated fadeIn');
-            wct.addClass('hidden');
-        });
-        wct.on('touch', function(){
-            $('#page1').removeClass('hidden').addClass('animated fadeIn');
-            wct.addClass('hidden');
-        });
-      });
+
+        function vivy(){
+
+          // init vars
+          var wp = $('.work__project'),
+              wpc = $('.work__project_card');
+
+          // fadeOut work__content_title
+          function fadeOutWP() {
+            wp.addClass('animated fadeOut');
+          };
+
+          // hide work__content_title
+          function hideWP() {
+              wp.addClass('hidden');
+          }
+
+          // Reveal .work__project_card
+          function revealWPC() {
+            wpc.addClass('animated fadeIn').removeClass('hidden');
+          }
+          
+          // Function to: reveal work__project_card
+          function revealWPC() {
+          
+            // Create runloop for text animation timing
+            var loop = jQuery.runloop();
+            // Note: only use 5% intervals (10% for <500ms durations)!
+            loop.addKey('5%', function()
+            {
+              fadeOutWP();
+            });
+            loop.addKey('45%', function()
+            {
+              // do something else
+              hideWP();
+              revealWPC();
+            });
+            loop.play(2200);
+            }
+            
+            // React to .work__project click/touch
+            wp.on('click', function(){
+                revealWPC(); 
+            });
+            wp.on('touch', function(){
+                revealWPC();
+            });
+
+          } vivy();
+      }); // end document ready 
