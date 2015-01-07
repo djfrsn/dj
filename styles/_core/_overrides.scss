@@ -1,6 +1,6 @@
 /*
 **
-*** BootStrap Overrides Styles
+*** Overrides Styles
 **
 */
 
@@ -22,4 +22,17 @@
 	{
 		@include rem(font-size, 16px);
 	}
+}
+
+/*
+** Disable Select
+*/
+#brand, #active__page_container, .main-menu li a, #intro__header, #intro__sub_header, #intro__header_description
+{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

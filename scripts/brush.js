@@ -238,7 +238,7 @@
             $('#active__page_container')
               .addClass('animated fadeOut');
           }
-          // Highlight all bars on mouseover
+          // Highlight svg on mouseover
         var tba = $('a.three-bars_a'),
           tb = $('.three-bars');
         tba.mouseover(function()
@@ -349,7 +349,7 @@
           $('html')
             .off('scroll touchmove mousewheel');   
           // dev_mode
-          $.fn.fullpage.moveTo(4);
+          // $.fn.fullpage.moveTo(4);
         }, 1000);
         // Center intro content horizontally
         function inwi()

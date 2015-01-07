@@ -3,32 +3,66 @@
 *** Work Styles
 **
 */
+.gay{color: red;}
+/* #github
+*/
+#github
+{
+	fill: themeColor(three);
+	position: relative;
+	top: em(21);
+	transition: fill 0.5s ease; 
+}
+svg#github:hover
+{
+	fill: themeColor(five);
+}
+
+/* #divider
+*/
+#divider
+{
+	color: themeColor(one);
+	padding: 0 em(10);
+	font-size: em(24);
+}
+
+/* #resume
+*/
+a#resume
+{
+	color: themeColor(three);
+	font-size: em(24);
+	text-decoration: none;
+	transition: color 0.5s ease;
+	
+}
+a#resume:hover
+{
+	color: themeColor(five);
+	font-size: em(24);
+	
+}
 
 /* .work
 */
 .work
 {
 	@include rem(font-size, 16px);
-	font-family: 'montserratbold';
 }
 
-/* .work__project
+/* .work__project_title
 */
-.work__project
+.work__project_title
 {
-	font-size: em(35);
-	font-family: 'fira';
-	text-align: center;	
-	@include text-shadow();
-	color: themeColor(three);
-	transition: color 0.5s ease;
-	cursor: pointer;
-}
-
-h1.work__project:hover
-{
+	font-size: em(20);
+	padding-left: em(20);
+	width: em(100);
+	text-align: left;	
+	text-decoration: underline;
 	color: themeColor(five);
 }
+
 /* .work__toolbar
 */
 
@@ -81,7 +115,6 @@ h1.work__project:hover
 	text-align: left;
 	height: em(120);
 	width: em(400);
-	font-family: 'fira';
 	margin: 0 auto;
 }
 

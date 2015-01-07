@@ -23,9 +23,6 @@ nav {
   z-index: 2000;
   
   transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
   @include paper-shadow();
 }
 
@@ -39,9 +36,6 @@ nav {
 body.nav-expanded {
   margin-left: 0em;
   transition: right 0.4s ease-in-out 0s;
-  -webkit-transition: right 0.4s ease-in-out 0s;
-  -moz-transition: right 0.4s ease-in-out 0s;
-  -o-transition: right 0.4s ease-in-out 0s;
 }
 
 /* #nav-close

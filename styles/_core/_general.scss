@@ -14,14 +14,14 @@ html
 
 body
 {
-    font-family: 'Open Sans';
-    background-color: themeColor(bg);
-    color: themeColor(txt);
+  font-family: 'open_sansregular';
+  background-color: themeColor(bg);
+  color: themeColor(txt);
 }
 
 
 // Utility
 .underline
 {
-    text-decoration: underline;
+  text-decoration: underline;
 }

@@ -16,13 +16,13 @@
 #intro__header, #intro__sub_header, #intro__header_description
 {
 	text-align: center;
+	cursor: default;
 }
 
 /* #intro__header
 */
 #intro__header
 {
-	font-family: 'fira';
 	font-size: em(46);
 }
 
@@ -61,7 +61,6 @@
 	color: themeColor(three);
 	@include text-shadow();
 	text-transform: uppercase;
-	font-family: 'fira';
 }
 
 html {
