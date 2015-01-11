@@ -1,0 +1,78 @@
+/*
+**
+*** Process Styles
+**
+*/
+
+/* .process
+*/
+.process
+{
+	@include rem(font-size, 16px);
+}
+
+/* .process__header_block
+*/
+.process__header_block
+{
+	width: em(275);
+	margin: 0 auto;	
+	margin-top: em(10);
+	margin-bottom: 0;
+	padding: em(10) 0;
+}
+
+.process__header_block.one
+{
+	padding-top: em(50);
+}
+
+.process__header_block.two
+{
+
+}
+
+.process__header_block.three
+{
+
+}
+
+.process__header_block.four
+{
+
+}
+
+/* .process__list
+*/
+.process__list
+{
+	width: em(225);
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* .process__list_title
+*/
+.process__list_title
+{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+/* .process__list_title_border
+*/
+.process__list_title_border
+{
+	width: em(20);
+	border-bottom: 2px solid themeColor(one);
+}
+
+/* .process__list_item
+*/
+.process__list_item
+{
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}

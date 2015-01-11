@@ -1,0 +1,139 @@
+<!--
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!--
+# Conditionally Hiding an Element
+
+Shows use **conditional boolean attributes** using **?=** syntax.
+
+You can set an element's `hidden` property using `hidden?=`:
+
+    <p hidden?="{{view}}">
+      ...
+    </p>
+
+The boolean attribute gets set if it is bound to a `true` value. Note the
+use of `?=` syntax for conditionally setting a boolean attribute.
+
+Read the
+[official documentation for conditional attributes]
+(http://www.polymer-project.org/docs/polymer/binding-types.html#conditional-attributes).
+
+[jsbin](http://jsbin.com/javot/edit)
+-->
+
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+
+<polymer-element name="work--project-card">
+  <template>
+  <link rel="stylesheet" href="styles/portfolio.css">
+    <div class="work__toolbar card--z-1">
+        <paper-tabs id="paper-tabs" selected='{{selected}}' selected='0' selectedindex='0'>
+            <paper-tab id="paper-tab" >About</paper-tab>
+            <paper-tab id="paper-tab" >Tech</paper-tab>
+            <paper-tab id="paper-tab" >View</paper-tab>
+        </paper-tabs>
+    </div>
+    <div class="work__content card--z-1">
+        <core-animated-pages  selectedindex='null' selected='{{selected}}' selectedindex="0" transitions="cross-fade">
+          <section class='' id="page1">
+            <div cross-fade>
+                <div class='work__project_info' cross-fade>
+                    <p>{{project_one.about}}</p>
+                </div>
+            </div>
+          </section>    
+          <section id="page2">
+            <div class='work__project_info' cross-fade>
+                <ul class='tech_ul'>
+                        <li>{{project_one.tech_t_one}}</li>
+                        <li>{{project_one.tech_t_two}}</li>
+                        <li>{{project_one.tech_t_three}}</li>
+                        <li>{{project_one.tech_t_four}}</li>
+                    </ul>
+            </div>
+          </section>
+          <section id="page3">
+            <div class='work__project_info' cross-fade>
+                <p>{{project_one.view}}</p>
+            </div>
+          </section>
+        </core-animated-pages>
+    </div>
+  </div>
+  </template>
+  <script>
+    Polymer('work--project-card', {
+      created: function() {
+        this.project_one = {
+          about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus. Fugiat, repellendus placeat. Nemo ipsum cum saepe, magnam aperiam, suscipit odit enim, repellendus.",
+          tech_t_one: "Scaffolding",
+          tech_t_one_p: "Lorem ipsum dolor sit amet.",
+          tech_t_two: "Design",
+          tech_t_two_p: "Lorem ipsum dolor sit amet",
+          tech_t_three: "Tooling",
+          tech_t_three_p: "Lorem ipsum dolor sit amet",
+          tech_t_four: "Features",
+          tech_t_four_p: "Lorem ipsum dolor sit amet",
+          view: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus."
+        },
+        this.project_two = {
+          about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus.",
+          tech_t_one: "Scaffolding",
+          tech_t_one_p: "Lorem ipsum dolor sit amet.",
+          tech_t_two: "Design",
+          tech_t_two_p: "Lorem ipsum dolor sit amet",
+          tech_t_three: "Tooling",
+          tech_t_three_p: "Lorem ipsum dolor sit amet",
+          tech_t_four: "Features",
+          tech_t_four_p: "Lorem ipsum dolor sit amet",
+          view: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus."
+        },
+        this.project_three = {
+          about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus.",
+          tech_t_one: "Scaffolding",
+          tech_t_one_p: "Lorem ipsum dolor sit amet.",
+          tech_t_two: "Design",
+          tech_t_two_p: "Lorem ipsum dolor sit amet",
+          tech_t_three: "Tooling",
+          tech_t_three_p: "Lorem ipsum dolor sit amet",
+          tech_t_four: "Features",
+          tech_t_four_p: "Lorem ipsum dolor sit amet",
+          view: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus."
+        },
+        this.project_four = {
+          about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus.",
+          tech_t_one: "Scaffolding",
+          tech_t_one_p: "Lorem ipsum dolor sit amet.",
+          tech_t_two: "Design",
+          tech_t_two_p: "Lorem ipsum dolor sit amet",
+          tech_t_three: "Tooling",
+          tech_t_three_p: "Lorem ipsum dolor sit amet",
+          tech_t_four: "Features",
+          tech_t_four_p: "Lorem ipsum dolor sit amet",
+          view: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus."
+        },
+        this.project_five = {
+          about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum alias nobis, rerum adipisci, ut velit minima aliquam sunt quia nam at voluptatem, explicabo temporibus.",
+          tech_t_one: "Scaffolding",
+          tech_t_one_p: "Lorem ipsum dolor sit amet.",
+          tech_t_two: "Design",
+          tech_t_two_p: "Lorem ipsum dolor sit amet",
+          tech_t_three: "Tooling",
+          tech_t_three_p: "Lorem ipsum dolor sit amet",
+          tech_t_four: "Features",
+          tech_t_four_p: "Lorem ipsum dolor sit amet",
+          view: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit, et! Perferendis repellat debitis quos aliquam architecto voluptatum repellendus."
+        }
+      }
+    });
+  </script>
+</polymer-element>

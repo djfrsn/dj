@@ -1,0 +1,127 @@
+/*
+**
+*** Work Styles
+**
+*/
+.gay{color: red;}
+/* #github
+*/
+#github
+{
+	fill: themeColor(three);
+	position: relative;
+	top: em(21);
+	transition: fill 0.5s ease; 
+}
+svg#github:hover
+{
+	fill: themeColor(five);
+}
+
+/* #divider
+*/
+#divider
+{
+	color: themeColor(one);
+	padding: 0 em(10);
+	font-size: em(24);
+}
+
+/* #resume
+*/
+a#resume
+{
+	color: themeColor(three);
+	font-size: em(24);
+	text-decoration: none;
+	transition: color 0.5s ease;
+	
+}
+a#resume:hover
+{
+	color: themeColor(five);
+	font-size: em(24);
+	
+}
+
+/* .work
+*/
+.work
+{
+	@include rem(font-size, 16px);
+}
+
+/* .work__project_title
+*/
+.work__project_title
+{
+	font-size: em(20);
+	padding-left: em(20);
+	width: em(100);
+	text-align: left;	
+	text-decoration: underline;
+	color: themeColor(five);
+}
+
+/* .work__toolbar
+*/
+
+.work__toolbar
+{
+    height: em(55);
+    background: themeColor(one);
+    width: em(400);
+    margin: 0 auto;
+}
+.work__toolbar.card--z-1
+{
+    border: none;
+}
+
+/* .work__content
+*/
+.work__content
+{
+    height: em(107);
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    width: em(400);
+    margin: 0 auto;
+}
+.work__content.card--z-1
+{
+    border: none;
+}
+
+/* .work__content_title
+*/
+.work__content_title
+{
+    transition: color 0.5s ease;
+    cursor: default;
+}
+.work__content_title:hover
+{
+    color: themeColor(five);        
+}
+
+/* .work__project_info
+*/
+.work__project_info
+{
+	padding: em(15) em(15);
+	font-size: em(15);
+	text-align: left;
+	height: em(120);
+	width: em(400);
+	margin: 0 auto;
+}
+
+/* .tech_ul
+*/
+.tech_ul
+{
+	list-style: none;
+	padding: 0;
+}

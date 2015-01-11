@@ -1,0 +1,215 @@
+<!doctype html>
+<html class='no-js'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web Consultant | Experimental Front-End Developer | Dennis Jefferson</title>
+    <meta name='description' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <!-- build:css styles/paint.css -->
+    <link href='styles/animate.css' rel='stylesheet'>
+    <link href='styles/fullpage.css' rel='stylesheet'>
+    <link rel='stylesheet' href='styles/paint.css'>
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- 
+    Performant Web Font Loading: http://bdadam.com/blog/loading-webfonts-with-high-performance.html
+    -->
+    <script src='scripts/fonts.js' inline></script>
+     <script src='scripts/LAB.js'></script>
+    
+    <script>
+        $LAB
+          .script("scripts/brush.x.js").wait(function(){
+              initMyPage();
+          });
+    </script>
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+    <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class='main container'>
+
+        <!-- Begin fixed navbar -->
+        <nav id='nav__main-menu' class='card--z-2'>
+            <ul class='list-unstyled main-menu'>
+                <li><a href='#' id='nav-close'>X</a>
+                </li>
+                <li><a class='main-menu-home'>Home</a>
+                </li>
+                <li><a class='main-menu-about'>About</a>
+                </li>
+                <li><a class='main-menu-work'>Work</a>
+                </li>
+                <li><a class='main-menu-process'>Process</a>
+                </li>
+                <li><a class='main-menu-resume' href='http://dennisjefferson.com/resume' target='_blank'>Resume</a>
+                </li>
+                <li><a class='main-menu-contact'>Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class='navbar card--z-1 navbar-fixed-top'>
+
+            <!--Include your brand here-->
+            <a id='brand' class='navbar-brand' href='https://twitter.com/djfrsn'>@djfrsn</a>
+            <div class='card--z-2 inactive hidden' id="active__page_container">[ <span id="active__page"></span> ]</div>
+            <div class='navbar-header pull-right'>
+                <a id='paper-plane_a nav-expander' class='paper-plane_a nav-expander fixed' href='mailto:dj@dennisjefferson.com'>
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="28px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="28px" xml:space="preserve"><g><g><path d="M1.911 16.179c-1.084 0.568-1.039 1.4 0.1 1.852l3.364 1.331c1.137 0.4 2.9 0.2 3.821-0.55 L23.806 7.289c0.961-0.757 1.064-0.645 0.2 0.249L12.483 19.902c-0.837 0.892-0.59 2 0.6 2.425l0.394 0.2 c1.14 0.4 3 1.2 4.1 1.642l3.732 1.521c1.133 0.5 2.1 0.8 2.1 0.849c0.001 0 0 0 0 0 s0.273-0.962 0.594-2.141l5.688-20.908c0.321-1.18-0.302-1.681-1.385-1.113L1.911 16.179z" class="paper-plane one"/></g><g><path d="M11.146 29.864c-0.067 0.2 2.301-3.429 2.301-3.429c0.669-1.022 0.29-2.241-0.842-2.703l-2.582-1.058 c-1.132-0.463-1.674 0.08-1.205 1.212C8.818 23.9 11.2 29.7 11.1 29.864z" class="paper-plane two"/></g></g></svg>
+                </a>
+                <a id='nav-expander' class='three-bars_a nav-expander fixed'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M25.695 9.43c0 0.771-0.631 1.401-1.402 1.401H8.875c-0.771 0-1.402-0.63-1.402-1.401V7.152 c0-0.771 0.631-1.402 1.402-1.402h15.418c0.771 0 1.4 0.6 1.4 1.402V9.43z" class="three-bars"/><path d="M25.695 24.848c0 0.771-0.631 1.402-1.402 1.402H8.875c-0.771 0-1.402-0.631-1.402-1.402V22.57 c0-0.771 0.631-1.401 1.402-1.401h15.418c0.771 0 1.4 0.6 1.4 1.401V24.848z" class="three-bars"/><path d="M25.695 17.139c0 0.771-0.631 1.402-1.402 1.402H8.875c-0.771 0-1.402-0.631-1.402-1.402v-2.277 c0-0.771 0.631-1.402 1.402-1.402h15.418c0.771 0 1.4 0.6 1.4 1.402V17.139z" class="three-bars"/></g></svg>
+                </a>
+            </div>
+        </div>
+        <!-- End fixed navbar -->
+
+
+        <div id='fullpage' class='hidden'>
+
+            <!-- Begin intro section -->
+            <div class='intro section table' data-anchor='intro'>
+                <div class='table__cell'>
+                    <h1 id='intro__header'>Dennis Jefferson</h1>
+                    <h5 id='intro__sub_header'>[ <span class='dynamic_text0 hidden'>Aspiring Web Consultant</span><span class='dynamic_text1 hidden'>Experimental Front-End Web Developer</span><span class='dynamic_text2 hidden'>Spaceship Builder + Astronaut</span><span class='dynamic_text3 hidden'>Ok, maybe the last one was a bit of a stretch...</span><span class='dynamic_text4 hidden'>creates</span> ]</h5>
+                    <p class='invisible dynamic_text5' id='intro__header_description'>hand-crafted <span class='underline'>web experiences</span> for the modern individual & business.</p>
+                    <p class="footer wip invisible">wip</p>
+                </div>
+            </div>
+            <!-- End intro section -->
+
+            <!-- begin new section -->
+            <div class='section about table reveal hidden' data-anchor='about'>
+                <div class="table__cell">
+                    <p class='card--z-1' id="about__description">I am a passionate, self-taught and driven front-end developer. I live on the bleeding edge learning from the industry's best through blogs, live websites, documentation, books, and open-source code. Hand writing code daily is a love of mine and I'm also actively helping others learn programming.</p>
+                </div>
+            </div>
+            <!-- end new section -->
+            <!-- begin new section -->
+            <div class='section process table reveal hidden' data-anchor='process'>
+                <div class="table__cell">
+
+
+                    <div class="process__header_block one">
+                        <h3 class='process__list_title'>HTML5</h3>
+                        <div class="process__list_title_border"></div>
+                    </div>
+                    <ul class="process__list">
+                        <li class="process__list_item">Mobile First Design</li>
+                        <li class="process__list_item">Cross-Browser Friendly</li>
+                        <li class="process__list_item">SEO Optimized</li>
+                    </ul>
+                    <div class="process__header_block two">
+                        <h3 class='process__list_title'>CSS3</h3>
+                        <div class="process__list_title_border"></div>
+                    </div>
+                    <ul class="process__list">
+                        <li class="process__list_item">Responsive Design</li>
+                        <li class="process__list_item">item</li>
+                        <li class="process__list_item">item</li>
+                    </ul>
+                    <div class="process__header_block three">
+                        <h3 class='process__list_title'>Javascript</h3>
+                        <div class="process__list_title_border"></div>
+                    </div>
+                    <ul class="process__list">
+                        <li class="process__list_item">Custom Animations</li>
+                        <li class="process__list_item">Application Development</li>
+                        <li class="process__list_item">item</li>
+                    </ul>
+                    <div class="process__header_block four">
+                        <h3 class='process__list_title'>Performance</h3>
+                        <div class="process__list_title_border"></div>
+                    </div>
+                    <ul class="process__list">
+                        <li class="process__list_item">This page loaded in: [secs]</li>
+                        <li class="process__list_item">item</li>
+                        <li class="process__list_item">item</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end new section -->
+            <!-- begin new section -->
+            <!-- work links will fade in once a user hovers over a work__project -->
+            <div class='section work table reveal hidden' data-anchor='work'>
+                <div class="table__cell">
+                    <portfolio--page></portfolio--page>
+                </div>
+            </div>
+            <!-- end new section -->
+            <!-- begin new section -->
+            <div class='section contact table reveal hidden' data-anchor='contact'>
+                <div class="table__cell">
+                    <p id='contact__header_text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus pariatur.</p>
+                    <form action="" class="form-style" id="contact_form">
+                        <div class="form-style-header">Reach out!</div>
+                        <div id="contact_results"></div>
+                        <div class="contact_body">
+                            <label><span>Name <span class="required">*</span></span>
+                                <input type="text" name="name" id="name" required="true" class="input-field" />
+                            </label>
+                            <label><span>Email <span class="required">*</span></span>
+                                <input type="email" name="email" required="true" class="input-field" />
+                            </label>
+                            <label><span>Phone</span>
+                                <input type="text" name="phone1" maxlength="4" placeholder="+91" required="true" class="tel-number-field" />&mdash;
+                                <input type="text" name="phone2" maxlength="15" required="true" class="tel-number-field long" />
+                            </label>
+                            <label for="subject"><span>Regarding</span>
+                                <select name="subject" class="select-field">
+                                    <option value="General Question">General Question</option>
+                                    <option value="Advertise">Advertisement</option>
+                                    <option value="Partnership">Partnership Oppertunity</option>
+                                </select>
+                            </label>
+                            <label for="field5"><span>Message <span class="required">*</span></span>
+                                <textarea name="message" id="message" class="textarea-field" required="true"></textarea>
+                            </label>
+                            <label>
+                                <span>&nbsp;</span>
+                                <input type="submit" id="submit_btn" value="Submit" />
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end new section -->
+        </div>
+    </div>
+
+    <!-- Begin custom assets -->
+    <link rel="import" href="web_components/portfolio.html">
+    <!-- End custom assets -->
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/*
+**
+*** NavBar Styles
+**
+*/
+
+/* .nav-expander
+*/
+
+a.nav-expander {
+  color: $black;
+  display: block;
+  @include rem(font-size, 15px);
+  margin-right: 0;
+  @include rem(padding, 12px 20px 0 0);
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  z-index: 12;
+}
+
+a.paper-plane_a.nav-expander
+{
+  @include rem(padding, 15px 70px 0 0);  
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    right: 10em;
+}
+
+/* #nav__main-menu
+*/
+#nav__main-menu
+{
+  border: none;
+}
+
+/* .navbar
+*/
+.navbar
+{
+  @include rem(font-size, 16px);
+  background: themeColor(four);
+  border: none;
+}
+
+/* #brand
+*/
+#brand
+{
+	@include rem(padding, 20px 0 0 20px);
+	font-size: em(25);
+  transition: color 0.5s ease;
+}
+
+a.navbar-brand:hover
+{
+  color: themeColor(five);
+}
+
+/* #active__page_container
+*/
+#active__page_container
+{
+  color: themeColor(five);
+  background: themeColor(four);
+  border: none;
+  @include rem(margin-top, 10px);
+  @include rem(padding, 5px 10px);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+  cursor: default;
+}
+
+/* #active__page
+*/
+#active__page
+{
+  color: themeColor(one);
+}
+
+/* .paper-plane
+*/
+.paper-plane
+{
+  fill: themeColor(two);
+  transition: fill 0.5s ease;
+}
+
+/* .three-bars
+*/
+.three-bars
+{
+  fill: themeColor(one);
+  transition: fill 0.5s ease;
+}
