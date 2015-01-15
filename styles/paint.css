@@ -2420,9 +2420,9 @@ body {
 /* .process__list
 */
 .process__list {
-  width: 14.0625em;
+  width: 17.8125em;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 0 0 1.875em; }
 
 /* .process__list_title
 */
