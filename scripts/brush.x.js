@@ -9956,7 +9956,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           $('html')
             .off('scroll touchmove mousewheel');   
           // dev_mode
-          $.fn.fullpage.moveTo(5);
+          // $.fn.fullpage.moveTo(5);
         }, 1000);
         // Center intro content horizontally
         function inwi()
@@ -10002,14 +10002,14 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
                   }
                 });
             }
-            // create function to fadeIn invisible object
+            // create function to fadeIn hidden object
 
           function invFade(obj)
             {
               obj.removeClass('invisible')
                 .addClass('animated fadeIn')
             }
-            // Build engine for paper-plane & fly
+            // Build engine for paper-plane & take off
           var engine = $('.two.paper-plane');
 
           function igniteEngine()

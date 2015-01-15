@@ -2077,6 +2077,9 @@ body {
 .hidden {
   display: none; }
 
+.invisible {
+  visibility: hidden; }
+
 /*
 **
 *** Off_Canvas-Menu Styles

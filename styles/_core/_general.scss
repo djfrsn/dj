@@ -20,7 +20,7 @@ body
 }
 
 
-// Utility
+// Project Utilities
 .underline
 {
   text-decoration: underline;
@@ -29,4 +29,8 @@ body
 .hidden
 {
 	display: none;
+}
+.invisible
+{
+	visibility: hidden;
 }
