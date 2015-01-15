@@ -21,11 +21,10 @@
     Performant Web Font Loading: http://bdadam.com/blog/loading-webfonts-with-high-performance.html
     -->
     <script src='scripts/fonts.js' inline></script>
-     <script src='scripts/LAB.js'></script>
-    
+    <script async defer src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src='scripts/LAB.js'></script>
     <script>
         $LAB
-          .script("bower_components/webcomponentsjs/webcomponents.min.js")
           .script("scripts/brush.x.js").wait(function(){
               initMyPage();
           });
