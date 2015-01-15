@@ -9731,13 +9731,18 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           };    
           })(jQuery); $('.process__list_item.x').innerText('Progressive enhancement');
           // Mobile FullPageJS setup
-          $('#fullpage')
+          }
+        else
+        {
+          // Desktop FullPageJS setup
+        }
+        $('#fullpage')
             .fullpage(
             {
               sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3',
                 '#F5EDE3'
               ],
-              anchors: ['intro', 'about', 'process', 'work', 'contact'],
+              anchors: ['intro', 'about', 'process', 'portfolio', 'contact'],
               menu: '.main-menu',
               css3: true,
               animateAnchor: true,
@@ -9757,9 +9762,9 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
                 {
                   loadAPText("Process");
                 }
-                if (anchorLink == 'work')
+                if (anchorLink == 'portfolio')
                 {
-                  loadAPText("Work");
+                  loadAPText("Portfolio");
                 }
                 if (anchorLink == 'contact')
                 {
@@ -9785,63 +9790,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
                 }
               }
             });
-        }
-        else
-        {
-          // Desktop FullPageJS setup
-          $('#fullpage')
-            .fullpage(
-            {
-              sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3',
-                '#F5EDE3'
-              ],
-              anchors: ['intro', 'about', 'process', 'work', 'contact'],
-              menu: '.main-menu',
-              easing: 'easeOutExpo',
-              afterLoad: function(anchorLink, index)
-              {
-                // fadeIn the page title in on anchor load
-                if (anchorLink == 'intro')
-                {
-                  clearAPBrackets()
-                }
-                if (anchorLink == 'about')
-                {
-                  loadAPText("About");
-                }
-                if (anchorLink == 'process')
-                {
-                  loadAPText("Process");
-                }
-                if (anchorLink == 'work')
-                {
-                  loadAPText("Work");
-                }
-                if (anchorLink == 'contact')
-                {
-                  loadAPText("Contact");
-                }
-              },
-              onLeave: function(index, nextIndex, direction)
-              {
-                // Load active__page brackets onLeave from intro
-                if (index == 1 && direction == 'down')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                // fadeOut the page title when going 'up' or 'down'
-                if (direction == 'down')
-                {
-                  clearAPText();
-                }
-                else if (direction == 'up')
-                {
-                  clearAPText();
-                }
-              }
-            });
-        }
         // Reset URL Hash for fullpage.js bug
         history.pushState('', document.title, window.location.pathname);
         // create function to off-canvas-menu
@@ -9939,7 +9887,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
             apcFadeIn();
             $.fn.fullpage.moveTo(3);
           });
-        $('.main-menu-work')
+        $('.main-menu-portfolio')
           .on('click', function(e)
           {
             e.preventDefault();

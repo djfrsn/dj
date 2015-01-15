@@ -155,7 +155,7 @@ paper-tabs::shadow #selectionBar {
 /* ink ripple color
 */
 paper-tabs paper-tab::shadow #ink {
-  color: #E1D4C0; }
+  color: #E1D4C0; height: 70px; }
 
 paper-tabs::shadow #selectionBar {
   width: 33.3333333333%;
