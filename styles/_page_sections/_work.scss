@@ -3,46 +3,7 @@
 *** Work Styles
 **
 */
-.gay{color: red;}
-/* #github
-*/
-#github
-{
-	fill: themeColor(three);
-	position: relative;
-	top: em(21);
-	transition: fill 0.5s ease; 
-}
-svg#github:hover
-{
-	fill: themeColor(five);
-}
 
-/* #divider
-*/
-#divider
-{
-	color: themeColor(one);
-	padding: 0 em(10);
-	font-size: em(24);
-}
-
-/* #resume
-*/
-a#resume
-{
-	color: themeColor(three);
-	font-size: em(24);
-	text-decoration: none;
-	transition: color 0.5s ease;
-	
-}
-a#resume:hover
-{
-	color: themeColor(five);
-	font-size: em(24);
-	
-}
 
 /* .work
 */
@@ -124,4 +85,45 @@ a#resume:hover
 {
 	list-style: none;
 	padding: 0;
+}
+
+
+/* #github
+*/
+#github
+{
+	fill: themeColor(three);
+	position: relative;
+	top: em(21);
+	transition: fill 0.5s ease; 
+}
+svg#github:hover
+{
+	fill: themeColor(five);
+}
+
+/* #divider
+*/
+#divider
+{
+	color: themeColor(one);
+	padding: 0 em(10);
+	font-size: em(24);
+}
+
+/* #resume
+*/
+a#resume
+{
+	color: themeColor(three);
+	font-size: em(24);
+	text-decoration: none;
+	transition: color 0.5s ease;
+	
+}
+a#resume:hover
+{
+	color: themeColor(five);
+	font-size: em(24);
+	
 }

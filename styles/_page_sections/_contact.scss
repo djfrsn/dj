@@ -20,7 +20,10 @@
 	text-transform: capitalize;
 }
 
-/* #contact__header_text
+/* #contact__x
 */
-
+#contact__email, #contact__phonenumber
+{
+	font-size: em(20);
+}
 

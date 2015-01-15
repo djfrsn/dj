@@ -2451,39 +2451,6 @@ body {
 *** Work Styles
 **
 */
-.gay {
-  color: red; }
-
-/* #github
-*/
-#github {
-  fill: #E1D4C0;
-  position: relative;
-  top: 1.3125em;
-  transition: fill 0.5s ease; }
-
-svg#github:hover {
-  fill: #FF6600; }
-
-/* #divider
-*/
-#divider {
-  color: #6699FF;
-  padding: 0 0.625em;
-  font-size: 1.5em; }
-
-/* #resume
-*/
-a#resume {
-  color: #E1D4C0;
-  font-size: 1.5em;
-  text-decoration: none;
-  transition: color 0.5s ease; }
-
-a#resume:hover {
-  color: #FF6600;
-  font-size: 1.5em; }
-
 /* .work
 */
 .work {
@@ -2549,6 +2516,36 @@ a#resume:hover {
   list-style: none;
   padding: 0; }
 
+/* #github
+*/
+#github {
+  fill: #E1D4C0;
+  position: relative;
+  top: 1.3125em;
+  transition: fill 0.5s ease; }
+
+svg#github:hover {
+  fill: #FF6600; }
+
+/* #divider
+*/
+#divider {
+  color: #6699FF;
+  padding: 0 0.625em;
+  font-size: 1.5em; }
+
+/* #resume
+*/
+a#resume {
+  color: #E1D4C0;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.5s ease; }
+
+a#resume:hover {
+  color: #FF6600;
+  font-size: 1.5em; }
+
 /*
 **
 *** Contact Styles
@@ -2567,8 +2564,11 @@ a#resume:hover {
   font-family: 'montserratbold';
   text-transform: capitalize; }
 
-/* #contact__header_text
+/* #contact__x
 */
+#contact__email, #contact__phonenumber {
+  font-size: 1.25em; }
+
 /*
 **
 *** Overrides Styles
