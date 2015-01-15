@@ -489,7 +489,7 @@
         function vivy(){
 
           // init vars
-          var wp = $('.work__project'),
+          var wp = $('.null'),
               wpc = $('.work__project_card');
 
           // fadeOut work__content_title
