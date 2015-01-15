@@ -133,7 +133,7 @@
                         <div class="process__list_title_border"></div>
                     </div>
                     <ul class="process__list">
-                        <li class="process__list_item">This page loaded in: [secs]</li>
+                        <li class="process__list_item">This page loaded in: [ <span class="pagespeed"></span> secs ]</li>
                         <li class="process__list_item">Workflow automation</li>
                         <li class="process__list_item">Mobile web performance</li>
                     </ul>
@@ -183,6 +183,25 @@
         ga('send', 'pageview');
     </script>
     -->
+<script>
+    window.onload = function(){
+      setTimeout(function(){
+        window.performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {};
+        var t = performance.timing || {};
+
+        if (!t) {
+          //fail silently
+          return;
+        }
+        var start = t.navigationStart,
+            end = t.loadEventEnd
+            loadTime = (end - start) / 1000;
+
+        var copy = document.getElementsByClassName('pagespeed');
+        copy[0].innerHTML += loadTime;
+      }, 0); 
+    }
+</script>
 </body>
 
 </html>
