@@ -2281,6 +2281,7 @@ a.navbar-brand:hover {
   position: absolute;
   top: 35%;
   left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   cursor: default; }
 
