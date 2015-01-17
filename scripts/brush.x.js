@@ -9802,8 +9802,13 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
             $('body')
               .removeClass('nav-expanded');
           }
+          $('.arrow.up').on('click',  function() {
+            $.fn.fullpage.moveSectionUp();
+          });
+          $('.arrow.down').on('click',  function() {
+            $.fn.fullpage.moveSectionDown();
+          });
           // fadeIn APC after closeNav()
-
         function apcFadeIn()
           {
             apc.addClass('fadeIn');
@@ -9961,7 +9966,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           t3 = $('.dynamic_text3'),
           t4 = $('.dynamic_text4'),
           t5 = $('.dynamic_text5'),
-          wip = $('.wip');
+          controls = $('.controls');
         // create anon function for our into animation handler
         (function()
         {
@@ -10084,7 +10089,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           });
           loop.addKey('100%', function()
           {
-            invFade(wip);
+            invFade(controls);
           });
           loop.play(20000);
         })();
