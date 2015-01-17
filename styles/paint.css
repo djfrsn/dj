@@ -2077,6 +2077,9 @@ body {
 .hidden {
   display: none; }
 
+#hidden {
+  display: none; }
+
 .invisible {
   visibility: hidden; }
 
