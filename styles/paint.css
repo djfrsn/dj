@@ -2266,6 +2266,10 @@ a.nav-expander.fixed {
   font-size: 1.625em;
   transition: color 0.5s ease;
   /* 480px */ }
+  @media (min-width: 30em) {
+    #brand {
+      font-size: 1.875em;
+      padding: 0.625em 0 0 0.625em; } }
 
 a.navbar-brand:hover {
   color: #FF6600; }

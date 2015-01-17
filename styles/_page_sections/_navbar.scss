@@ -64,7 +64,8 @@ a.nav-expander.fixed {
   transition: color 0.5s ease;
   @include respond-to(sxs)
   {
-    
+    font-size: em(30);
+    padding: em(10) 0 0 em(10);
   }
 }
 
