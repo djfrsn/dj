@@ -9782,76 +9782,26 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
                 {
                   clearAPText();
                   loadAPBrackets();
-                  $('.intro').removeClass('fadeIn').addClass('animated fadeOut');
-                  setTimeout(function()
-                  {
-                    $('.intro').attr('id', 'hidden');
-                  }, 300);
                 }
                 if (index == 2 && direction == 'down' || direction == 'up')
                 {
                   clearAPText();
                   loadAPBrackets();
-                  $('.about').removeClass('fadeIn').addClass('animated fadeOut');
-                  setTimeout(function()
-                  {
-                    $('.about').attr('id', 'hidden');
-                  }, 300);
                 }
                 if (index == 3 && direction == 'down' || direction == 'up')
                 {
                   clearAPText();
                   loadAPBrackets();
-                  $('.process').removeClass('fadeIn').addClass('animated fadeOut');
-                  setTimeout(function()
-                  {
-                    $('.process').attr('id', 'hidden');
-                  }, 300);
                 }
                 if (index == 4 && direction == 'down' || direction == 'up')
                 {
                   clearAPText();
                   loadAPBrackets();
-                  $('.work').removeClass('fadeIn').addClass('animated fadeOut');
-                  setTimeout(function()
-                  {
-                    $('.work').attr('id', 'hidden');
-                  }, 300);
                 }
                 if (index == 5 && direction == 'down' || direction == 'up' )
                 {
                   clearAPText();
                   loadAPBrackets();
-                  $('.contact').removeClass('fadeIn').addClass('animated fadeOut');
-                  setTimeout(function()
-                  {
-                    $('.contact').attr('id', 'hidden');
-                  }, 300);
-                }
-                if (nextIndex == 1)
-                {
-                  clearAPText();
-                  $('.intro').removeClass('fadeOut').attr('id', '').addClass('animated fadeIn');
-                }
-                if (nextIndex == 2)
-                {
-                  clearAPText();
-                  $('.about').removeClass('fadeOut').attr('id', '').addClass('animated fadeIn');
-                }
-                if (nextIndex == 3)
-                {
-                  clearAPText();
-                  $('.process').removeClass('fadeOut').attr('id', '').addClass('animated fadeIn');
-                }
-                if (nextIndex == 4)
-                {
-                  clearAPText();
-                  $('.work').removeClass('fadeOut').attr('id', '').addClass('animated fadeIn');
-                }
-                if (nextIndex == 5)
-                {
-                  clearAPText();
-                  $('.contact').removeClass('fadeOut').attr('id', '').addClass('animated fadeIn');
                 }
                 // fadeOut the page title when going 'up' or 'down'
                 if (direction == 'down')
