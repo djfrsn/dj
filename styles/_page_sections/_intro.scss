@@ -53,14 +53,35 @@
 	color: themeColor(five);
 }
 
-/* .wip
+/* .arrows
 */
-.wip
+.arrows
 {
-	font-size: em(20);
-	color: themeColor(three);
-	@include text-shadow();
-	text-transform: uppercase;
+	width: em(115);
+	margin: 0 auto;
+}
+
+.arrow svg
+{
+	width: em(55);
+	height: em(55);
+	fill: themeColor(three);
+}
+.arrow.down svg 
+{
+	-webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.arrow.up svg
+{
+	-webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -o-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg);
 }
 
 html {

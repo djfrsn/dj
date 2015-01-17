@@ -131,11 +131,11 @@
           }
           };    
           })(jQuery); $('.process__list_item.x').innerText('Progressive enhancement');
-          // Mobile FullPageJS setup
+          // Mobile  setup
           }
         else
         {
-          // Desktop FullPageJS setup
+          // Desktop setup
         }
         $('#fullpage')
             .fullpage(
@@ -146,7 +146,11 @@
               anchors: ['intro', 'about', 'process', 'portfolio', 'contact'],
               menu: '.main-menu',
               css3: true,
-              animateAnchor: true,
+              scrollingSpeed: 900,
+              animateAnchor: true, 
+              loopBottom: true,
+              keyboardScrolling: true,
+              fixedElements: '.controls',
               easingcss3: 'ease-in-out',
               afterLoad: function(anchorLink, index)
               {

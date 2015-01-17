@@ -2344,13 +2344,30 @@ a.navbar-brand:hover {
 .dynamic_text4 {
   color: #FF6600; }
 
-/* .wip
+/* .arrows
 */
-.wip {
-  font-size: 1.25em;
-  color: #E1D4C0;
-  text-shadow: 0 0.02em #fff;
-  text-transform: uppercase; }
+.arrows {
+  width: 7.1875em;
+  margin: 0 auto; }
+
+.arrow svg {
+  width: 3.4375em;
+  height: 3.4375em;
+  fill: #E1D4C0; }
+
+.arrow.down svg {
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); }
+
+.arrow.up svg {
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -o-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg); }
 
 html {
   position: relative;
