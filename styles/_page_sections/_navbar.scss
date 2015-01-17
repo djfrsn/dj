@@ -4,13 +4,23 @@
 **
 */
 
+
+/* .navbar
+*/
+.navbar
+{
+  @include rem(font-size, 16px);
+  background: themeColor(four);
+  border: none;
+}
+
 /* .nav-expander
 */
 
 a.nav-expander {
   color: $black;
   display: block;
-  @include rem(font-size, 15px);
+  font-size: em(15);
   margin-right: 0;
   @include rem(padding, 12px 20px 0 0);
   position: absolute;
@@ -45,22 +55,17 @@ a.nav-expander.fixed {
   border: none;
 }
 
-/* .navbar
-*/
-.navbar
-{
-  @include rem(font-size, 16px);
-  background: themeColor(four);
-  border: none;
-}
-
 /* #brand
 */
 #brand
 {
-	@include rem(padding, 20px 0 0 20px);
-	font-size: em(25);
+	padding: em(12) 0 0 em(12);
+	font-size: em(26);
   transition: color 0.5s ease;
+  @include respond-to(sxs)
+  {
+    
+  }
 }
 
 a.navbar-brand:hover
