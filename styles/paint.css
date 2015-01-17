@@ -2350,6 +2350,11 @@ a.navbar-brand:hover {
 .dynamic_text4 {
   color: #FF6600; }
 
+#controls__msg {
+  text-align: center;
+  font-size: 0.75em;
+  text-transform: capitalize; }
+
 /* .arrows
 */
 .arrows {
