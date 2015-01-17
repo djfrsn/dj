@@ -146,7 +146,7 @@
               anchors: ['intro', 'about', 'process', 'portfolio', 'contact'],
               menu: '.main-menu',
               css3: true,
-              scrollingSpeed: 3000,
+              scrollingSpeed: 900,
               animateAnchor: true, 
               loopBottom: true,
               keyboardScrolling: true,
@@ -180,26 +180,6 @@
               {
                 // Load active__page brackets onLeave from intro
                 if (index == 1 && direction == 'down')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 2 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 3 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 4 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 5 && direction == 'down' || direction == 'up' )
                 {
                   clearAPText();
                   loadAPBrackets();
@@ -349,7 +329,7 @@
         setTimeout(function()
         {
           // Reveal sections after page load to avoid FOUC
-          $('.reveal.hidden.intro')
+          $('.reveal.hidden')
             .removeClass('hidden')
             .addClass('animated fadeIn');
           // Turn scroll back on

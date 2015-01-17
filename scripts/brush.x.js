@@ -9745,7 +9745,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
               anchors: ['intro', 'about', 'process', 'portfolio', 'contact'],
               menu: '.main-menu',
               css3: true,
-              scrollingSpeed: 3000,
+              scrollingSpeed: 900,
               animateAnchor: true, 
               loopBottom: true,
               keyboardScrolling: true,
@@ -9779,26 +9779,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
               {
                 // Load active__page brackets onLeave from intro
                 if (index == 1 && direction == 'down')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 2 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 3 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 4 && direction == 'down' || direction == 'up')
-                {
-                  clearAPText();
-                  loadAPBrackets();
-                }
-                if (index == 5 && direction == 'down' || direction == 'up' )
                 {
                   clearAPText();
                   loadAPBrackets();
@@ -9948,7 +9928,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
         setTimeout(function()
         {
           // Reveal sections after page load to avoid FOUC
-          $('.reveal.hidden.intro')
+          $('.reveal.hidden')
             .removeClass('hidden')
             .addClass('animated fadeIn');
           // Turn scroll back on
@@ -10164,7 +10144,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
           } vivy();
       }); // end document ready 
-
 },{"../bower_components/jquery/jquery":1,"./deps/fullpage":3,"./deps/jui":4,"./deps/lettering":5,"./deps/navgoco":6,"./deps/runloop":7,"./deps/textillate":8}],3:[function(require,module,exports){
 /**
  * fullPage 2.4.3
