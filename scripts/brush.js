@@ -130,7 +130,8 @@
             }
           }
           };    
-          })(jQuery); $('.process__list_item.x').innerText('Progressive enhancement');
+          })(jQuery); $('.process__list_item.x').innerText('View this sites page speed score')
+          .wrap( "<a href='https://developers.google.com/speed/pagespeed/insights/?url=dennisjefferson.com' class='process__list_a'></a>" );;
           // Mobile  setup
           }
         else
