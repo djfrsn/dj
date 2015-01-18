@@ -4,6 +4,22 @@
 **
 */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  @include rem(margin-bottom, 70px);
+}
+.footer {
+  position: absolute;
+  bottom: em(7);
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  @include rem(height, 70px);
+  @include rem(font-size, 16px);
+}
 
 #controls__msg
 {
@@ -13,7 +29,7 @@
 	margin-top: em(-33);
   @include respond-to(sxs)
   {
-    font-size: em(13.5);   
+    font-size: em(14);   
   }
 }
 
@@ -21,14 +37,14 @@
 */
 .arrows
 {
-	width: em(155);
+	width: em(165);
 	margin: 0 auto;
 }
 
 .arrow svg
 {
-	width: em(75);
-	height: em(75);
+	width: em(80);
+	height: em(80);
 	fill: themeColor(three);
 }
 .arrow.down svg 
@@ -48,18 +64,3 @@
   transform: rotate(-80deg);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  @include rem(margin-bottom, 70px);
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  @include rem(height, 70px);
-}

@@ -2715,6 +2715,25 @@ a#resume:hover {
 *** Footer Styles
 **
 */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+  margin-bottom: 4.375rem; }
+
+.footer {
+  position: absolute;
+  bottom: 0.4375em;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  height: 4.375rem;
+  font-size: 16px;
+  font-size: 1rem; }
+
 #controls__msg {
   text-align: center;
   font-size: 0.75em;
@@ -2723,17 +2742,17 @@ a#resume:hover {
   /* 480px */ }
   @media (min-width: 30em) {
     #controls__msg {
-      font-size: 0.84375em; } }
+      font-size: 0.875em; } }
 
 /* .arrows
 */
 .arrows {
-  width: 9.6875em;
+  width: 10.3125em;
   margin: 0 auto; }
 
 .arrow svg {
-  width: 4.6875em;
-  height: 4.6875em;
+  width: 5em;
+  height: 5em;
   fill: #E1D4C0; }
 
 .arrow.down svg {
@@ -2749,23 +2768,6 @@ a#resume:hover {
   -o-transform: rotate(-80deg);
   -ms-transform: rotate(-80deg);
   transform: rotate(-80deg); }
-
-html {
-  position: relative;
-  min-height: 100%; }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 70px;
-  margin-bottom: 4.375rem; }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 70px;
-  height: 4.375rem; }
 
 /*
 **
