@@ -27,7 +27,16 @@
 		@include rem(font-size, 18px);
 	}
 }
-.navbar
+
+.about, .intro, .work, .process, .contact, .footer
+{
+	@include respond-to(sm)
+	{
+		@include rem(font-size, 20px);
+	}
+}
+
+.navbar, #nav__main-menu
 {
 	@include respond-to(xs)
 	{

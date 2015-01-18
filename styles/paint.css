@@ -2888,10 +2888,17 @@ body {
       font-size: 18px;
       font-size: 1.125rem; } }
 
-.navbar {
+.about, .intro, .work, .process, .contact, .footer {
+  /* 992px */ }
+  @media (min-width: 62em) {
+    .about, .intro, .work, .process, .contact, .footer {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+.navbar, #nav__main-menu {
   /* 768 px */ }
   @media (min-width: 48em) {
-    .navbar {
+    .navbar, #nav__main-menu {
       font-size: 17px;
       font-size: 1.0625rem; } }
 
