@@ -23,13 +23,16 @@ nav {
   
   transition: right 0.3s ease-in-out 0s;
   @include paper-shadow();
+  @include respond-to(sm)
+  {    
+    @include rem(width, 175px);
+  }
 }
 
 /* .nav-expanded 
 */
-
 .nav-expanded nav {
-  right: 0;
+  right: 0; 
 }
 
 body.nav-expanded {

@@ -2112,7 +2112,12 @@ nav {
   width: 150px;
   width: 9.375rem;
   z-index: 2000;
-  transition: right 0.3s ease-in-out 0s; }
+  transition: right 0.3s ease-in-out 0s;
+  /* 992px */ }
+  @media (min-width: 62em) {
+    nav {
+      width: 175px;
+      width: 10.9375rem; } }
 
 /* .nav-expanded 
 */
