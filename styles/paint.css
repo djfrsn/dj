@@ -2061,7 +2061,7 @@ nav, #intro__header, #about__description, .work__project_info, .process__header_
 *** General Styles
 **
 */
-html {
+html, body {
   /* Document level font adjustments */
   /* Mobile First @ 320px-480px */
   font-size: 12px; }
@@ -2780,14 +2780,14 @@ body {
 
 /* Document level font adjustments 
 */
-.navbar, .about, .intro, .work, .process, .contact {
+.navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
   /* 480px */ }
   @media (max-width: 275px) {
-    .navbar, .about, .intro, .work, .process, .contact {
-      font-size: 11px;
-      font-size: 0.6875rem; } }
+    .navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
+      font-size: 10px;
+      font-size: 0.625rem; } }
   @media (min-width: 30em) {
-    .navbar, .about, .intro, .work, .process, .contact {
+    .navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
       font-size: 16px;
       font-size: 1rem; } }
 

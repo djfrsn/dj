@@ -12,11 +12,11 @@
 
 /* Document level font adjustments 
 */
-.navbar, .about, .intro, .work, .process, .contact
+.navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer
 {
 	@include media(max-width, 275px) // Super Small Devices
 	{
-		@include rem(font-size, 11px);
+		@include rem(font-size, 10px);
 	}
 	@include respond-to(sxs)
 	{
