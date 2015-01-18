@@ -369,7 +369,7 @@
           t4 = $('.dynamic_text4'),
           t5 = $('.dynamic_text5'),
           controls = $('.controls');
-        // create anon function for our into animation handler
+        // create anon function for our intro animation handler
         (function()
         {
           // create function to run texillate animation
@@ -383,26 +383,32 @@
                   }
                 });
             }
-            // create function to fadeIn hidden object
-
+          // create function to fadeIn hidden object
           function invFade(obj)
             {
               obj.removeClass('invisible')
                 .addClass('animated fadeIn')
             }
-            // Build engine for paper-plane & take off
+          // Build engine for paper-plane & take off
           var engine = $('.two.paper-plane');
-
           function igniteEngine()
           {
             engine.css('fill', '#FF6600');
           }
-
           function killEngine()
           {
             engine.css('fill', '#F5EDE3');
           }
-
+          // Fade out control msg after intro animation
+          function fadeCtrlsMsg()
+          {
+            var loop = jQuery.runloop();
+            loop.addKey('100%', function()
+            {
+              $('#controls__msg').addClass('animated fadeOut');              
+            });
+            loop.play(3200);
+          }
           function takeOff()
             {
               //        \ / 
@@ -456,7 +462,8 @@
               });
               loop.play(1500);
             }
-            // Create runloop for text animation timing
+
+          // Create runloop for text animation timing
           var loop = jQuery.runloop();
           // Note: only use 5% intervals (10% for <500ms durations)!
           loop.addKey('5%', function()
@@ -492,6 +499,7 @@
           loop.addKey('100%', function()
           {
             invFade(controls);
+            fadeCtrlsMsg();            
           });
           loop.play(20000);
         })();
