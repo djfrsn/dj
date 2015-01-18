@@ -17,13 +17,13 @@
 {
 	@include respond-to(xs)
 	{
-		width: em(572);
+		width: em(665);
 		margin: 0 auto;
 		min-height: 194px;
 	}
 	@include respond-to(sm)
 	{
-		width: em(991);
+		width: em(1001);
 	}
 }
 
@@ -36,6 +36,11 @@
 	@include respond-to(xs)
 	{
 		float: left;
+		width: em(332);
+	}
+	@include respond-to(sm)
+	{
+		width: em(250);
 	}
 }
 .process__header_blocks.one
@@ -59,7 +64,7 @@
 	}
 	@include respond-to(sm)
 	{
-		padding-left: em(20);	
+		padding-left: em(0);	
 	}
 }
 
@@ -67,7 +72,7 @@
 {
 	@include respond-to(sm)
 	{
-		
+		padding-left: em(0);	
 	}
 }
 
@@ -79,7 +84,7 @@
 	}
 	@include respond-to(sm)
 	{
-		padding-left: em(20);	
+		padding-left: em(0);	
 	}
 }
 /* .process__header_block

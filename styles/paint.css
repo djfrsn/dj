@@ -2434,22 +2434,27 @@ a.navbar-brand:hover {
   /* 992px */ }
   @media (min-width: 48em) {
     #process__header_block_wrap {
-      width: 35.75em;
+      width: 41.5625em;
       margin: 0 auto;
       min-height: 194px; } }
   @media (min-width: 62em) {
     #process__header_block_wrap {
-      width: 61.9375em; } }
+      width: 62.5625em; } }
 
 /* .process__header_blocks
 */
 .process__header_blocks {
   width: 15em;
   margin: 0 auto;
-  /* 768 px */ }
+  /* 768 px */
+  /* 992px */ }
   @media (min-width: 48em) {
     .process__header_blocks {
-      float: left; } }
+      float: left;
+      width: 20.75em; } }
+  @media (min-width: 62em) {
+    .process__header_blocks {
+      width: 15.625em; } }
 
 .process__header_blocks.one {
   /* 768 px */
@@ -2469,10 +2474,13 @@ a.navbar-brand:hover {
       padding: 0 0 2.5em 5em; } }
   @media (min-width: 62em) {
     .process__header_blocks.two {
-      padding-left: 1.25em; } }
+      padding-left: 0em; } }
 
 .process__header_blocks.three {
   /* 992px */ }
+  @media (min-width: 62em) {
+    .process__header_blocks.three {
+      padding-left: 0em; } }
 
 .process__header_blocks.four {
   /* 768 px */
@@ -2482,7 +2490,7 @@ a.navbar-brand:hover {
       padding-left: 5em; } }
   @media (min-width: 62em) {
     .process__header_blocks.four {
-      padding-left: 1.25em; } }
+      padding-left: 0em; } }
 
 /* .process__header_block
 */
@@ -2797,6 +2805,13 @@ a#resume:hover {
   font-family: 'montserratbold';
   text-transform: capitalize; }
 
+/* #contact__header_sub-title
+*/
+#contact__header_sub-title {
+  font-size: 1.875em;
+  font-family: 'montserratbold';
+  text-transform: capitalize; }
+
 /* #contact__x
 */
 #contact__email, #contact__phonenumber {
@@ -2889,11 +2904,16 @@ body {
       font-size: 1.125rem; } }
 
 .about, .intro, .work, .process, .contact, .footer {
-  /* 992px */ }
+  /* 992px */
+  /* 1200px */ }
   @media (min-width: 62em) {
     .about, .intro, .work, .process, .contact, .footer {
       font-size: 20px;
       font-size: 1.25rem; } }
+  @media (min-width: 75em) {
+    .about, .intro, .work, .process, .contact, .footer {
+      font-size: 24px;
+      font-size: 1.5rem; } }
 
 .navbar, #nav__main-menu {
   /* 768 px */ }
