@@ -16,7 +16,7 @@ nav {
   overflow: auto;
   position: fixed;
   right: -20em;
-  @include rem(font-size, 15px);
+  @include rem(font-size, 16px);
   top: 0;
   @include rem(width, 150px);
   z-index: 2000;
@@ -43,7 +43,7 @@ body.nav-expanded {
 #nav-close {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  @include rem(font-size, 17px);
+  font-size: em(19);
 }
 
 /* .main-menu
@@ -55,7 +55,7 @@ body.nav-expanded {
 
 .main-menu li {
   text-align: center;
-  @include rem(font-size, 20px);
+  font-size: em(22);
   padding: 10px;
 }
 

@@ -12,6 +12,10 @@
   @include rem(font-size, 16px);
   background: themeColor(four);
   border: none;
+  @include respond-to(xs)
+  {
+  min-height: 60px;
+  }
 }
 
 /* .nav-expander
@@ -20,20 +24,25 @@
 a.nav-expander {
   color: $black;
   display: block;
+  width: em(75);
   font-size: em(15);
   margin-right: 0;
-  @include rem(padding, 12px 20px 0 0);
+  @include rem(padding, 8px 20px 0 0);
   position: absolute;
   right: 0;
   text-decoration: none;
   top: 0;
   transition: right 0.3s ease-in-out 0s;
   z-index: 12;
+  @include respond-to(xs)
+  {
+    
+  }
 }
 
 a.paper-plane_a.nav-expander
 {
-  @include rem(padding, 15px 70px 0 0);  
+  @include rem(padding, 15px 115px 0 0);  
 }
 
 a.nav-expander:hover {
@@ -65,7 +74,12 @@ a.nav-expander.fixed {
   @include respond-to(sxs)
   {
     font-size: em(30);
-    padding: em(10) 0 0 em(10);
+    padding: em(11) 0 0 em(11);
+  }
+  @include respond-to(xs)
+  {
+    font-size: em(36);
+    padding: em(11) 0 0 em(11);
   }
 }
 
@@ -105,7 +119,6 @@ a.navbar-brand:hover
   fill: themeColor(two);
   transition: fill 0.5s ease;
 }
-
 /* .three-bars
 */
 .three-bars

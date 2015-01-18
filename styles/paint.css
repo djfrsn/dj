@@ -2098,8 +2098,8 @@ nav {
   overflow: auto;
   position: fixed;
   right: -20em;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16px;
+  font-size: 1rem;
   top: 0;
   width: 150px;
   width: 9.375rem;
@@ -2120,8 +2120,7 @@ body.nav-expanded {
 #nav-close {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 17px;
-  font-size: 1.0625rem; }
+  font-size: 1.1875em; }
 
 /* .main-menu
 */
@@ -2130,8 +2129,7 @@ body.nav-expanded {
 
 .main-menu li {
   text-align: center;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.375em;
   padding: 10px; }
 
 .main-menu li a {
@@ -2223,27 +2221,33 @@ paper-tabs::shadow #selectionBar {
   font-size: 16px;
   font-size: 1rem;
   background: #104386;
-  border: none; }
+  border: none;
+  /* 768 px */ }
+  @media (min-width: 48em) {
+    .navbar {
+      min-height: 60px; } }
 
 /* .nav-expander
 */
 a.nav-expander {
   color: #333333;
   display: block;
+  width: 4.6875em;
   font-size: 0.9375em;
   margin-right: 0;
-  padding: 12px 20px 0 0;
-  padding: 0.75rem 1.25rem 0 0;
+  padding: 8px 20px 0 0;
+  padding: 0.5rem 1.25rem 0 0;
   position: absolute;
   right: 0;
   text-decoration: none;
   top: 0;
   transition: right 0.3s ease-in-out 0s;
-  z-index: 12; }
+  z-index: 12;
+  /* 768 px */ }
 
 a.paper-plane_a.nav-expander {
-  padding: 15px 70px 0 0;
-  padding: 0.9375rem 4.375rem 0 0; }
+  padding: 15px 115px 0 0;
+  padding: 0.9375rem 7.1875rem 0 0; }
 
 a.nav-expander:hover {
   cursor: pointer; }
@@ -2265,11 +2269,16 @@ a.nav-expander.fixed {
   padding: 0.75em 0 0 0.75em;
   font-size: 1.625em;
   transition: color 0.5s ease;
-  /* 480px */ }
+  /* 480px */
+  /* 768 px */ }
   @media (min-width: 30em) {
     #brand {
       font-size: 1.875em;
-      padding: 0.625em 0 0 0.625em; } }
+      padding: 0.6875em 0 0 0.6875em; } }
+  @media (min-width: 48em) {
+    #brand {
+      font-size: 2.25em;
+      padding: 0.6875em 0 0 0.6875em; } }
 
 a.navbar-brand:hover {
   color: #FF6600; }
@@ -2710,17 +2719,21 @@ a#resume:hover {
   text-align: center;
   font-size: 0.75em;
   text-transform: capitalize;
-  margin-top: -2.0625em; }
+  margin-top: -2.0625em;
+  /* 480px */ }
+  @media (min-width: 30em) {
+    #controls__msg {
+      font-size: 0.84375em; } }
 
 /* .arrows
 */
 .arrows {
-  width: 7.1875em;
+  width: 9.6875em;
   margin: 0 auto; }
 
 .arrow svg {
-  width: 3.4375em;
-  height: 3.4375em;
+  width: 4.6875em;
+  height: 4.6875em;
   fill: #E1D4C0; }
 
 .arrow.down svg {

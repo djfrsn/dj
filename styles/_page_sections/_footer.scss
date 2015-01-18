@@ -11,20 +11,24 @@
 	font-size: em(12);
 	text-transform: capitalize;
 	margin-top: em(-33);
+  @include respond-to(sxs)
+  {
+    font-size: em(13.5);   
+  }
 }
 
 /* .arrows
 */
 .arrows
 {
-	width: em(115);
+	width: em(155);
 	margin: 0 auto;
 }
 
 .arrow svg
 {
-	width: em(55);
-	height: em(55);
+	width: em(75);
+	height: em(75);
 	fill: themeColor(three);
 }
 .arrow.down svg 
