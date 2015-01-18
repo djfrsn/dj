@@ -150,6 +150,7 @@
               scrollingSpeed: 900,
               animateAnchor: true, 
               loopBottom: true,
+              loopTop: true,
               keyboardScrolling: true,
               fixedElements: '.controls',
               easingcss3: 'ease-in-out',
