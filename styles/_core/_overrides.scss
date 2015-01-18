@@ -38,6 +38,10 @@
 	{
 		@include rem(font-size, 24px);
 	}
+	@include respond-to(lg)
+	{
+		@include rem(font-size, 28px);
+	}
 }
 
 .navbar, #nav__main-menu
@@ -47,6 +51,7 @@
 		@include rem(font-size, 17px);
 	}
 }
+
 /*
 ** Disable Select
 */

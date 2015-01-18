@@ -2615,7 +2615,11 @@ a.work__project_link {
   fill: #E1D4C0;
   position: relative;
   top: 1.3125em;
-  transition: fill 0.5s ease; }
+  transition: fill 0.5s ease;
+  /* 992px */ }
+  @media (min-width: 62em) {
+    #github {
+      top: 0.9375em; } }
 
 svg#github:hover {
   fill: #FF6600; }
@@ -2917,7 +2921,8 @@ body {
 
 .about, .intro, .work, .process, .contact, .footer {
   /* 992px */
-  /* 1200px */ }
+  /* 1200px */
+  /* 1440px */ }
   @media (min-width: 62em) {
     .about, .intro, .work, .process, .contact, .footer {
       font-size: 20px;
@@ -2926,6 +2931,10 @@ body {
     .about, .intro, .work, .process, .contact, .footer {
       font-size: 24px;
       font-size: 1.5rem; } }
+  @media (min-width: 90em) {
+    .about, .intro, .work, .process, .contact, .footer {
+      font-size: 28px;
+      font-size: 1.75rem; } }
 
 .navbar, #nav__main-menu {
   /* 768 px */ }
