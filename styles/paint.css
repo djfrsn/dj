@@ -2350,53 +2350,6 @@ a.navbar-brand:hover {
 .dynamic_text4 {
   color: #FF6600; }
 
-#controls__msg {
-  text-align: center;
-  font-size: 0.75em;
-  text-transform: capitalize; }
-
-/* .arrows
-*/
-.arrows {
-  width: 7.1875em;
-  margin: 0 auto; }
-
-.arrow svg {
-  width: 3.4375em;
-  height: 3.4375em;
-  fill: #E1D4C0; }
-
-.arrow.down svg {
-  -webkit-transform: rotate(80deg);
-  -moz-transform: rotate(80deg);
-  -o-transform: rotate(80deg);
-  -ms-transform: rotate(80deg);
-  transform: rotate(80deg); }
-
-.arrow.up svg {
-  -webkit-transform: rotate(-80deg);
-  -moz-transform: rotate(-80deg);
-  -o-transform: rotate(-80deg);
-  -ms-transform: rotate(-80deg);
-  transform: rotate(-80deg); }
-
-html {
-  position: relative;
-  min-height: 100%; }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 70px;
-  margin-bottom: 4.375rem; }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 70px;
-  height: 4.375rem; }
-
 /*
 **
 *** About Styles
@@ -2747,6 +2700,59 @@ a#resume:hover {
 */
 #contact__email, #contact__phonenumber {
   font-size: 1.25em; }
+
+/*
+**
+*** Footer Styles
+**
+*/
+#controls__msg {
+  text-align: center;
+  font-size: 0.75em;
+  text-transform: capitalize;
+  margin-top: -2.0625em; }
+
+/* .arrows
+*/
+.arrows {
+  width: 7.1875em;
+  margin: 0 auto; }
+
+.arrow svg {
+  width: 3.4375em;
+  height: 3.4375em;
+  fill: #E1D4C0; }
+
+.arrow.down svg {
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); }
+
+.arrow.up svg {
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -o-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg); }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+  margin-bottom: 4.375rem; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  height: 4.375rem; }
 
 /*
 **
