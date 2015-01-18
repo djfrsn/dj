@@ -21,6 +21,10 @@
 		margin: 0 auto;
 		min-height: 194px;
 	}
+	@include respond-to(sm)
+	{
+		width: em(991);
+	}
 }
 
 /* .process__header_blocks
@@ -40,6 +44,10 @@
 	{
 		padding-bottom: em(40);
 	}
+	@include respond-to(sm)
+	{
+		padding-left: em(0);	
+	}
 }
 
 .process__header_blocks.two
@@ -49,11 +57,15 @@
 		padding: 0 0 em(40) em(80);
 
 	}
+	@include respond-to(sm)
+	{
+		padding-left: em(20);	
+	}
 }
 
 .process__header_blocks.three
 {
-	@include respond-to(xs)
+	@include respond-to(sm)
 	{
 		
 	}
@@ -64,6 +76,10 @@
 	@include respond-to(xs)
 	{
 		padding-left: em(80);
+	}
+	@include respond-to(sm)
+	{
+		padding-left: em(20);	
 	}
 }
 /* .process__header_block
