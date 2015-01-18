@@ -1678,7 +1678,9 @@ nav, #intro__header, #about__description, .work__project_info, .process__header_
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  height: 100%; }
+  height: 100%;
+  top: -12px;
+  position: relative; }
 
 .underline {
   text-decoration: underline; }
@@ -2423,7 +2425,7 @@ a.navbar-brand:hover {
 /* .process__header_block_wrap
 */
 .process__header_block_wrap {
-  width: 9.375em;
+  width: 15em;
   margin: 0 auto; }
 
 /* .process__header_block
