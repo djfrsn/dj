@@ -2808,7 +2808,7 @@ a#resume:hover {
 /* #contact__header_sub-title
 */
 #contact__header_sub-title {
-  font-size: 1.875em;
+  font-size: 1.25em;
   font-family: 'montserratbold';
   text-transform: capitalize; }
 
@@ -2839,7 +2839,19 @@ body {
   height: 70px;
   height: 4.375rem;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  /* 768 px */
+  /* 992px */
+  /* 1200px */ }
+  @media (min-width: 48em) {
+    .footer {
+      bottom: 1.25em; } }
+  @media (min-width: 62em) {
+    .footer {
+      bottom: 2.1875em; } }
+  @media (min-width: 75em) {
+    .footer {
+      bottom: 2.5em; } }
 
 #controls__msg {
   text-align: center;

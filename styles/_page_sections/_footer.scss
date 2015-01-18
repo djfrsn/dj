@@ -19,6 +19,18 @@ body {
   /* Set the fixed height of the footer here */
   @include rem(height, 70px);
   @include rem(font-size, 16px);
+  @include respond-to(xs)
+  {
+    bottom: em(20);
+  }
+  @include respond-to(sm)
+  {
+    bottom: em(35);
+  }
+  @include respond-to(md)
+  {
+    bottom: em(40);
+  }
 }
 
 #controls__msg
