@@ -338,7 +338,7 @@
           $('html')
             .off('scroll touchmove mousewheel');   
           // dev_mode
-          // $.fn.fullpage.moveTo(3);
+           $.fn.fullpage.moveTo(3);
         }, 1000);
         // Center intro content horizontally
         function inwi()
@@ -401,7 +401,7 @@
             engine.css('fill', '#F5EDE3');
           }
           // Fade out control msg after intro animation
-          function fadeCtrlsMsg()
+          function fadeInCtrlsMsg()
           {
             var loop = jQuery.runloop();
             loop.addKey('100%', function()
@@ -500,7 +500,7 @@
           loop.addKey('100%', function()
           {
             invFade(controls);
-            fadeCtrlsMsg();            
+            fadeInCtrlsMsg();            
           });
           loop.play(20000);
         })();

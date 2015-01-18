@@ -2083,6 +2083,12 @@ body {
 .invisible {
   visibility: hidden; }
 
+.pagespeed {
+  color: #FF6600; }
+
+#pagespeed_s {
+  color: #6699FF; }
+
 /*
 **
 *** Off_Canvas-Menu Styles
@@ -2413,6 +2419,12 @@ a.navbar-brand:hover {
 .process {
   font-size: 16px;
   font-size: 1rem; }
+
+/* .process__header_block_wrap
+*/
+.process__header_block_wrap {
+  width: 9.375em;
+  margin: 0 auto; }
 
 /* .process__header_block
 */

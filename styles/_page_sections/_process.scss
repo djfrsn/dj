@@ -11,6 +11,14 @@
 	@include rem(font-size, 16px);
 }
 
+/* .process__header_block_wrap
+*/
+.process__header_block_wrap
+{
+	width: em(150);
+	margin: 0 auto;
+}
+
 /* .process__header_block
 */
 .process__header_block

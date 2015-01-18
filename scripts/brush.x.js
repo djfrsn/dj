@@ -9937,7 +9937,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           $('html')
             .off('scroll touchmove mousewheel');   
           // dev_mode
-          // $.fn.fullpage.moveTo(3);
+           $.fn.fullpage.moveTo(3);
         }, 1000);
         // Center intro content horizontally
         function inwi()
@@ -10000,7 +10000,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
             engine.css('fill', '#F5EDE3');
           }
           // Fade out control msg after intro animation
-          function fadeCtrlsMsg()
+          function fadeInCtrlsMsg()
           {
             var loop = jQuery.runloop();
             loop.addKey('100%', function()
@@ -10099,7 +10099,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           loop.addKey('100%', function()
           {
             invFade(controls);
-            fadeCtrlsMsg();            
+            fadeInCtrlsMsg();            
           });
           loop.play(20000);
         })();
