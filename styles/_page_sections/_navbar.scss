@@ -12,6 +12,10 @@
   @include rem(font-size, 16px);
   background: themeColor(four);
   border: none;
+  @include respond-to(sxs)
+  {
+  min-height: 50px;
+  }
   @include respond-to(xs)
   {
   min-height: 60px;
@@ -36,13 +40,9 @@ a.nav-expander {
   z-index: 12;
   @include respond-to(xs)
   {
-    
+    @include rem(padding, 8px 20px 0 0);
+    width: em(84);
   }
-}
-
-a.paper-plane_a.nav-expander
-{
-  @include rem(padding, 15px 115px 0 0);  
 }
 
 a.nav-expander:hover {
@@ -57,6 +57,33 @@ a.nav-expander.fixed {
     right: 10em;
 }
 
+/* .paper-plane
+*/
+.paper-plane
+{
+  fill: themeColor(two);
+  transition: fill 0.5s ease;
+}
+
+a.paper-plane_a.nav-expander
+{
+  @include rem(padding, 16px 80px 0 0); 
+  width: em(125);
+  height: em(125);
+  @include respond-to(xs)
+  {
+    @include rem(padding, 17px 100px 0 0); 
+    width: em(149);
+  } 
+}
+/* .three-bars
+*/
+.three-bars
+{
+  fill: themeColor(one);
+  transition: fill 0.5s ease;
+}
+
 /* #nav__main-menu
 */
 #nav__main-menu
@@ -68,13 +95,13 @@ a.nav-expander.fixed {
 */
 #brand
 {
-	padding: em(12) 0 0 em(12);
-	font-size: em(26);
+	padding: em(10) 0 0 em(10);
+	font-size: em(30);
   transition: color 0.5s ease;
   @include respond-to(sxs)
   {
     font-size: em(30);
-    padding: em(11) 0 0 em(11);
+    padding: em(10) 0 0 em(10);
   }
   @include respond-to(xs)
   {
@@ -100,6 +127,7 @@ a.navbar-brand:hover
   position: absolute;
   top: 35%;
   left: 50%;
+  font-size: 16px;
   -webkit-transform: translateX(-50%) translateY(-50%); 
   transform: translateX(-50%) translateY(-50%); 
   cursor: default;
@@ -110,19 +138,4 @@ a.navbar-brand:hover
 #active__page
 {
   color: themeColor(one);
-}
-
-/* .paper-plane
-*/
-.paper-plane
-{
-  fill: themeColor(two);
-  transition: fill 0.5s ease;
-}
-/* .three-bars
-*/
-.three-bars
-{
-  fill: themeColor(one);
-  transition: fill 0.5s ease;
 }

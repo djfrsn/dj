@@ -22,8 +22,18 @@
 	{
 		@include rem(font-size, 16px);
 	}
+	@include respond-to(xs)
+	{
+		@include rem(font-size, 18px);
+	}
 }
-
+.navbar
+{
+	@include respond-to(xs)
+	{
+		@include rem(font-size, 17px);
+	}
+}
 /*
 ** Disable Select
 */
