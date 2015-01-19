@@ -22,26 +22,52 @@
   }
 }
 
+/* .navbar-header.pull-right
+*/
+.svg__container
+{
+    
+    height: 0;
+    position: absolute;
+    padding-top: 1%;
+    top: 0;
+    right: 0;
+    svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+}
+.svg__container.one
+{
+  margin: em(14) em(55) 0 0;
+  width: em(39);
+  @include respond-to(xs)
+  {
+    margin: em(14) em(70) 0 0;
+    width: em(48);
+  }
+}
+.svg__container.two
+{
+  margin: em(6) em(5) 0 0;
+  width: em(52);
+  @include respond-to(xs)
+  {
+    margin: em(6) em(5) 0 0;
+    width: em(62);
+  }
+}
 /* .nav-expander
 */
 
 a.nav-expander {
-  color: $black;
-  display: block;
-  width: em(75);
-  font-size: em(15);
-  margin-right: 0;
-  @include rem(padding, 8px 20px 0 0);
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  top: 0;
+  color: $black;  text-decoration: none;
   transition: right 0.3s ease-in-out 0s;
   z-index: 12;
   @include respond-to(xs)
   {
-    @include rem(padding, 8px 20px 0 0);
-    width: em(84);
+
   }
 }
 
@@ -50,7 +76,6 @@ a.nav-expander:hover {
 }
 
 a.nav-expander.fixed {
-  position: fixed;
 }
 
 .nav-expanded a.nav-expander.fixed {
@@ -67,15 +92,16 @@ a.nav-expander.fixed {
 
 a.paper-plane_a.nav-expander
 {
-  @include rem(padding, 16px 80px 0 0); 
-  width: em(125);
-  height: em(125);
+
   @include respond-to(xs)
   {
-    @include rem(padding, 17px 100px 0 0); 
-    width: em(149);
+
   } 
 }
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: right; } }
 /* .three-bars
 */
 .three-bars
