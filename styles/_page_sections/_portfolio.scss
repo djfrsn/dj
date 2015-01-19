@@ -17,7 +17,7 @@
 */
 .portfolio__project 
 {
-  font-size: 2.0175em;
+  font-size: em(26);
   padding-bottom: 0.5em;
   text-align: center;
   text-shadow: 0 0.02em #fff;
@@ -26,6 +26,14 @@
   cursor: pointer;
   margin: 0 auto; 
   color: themeColor(one);
+  @include respond-to(sxs)
+  {
+    font-size: em(34);
+  }
+  @include respond-to(md)
+  {
+    font-size: em(44);
+  }
   }
 
 h1.portfolio__project:hover 

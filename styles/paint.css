@@ -2579,7 +2579,7 @@ a.navbar-brand:hover {
 /* .portfolio__project
 */
 .portfolio__project {
-  font-size: 2.0175em;
+  font-size: 1.625em;
   padding-bottom: 0.5em;
   text-align: center;
   text-shadow: 0 0.02em #fff;
@@ -2587,7 +2587,15 @@ a.navbar-brand:hover {
   transition: color 0.5s ease;
   cursor: pointer;
   margin: 0 auto;
-  color: #6699FF; }
+  color: #6699FF;
+  /* 480px */
+  /* 1200px */ }
+  @media (min-width: 30em) {
+    .portfolio__project {
+      font-size: 2.125em; } }
+  @media (min-width: 75em) {
+    .portfolio__project {
+      font-size: 2.75em; } }
 
 h1.portfolio__project:hover {
   color: #FF6600; }
