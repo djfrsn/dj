@@ -60,6 +60,10 @@ body.nav-expanded {
   text-align: center;
   font-size: em(22);
   padding: 10px;
+  @include respond-to(sm)
+  {
+    font-size: em(24);
+  }
 }
 
 .main-menu li a {

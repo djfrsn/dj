@@ -2143,7 +2143,11 @@ body.nav-expanded {
 .main-menu li {
   text-align: center;
   font-size: 1.375em;
-  padding: 10px; }
+  padding: 10px;
+  /* 992px */ }
+  @media (min-width: 62em) {
+    .main-menu li {
+      font-size: 1.5em; } }
 
 .main-menu li a {
   color: #104386;
