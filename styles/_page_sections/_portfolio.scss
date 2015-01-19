@@ -5,17 +5,17 @@
 */
 
 
-/* .work
+/* .portfolio
 */
-.work 
+.portfolio 
 {
   @include rem(font-size, 16px);
   font-family: 'montserratbold'; 
 }
 
-/* .work__project
+/* .portfolio__project
 */
-.work__project 
+.portfolio__project 
 {
   font-size: 2.0175em;
   padding-bottom: 0.5em;
@@ -28,39 +28,39 @@
   color: themeColor(one);
   }
 
-h1.work__project:hover 
+h1.portfolio__project:hover 
 {
   color: themeColor(five); 
   }
 
-.work__project.one 
+.portfolio__project.one 
 {
   width: 6.25em; 
   }
 
-.work__project.two 
+.portfolio__project.two 
 {
   width: 12.25em; 
   }
 
-.work__project.three 
+.portfolio__project.three 
 {
   width: 10.25em; 
   }
 
-.work__project.four 
+.portfolio__project.four 
 {
   width: 11.15em; 
   }
 
-.work__project.five 
+.portfolio__project.five 
 {
   width: 5.85em; 
   }
 
-/* .work__project_Link
+/* .portfolio__project_Link
 */
-a.work__project_link
+a.portfolio__project_link
 {
   text-decoration: none;
 }
@@ -112,7 +112,7 @@ svg#github:hover
 /*
 ** Disable Select
 */
-#github_a,  #github, .work__project, a#resume, #divider
+#github_a,  #github, .portfolio__project, a#resume, #divider
 {
   -webkit-touch-callout: none;
     -webkit-user-select: none;

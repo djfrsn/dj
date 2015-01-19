@@ -10104,55 +10104,6 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           loop.play(20000);
         })();
 
-        function vivy(){
-
-          // init vars
-          var wp = $('.null'),
-              wpc = $('.work__project_card');
-
-          // fadeOut work__content_title
-          function fadeOutWP() {
-            wp.addClass('animated fadeOut');
-          };
-
-          // hide work__content_title
-          function hideWP() {
-              wp.addClass('hidden');
-          }
-
-          // Reveal .work__project_card
-          function revealWPC() {
-            wpc.addClass('animated fadeIn').removeClass('hidden');
-          }
-          
-          // Function to: reveal work__project_card
-          function revealWPC() {
-          
-            // Create runloop for text animation timing
-            var loop = jQuery.runloop();
-            // Note: only use 5% intervals (10% for <500ms durations)!
-            loop.addKey('5%', function()
-            {
-              fadeOutWP();
-            });
-            loop.addKey('45%', function()
-            {
-              // do something else
-              hideWP();
-              revealWPC();
-            });
-            loop.play(2200);
-            }
-            
-            // React to .work__project click/touch
-            wp.on('click', function(){
-                revealWPC(); 
-            });
-            wp.on('touch', function(){
-                revealWPC();
-            });
-
-          } vivy();
       }); // end document ready 
 },{"../bower_components/jquery/jquery":1,"./deps/fullpage":3,"./deps/jui":4,"./deps/lettering":5,"./deps/navgoco":6,"./deps/runloop":7,"./deps/textillate":8}],3:[function(require,module,exports){
 /**
