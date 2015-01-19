@@ -2449,22 +2449,18 @@ a.navbar-brand:hover {
   @media (min-width: 62em) {
     #skills__header_block_wrap {
       width: 64.738em;
-      width: 65.625em; } }
+      width: 65em; } }
 
 /* .skills__header_blocks
 */
 .skills__header_blocks {
   width: 15em;
   margin: 0 auto;
-  /* 768 px */
-  /* 992px */ }
+  /* 768 px */ }
   @media (min-width: 48em) {
     .skills__header_blocks {
       float: left;
       width: 20.75em; } }
-  @media (min-width: 62em) {
-    .skills__header_blocks {
-      width: 15.625em; } }
 
 .skills__header_blocks.one {
   /* 768 px */
@@ -2476,7 +2472,7 @@ a.navbar-brand:hover {
     .skills__header_blocks.one {
       padding-left: 0em;
       margin-right: 2.5em;
-      width: 14.6875em; } }
+      width: 15em; } }
 
 .skills__header_blocks.two {
   /* 768 px */
@@ -2506,7 +2502,8 @@ a.navbar-brand:hover {
       padding-left: 5em; } }
   @media (min-width: 62em) {
     .skills__header_blocks.four {
-      padding-left: 0em; } }
+      padding-left: 0em;
+      width: 15.3125em; } }
 
 /* .skills__header_block
 */

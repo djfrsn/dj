@@ -24,8 +24,7 @@
 	@include respond-to(sm)
 	{
 		width: 64.738em;
-		width: em(1050);
-		
+		width: em(1040);
 	}
 }
 
@@ -40,10 +39,6 @@
 		float: left;
 		width: em(332);
 	}
-	@include respond-to(sm)
-	{
-		width: em(250);
-	}
 }
 .skills__header_blocks.one
 {
@@ -55,7 +50,7 @@
 	{
 		padding-left: em(0);	
 		margin-right: em(40);	
-		width: em(235);
+		width: em(240);
 	}
 }
 
@@ -64,7 +59,6 @@
 	@include respond-to(xs)
 	{
 		padding: 0 0 em(40) em(80);
-
 	}
 	@include respond-to(sm)
 	{
@@ -93,6 +87,7 @@
 	@include respond-to(sm)
 	{
 		padding-left: em(0);	
+		width: em(245);
 	}
 }
 /* .skills__header_block
