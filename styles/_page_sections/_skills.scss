@@ -23,7 +23,7 @@
 	}
 	@include respond-to(sm)
 	{
-		width: em(1001);
+		width: em(1016);
 	}
 }
 
@@ -73,6 +73,7 @@
 	@include respond-to(sm)
 	{
 		padding-left: em(0);	
+		margin-right: em(15);
 	}
 }
 

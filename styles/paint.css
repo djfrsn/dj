@@ -2439,7 +2439,7 @@ a.navbar-brand:hover {
       min-height: 194px; } }
   @media (min-width: 62em) {
     #skills__header_block_wrap {
-      width: 62.5625em; } }
+      width: 63.5em; } }
 
 /* .skills__header_blocks
 */
@@ -2480,7 +2480,8 @@ a.navbar-brand:hover {
   /* 992px */ }
   @media (min-width: 62em) {
     .skills__header_blocks.three {
-      padding-left: 0em; } }
+      padding-left: 0em;
+      margin-right: 0.9375em; } }
 
 .skills__header_blocks.four {
   /* 768 px */
