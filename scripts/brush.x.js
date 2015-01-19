@@ -9937,7 +9937,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
           $('html')
             .off('scroll touchmove mousewheel');   
           // dev_mode
-           $.fn.fullpage.moveTo(3);
+          // $.fn.fullpage.moveTo(3);
         }, 1000);
         // Center intro content horizontally
         function inwi()
