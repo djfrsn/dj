@@ -2347,10 +2347,14 @@ a.navbar-brand:hover {
   position: absolute;
   top: 35%;
   left: 50%;
-  font-size: 16px;
+  font-size: 1.1875em;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  cursor: default; }
+  cursor: default;
+  /* 768 px */ }
+  @media (min-width: 48em) {
+    #active__page_container {
+      font-size: 1.375em; } }
 
 /* #active__page
 */
