@@ -2582,7 +2582,8 @@ a.navbar-brand:hover {
   color: #E1D4C0;
   transition: color 0.5s ease;
   cursor: pointer;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #6699FF; }
 
 h1.work__project:hover {
   color: #FF6600; }
@@ -2597,6 +2598,9 @@ h1.work__project:hover {
   width: 10.25em; }
 
 .work__project.four {
+  width: 11.15em; }
+
+.work__project.five {
   width: 5.85em; }
 
 /* .work__project_Link

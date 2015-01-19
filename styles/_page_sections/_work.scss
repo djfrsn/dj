@@ -25,11 +25,12 @@
   transition: color 0.5s ease;
   cursor: pointer;
   margin: 0 auto; 
+  color: themeColor(one);
   }
 
 h1.work__project:hover 
 {
-  color: #FF6600; 
+  color: themeColor(five); 
   }
 
 .work__project.one 
@@ -48,6 +49,11 @@ h1.work__project:hover
   }
 
 .work__project.four 
+{
+  width: 11.15em; 
+  }
+
+.work__project.five 
 {
   width: 5.85em; 
   }
