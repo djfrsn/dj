@@ -130,8 +130,8 @@
             }
           }
           };    
-          })(jQuery); $('.process__list_item.x').innerText('View this sites page speed score')
-          .wrap( "<a href='https://developers.google.com/speed/pagespeed/insights/?url=dennisjefferson.com' class='process__list_a'></a>" );;
+          })(jQuery); $('.skills__list_item.x').innerText('View this sites page speed score')
+          .wrap( "<a href='https://developers.google.com/speed/pagespeed/insights/?url=dennisjefferson.com' class='skills__list_a'></a>" );;
           // Mobile  setup
           }
         else
@@ -144,7 +144,7 @@
               sectionsColor: ['#F5EDE3', '#F5EDE3', '#F5EDE3', '#F5EDE3',
                 '#F5EDE3'
               ],
-              anchors: ['intro', 'about', 'process', 'portfolio', 'contact'],
+              anchors: ['intro', 'about', 'skills', 'portfolio', 'contact'],
               menu: '.main-menu',
               css3: true,
               scrollingSpeed: 900,
@@ -165,9 +165,9 @@
                 {
                   loadAPText("About");
                 }
-                if (anchorLink == 'process')
+                if (anchorLink == 'skills')
                 {
-                  loadAPText("Process");
+                  loadAPText("Skills");
                 }
                 if (anchorLink == 'portfolio')
                 {
@@ -291,7 +291,7 @@
             apcFadeIn();
             $.fn.fullpage.moveTo(2);
           });
-        $('.main-menu-process')
+        $('.main-menu-skills')
           .on('click', function(e)
           {
             e.preventDefault();

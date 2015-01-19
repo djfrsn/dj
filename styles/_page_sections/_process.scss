@@ -1,19 +1,19 @@
 /*
 **
-*** Process Styles
+*** Skills Styles
 **
 */
 
-/* .process
+/* .skills
 */
-.process
+.skills
 {
 	@include rem(font-size, 16px);
 }
 
-/* #process__header_block_wrap
+/* #skills__header_block_wrap
 */
-#process__header_block_wrap
+#skills__header_block_wrap
 {
 	@include respond-to(xs)
 	{
@@ -27,9 +27,9 @@
 	}
 }
 
-/* .process__header_blocks
+/* .skills__header_blocks
 */
-.process__header_blocks
+.skills__header_blocks
 {
 	width: em(240);
 	margin: 0 auto;
@@ -43,7 +43,7 @@
 		width: em(250);
 	}
 }
-.process__header_blocks.one
+.skills__header_blocks.one
 {
 	@include respond-to(xs)
 	{
@@ -55,7 +55,7 @@
 	}
 }
 
-.process__header_blocks.two
+.skills__header_blocks.two
 {
 	@include respond-to(xs)
 	{
@@ -68,7 +68,7 @@
 	}
 }
 
-.process__header_blocks.three
+.skills__header_blocks.three
 {
 	@include respond-to(sm)
 	{
@@ -76,7 +76,7 @@
 	}
 }
 
-.process__header_blocks.four
+.skills__header_blocks.four
 {
 	@include respond-to(xs)
 	{
@@ -87,9 +87,9 @@
 		padding-left: em(0);	
 	}
 }
-/* .process__header_block
+/* .skills__header_block
 */
-.process__header_block
+.skills__header_block
 {
 	width: em(275);
 	margin: 0 auto;	
@@ -98,7 +98,7 @@
 	padding: em(10) 0;
 }
 
-.process__header_block.one
+.skills__header_block.one
 {
 	padding-top: em(50);
 	@include respond-to(xs)
@@ -107,49 +107,49 @@
 	}
 }
 
-.process__header_block.two
+.skills__header_block.two
 {
 
 }
 
-.process__header_block.three
+.skills__header_block.three
 {
 
 }
 
-.process__header_block.four
+.skills__header_block.four
 {
 
 }
 
-/* .process__list
+/* .skills__list
 */
-.process__list
+.skills__list
 {
 	width: em(285);
 	margin: 0 auto;
 	padding: 0 0 0 em(30);
 }
 
-/* .process__list_title
+/* .skills__list_title
 */
-.process__list_title
+.skills__list_title
 {
 	margin: 0;
 	padding: 0;
 	text-align: left;
 }
-/* .process__list_title_border
+/* .skills__list_title_border
 */
-.process__list_title_border
+.skills__list_title_border
 {
 	width: em(20);
 	border-bottom: 2px solid themeColor(one);
 }
 
-/* .process__list_item
+/* .skills__list_item
 */
-.process__list_item
+.skills__list_item
 {
 	list-style: none;
 	text-align: left;
