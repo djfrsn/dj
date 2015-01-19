@@ -23,7 +23,9 @@
 	}
 	@include respond-to(sm)
 	{
-		width: em(1016);
+		width: 64.738em;
+		width: em(1050);
+		
 	}
 }
 
@@ -52,6 +54,8 @@
 	@include respond-to(sm)
 	{
 		padding-left: em(0);	
+		margin-right: em(40);	
+		width: em(235);
 	}
 }
 
@@ -64,7 +68,9 @@
 	}
 	@include respond-to(sm)
 	{
-		padding-left: em(0);	
+		padding-left: em(0);
+		margin-right: em(40);	
+		width: em(240);
 	}
 }
 
@@ -73,7 +79,8 @@
 	@include respond-to(sm)
 	{
 		padding-left: em(0);	
-		margin-right: em(15);
+		margin-right: em(40);
+		width: em(190);
 	}
 }
 

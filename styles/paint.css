@@ -2448,7 +2448,8 @@ a.navbar-brand:hover {
       min-height: 194px; } }
   @media (min-width: 62em) {
     #skills__header_block_wrap {
-      width: 63.5em; } }
+      width: 64.738em;
+      width: 65.625em; } }
 
 /* .skills__header_blocks
 */
@@ -2473,7 +2474,9 @@ a.navbar-brand:hover {
       padding-bottom: 2.5em; } }
   @media (min-width: 62em) {
     .skills__header_blocks.one {
-      padding-left: 0em; } }
+      padding-left: 0em;
+      margin-right: 2.5em;
+      width: 14.6875em; } }
 
 .skills__header_blocks.two {
   /* 768 px */
@@ -2483,14 +2486,17 @@ a.navbar-brand:hover {
       padding: 0 0 2.5em 5em; } }
   @media (min-width: 62em) {
     .skills__header_blocks.two {
-      padding-left: 0em; } }
+      padding-left: 0em;
+      margin-right: 2.5em;
+      width: 15em; } }
 
 .skills__header_blocks.three {
   /* 992px */ }
   @media (min-width: 62em) {
     .skills__header_blocks.three {
       padding-left: 0em;
-      margin-right: 0.9375em; } }
+      margin-right: 2.5em;
+      width: 11.875em; } }
 
 .skills__header_blocks.four {
   /* 768 px */
