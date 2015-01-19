@@ -2604,15 +2604,6 @@ h1.work__project:hover {
 a.work__project_link {
   text-decoration: none; }
 
-/* #github
-*/
-#github {
-  fill: #E1D4C0;
-  position: relative; }
-
-svg#github:hover {
-  fill: #FF6600; }
-
 /* #divider
 */
 #divider {
@@ -2641,11 +2632,10 @@ a#resume:hover {
   transition: fill 0.5s ease;
   top: 1.3125em;
   width: 5.625em;
-  transition: fill 0.5s ease;
-  /* 992px */ }
-  @media (min-width: 62em) {
-    #github {
-      top: 0.9375em; } }
+  transition: fill 0.5s ease; }
+
+svg#github:hover {
+  fill: #FF6600; }
 
 /*
 ** Disable Select
