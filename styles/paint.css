@@ -2818,14 +2818,14 @@ a#resume:hover {
 #contact__header {
   font-size: 2.875em;
   font-family: 'montserratbold';
-  text-transform: capitalize; }
+  color: #6699FF; }
 
 /* #contact__header_sub-title
 */
 #contact__header_sub-title {
   font-size: 1.25em;
   font-family: 'montserratbold';
-  text-transform: capitalize; }
+  color: #FF6600; }
 
 /* #contact__x
 */
