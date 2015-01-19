@@ -2263,8 +2263,8 @@ paper-tabs::shadow #selectionBar {
   /* 768 px */ }
   @media (min-width: 48em) {
     .svg__container.one {
-      margin: 0.875em 4.375em 0 0;
-      width: 3em; } }
+      margin: 0.9375em 4.375em 0 0;
+      width: 2.8125em; } }
 
 .svg__container.two {
   margin: 0.375em 0.3125em 0 0;
@@ -2273,7 +2273,7 @@ paper-tabs::shadow #selectionBar {
   @media (min-width: 48em) {
     .svg__container.two {
       margin: 0.375em 0.3125em 0 0;
-      width: 3.875em; } }
+      width: 3.75em; } }
 
 /* .nav-expander
 */
@@ -2625,6 +2625,7 @@ a.work__project_link {
   fill: #E1D4C0;
   position: relative;
   top: 1.3125em;
+  width: 5.625em;
   transition: fill 0.5s ease;
   /* 992px */ }
   @media (min-width: 62em) {

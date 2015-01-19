@@ -44,8 +44,8 @@
   width: em(39);
   @include respond-to(xs)
   {
-    margin: em(14) em(70) 0 0;
-    width: em(48);
+    margin: em(15) em(70) 0 0;
+    width: em(45);
   }
 }
 .svg__container.two
@@ -55,7 +55,7 @@
   @include respond-to(xs)
   {
     margin: em(6) em(5) 0 0;
-    width: em(62);
+    width: em(60);
   }
 }
 /* .nav-expander
