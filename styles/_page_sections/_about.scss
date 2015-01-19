@@ -29,6 +29,10 @@
 {
 	font-size: em(18);
 	padding: em(10);
-	width: em(270);
+	width: em(290);
 	margin: 0 auto;
+	@include respond-to(sxs)
+	{
+		width: em(380);
+	}
 }

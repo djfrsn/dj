@@ -7,153 +7,16 @@
 
 /* .work
 */
-.work
+.work 
 {
-	@include rem(font-size, 16px);
+  @include rem(font-size, 16px);
+  font-family: 'montserratbold'; 
 }
-
-/* .work__project_title
-*/
-.work__project_title
-{
-	font-size: em(20);
-	padding-left: em(20);
-	width: em(100);
-	text-align: left;	
-	text-decoration: underline;
-	color: themeColor(five);
-}
-
-/* .work__toolbar
-*/
-
-.work__toolbar
-{
-    height: em(55);
-    background: themeColor(one);
-    width: em(400);
-    margin: 0 auto;
-}
-.work__toolbar.card--z-1
-{
-    border: none;
-}
-
-/* .work__content
-*/
-.work__content
-{
-    height: em(107);
-    position: relative;
-    top: 0px;
-    overflow: hidden;
-    width: em(400);
-    margin: 0 auto;
-}
-
-a.work__project_link
-{
-  text-decoration: none;
-}
-
-.work__content.card--z-1
-{
-    border: none;
-}
-
-/* .work__content_title
-*/
-.work__content_title
-{
-    transition: color 0.5s ease;
-    cursor: default;
-}
-.work__content_title:hover
-{
-    color: themeColor(five);        
-}
-
-/* .work__project_info
-*/
-.work__project_info
-{
-	padding: em(15) em(15);
-	font-size: em(15);
-	text-align: left;
-	height: em(120);
-	width: em(400);
-	margin: 0 auto;
-}
-
-/* .tech_ul
-*/
-.tech_ul
-{
-	list-style: none;
-	padding: 0;
-}
-
-
-/* #github
-*/
-#github
-{
-	fill: themeColor(three);
-	position: relative;
-	top: em(21);
-  width: em(90);
-	transition: fill 0.5s ease; 
-  @include respond-to(sm)
-  {
-    top: em(15);
-  }
-}
-svg#github:hover
-{
-	fill: themeColor(five);
-}
-
-/* #divider
-*/
-#divider
-{
-	color: themeColor(one);
-	padding: 0 em(10);
-	font-size: em(24);
-}
-
-/* #resume
-*/
-a#resume
-{
-	color: themeColor(three);
-	font-size: em(24);
-	text-decoration: none;
-	transition: color 0.5s ease;
-	
-}
-a#resume:hover
-{
-	color: themeColor(five);
-	font-size: em(24);
-	
-}
-
-/*
-**
-*** Work Styles
-**
-*/
-/* .work
-*/
-.work {
-  font-size: 16px;
-  font-size: 1rem;
-  font-family: 'montserratbold'; }
 
 /* .work__project
 */
-.work__project {
+.work__project 
+{
   font-size: 2.0175em;
   padding-bottom: 0.5em;
   text-align: center;
@@ -161,102 +24,96 @@ a#resume:hover
   color: #E1D4C0;
   transition: color 0.5s ease;
   cursor: pointer;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  }
 
-h1.work__project:hover {
-  color: #FF6600; }
+h1.work__project:hover 
+{
+  color: #FF6600; 
+  }
 
-.work__project.one {
-  width: 6.25em; }
+.work__project.one 
+{
+  width: 6.25em; 
+  }
 
-.work__project.two {
-  width: 12.25em; }
+.work__project.two 
+{
+  width: 12.25em; 
+  }
 
-.work__project.three {
-  width: 10.25em; }
+.work__project.three 
+{
+  width: 10.25em; 
+  }
 
-.work__project.four {
-  width: 5.85em; }
+.work__project.four 
+{
+  width: 5.85em; 
+  }
 
+/* .work__project_Link
+*/
+a.work__project_link
+{
+  text-decoration: none;
+}
 
 /* #github
 */
-#github {
-  margin-top: -2.475em;
-  fill: #E1D4C0;
+#github
+{
+  fill: themeColor(three);
   position: relative;
-  top: 1.3125em;
-  transition: fill 0.5s ease;  }
-
-svg#github:hover {
-  fill: #FF6600; }
+  
+}
+svg#github:hover
+{
+  fill: themeColor(five);
+}
 
 /* #divider
 */
-#divider {
-  color: #6699FF;
-  padding: 0 0.625em;
-  font-size: 1.5em;  }
+#divider
+{
+  color: themeColor(one);
+  padding: 0 em(10);
+  font-size: em(24);
+}
 
 /* #resume
 */
-a#resume {
-  color: #E1D4C0;
-  font-size: 1.5em;
+a#resume
+{
+  color: themeColor(three);
+  font-size: em(24);
   text-decoration: none;
-  transition: color 0.5s ease; }
-
-a#resume:hover {
-  color: #FF6600;
-  font-size: 1.5em; }
-
-/* .work__toolbar
-*/
-.work__toolbar {
-  background: #6699FF;
-  width: 25em;
-  margin: 0 auto; }
-
-.work__toolbar.card--z-1 {
-  border: none; }
-
-/* .work__content
-*/
-.work__content {
-  height: 9.15em;
-  position: relative;
-  top: 0px;
-  overflow: hidden;
-  width: 25em;
-  margin: 0 auto; }
-
-.work__content.card--z-1 {
-  border: none; }
-
-/* .work__content_title
-*/
-.work__content_title {
   transition: color 0.5s ease;
-  cursor: default; }
+  
+}
+a#resume:hover
+{
+  color: themeColor(five);
+  font-size: em(24);
+  
+}
 
-.work__content_title:hover {
-  color: #FF6600; }
-
-/* .work__project_info
+/* #github
 */
-.work__project_info {
-  padding: 0.9375em 0.9375em;
-  font-size: 0.9375em;
-  text-align: left;
-  width: 25em;
-  font-family: 'fira';
-  margin: 0 auto; }
-
-/* .tech_ul
-*/
-.tech_ul {
-  list-style: none;
-  padding: 0; }
+#github 
+{
+  margin-top: -2.475em;
+  fill: #E1D4C0;
+  position: relative;
+  transition: fill 0.5s ease;
+  top: em(21);
+  width: em(90);
+  transition: fill 0.5s ease; 
+  @include respond-to(sm)
+  {
+    top: em(15);
+  }  
+}
 
 /*
 ** Disable Select
@@ -270,19 +127,3 @@ a#resume:hover {
     -ms-user-select: none;
     user-select: none;
 }
-
-/* Card
-*/
-.card {
-  width: 15em;
-  height: 15em;
-  margin: 2em;
-  background: white;
-  display: inline-block; }
-
-.card--z-0 {
-  /* border: 1px solid #eee; */}
-
-.card--z-1 {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
-  /* border: 1px solid #eee; */}

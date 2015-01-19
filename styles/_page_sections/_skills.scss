@@ -110,21 +110,6 @@
 	}
 }
 
-.skills__header_block.two
-{
-
-}
-
-.skills__header_block.three
-{
-
-}
-
-.skills__header_block.four
-{
-
-}
-
 /* .skills__list
 */
 .skills__list
@@ -140,6 +125,9 @@
 {
 	margin: 0;
 	padding: 0;
+	font-size: 24px;
+	font-size: em(26);
+	font-weight: 600;
 	text-align: left;
 }
 /* .skills__list_title_border
