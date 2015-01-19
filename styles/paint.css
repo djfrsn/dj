@@ -2914,36 +2914,36 @@ body {
 
 /* Document level font adjustments 
 */
-.navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
+.navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
   /* 480px */
   /* 768 px */ }
   @media (max-width: 275px) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
       font-size: 10px;
       font-size: 0.625rem; } }
   @media (min-width: 30em) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
       font-size: 16px;
       font-size: 1rem; } }
   @media (min-width: 48em) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .process, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
       font-size: 18px;
       font-size: 1.125rem; } }
 
-.about, .intro, .work, .process, .contact, .footer {
+.about, .intro, .work, .skills, .contact, .footer {
   /* 992px */
   /* 1200px */
   /* 1440px */ }
   @media (min-width: 62em) {
-    .about, .intro, .work, .process, .contact, .footer {
+    .about, .intro, .work, .skills, .contact, .footer {
       font-size: 20px;
       font-size: 1.25rem; } }
   @media (min-width: 75em) {
-    .about, .intro, .work, .process, .contact, .footer {
+    .about, .intro, .work, .skills, .contact, .footer {
       font-size: 24px;
       font-size: 1.5rem; } }
   @media (min-width: 90em) {
-    .about, .intro, .work, .process, .contact, .footer {
+    .about, .intro, .work, .skills, .contact, .footer {
       font-size: 28px;
       font-size: 1.75rem; } }
 
