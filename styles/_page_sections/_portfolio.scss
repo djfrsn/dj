@@ -30,10 +30,6 @@
   {
     font-size: em(34);
   }
-  @include respond-to(md)
-  {
-    font-size: em(44);
-  }
   }
 
 h1.portfolio__project:hover 
@@ -103,11 +99,15 @@ a#resume:hover
 */
 #github 
 {
-  margin-top: -2.475em;
+  margin-top: -1.905em;
   fill: #E1D4C0;
   position: relative;
   top: 1.3125em;
   transition: fill 0.5s ease; 
+  @include respond-to(md)
+  {
+    top: 0.8125em;
+  }
 }
 
 svg#github:hover

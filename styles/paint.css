@@ -2561,14 +2561,10 @@ a.nav-expander:hover {
   cursor: pointer;
   margin: 0 auto;
   color: #6699FF;
-  /* 480px */
-  /* 1200px */ }
+  /* 480px */ }
   @media (min-width: 30em) {
     .portfolio__project {
       font-size: 2.125em; } }
-  @media (min-width: 75em) {
-    .portfolio__project {
-      font-size: 2.75em; } }
 
 h1.portfolio__project:hover {
   color: #FF6600; }
@@ -2615,11 +2611,15 @@ a#resume:hover {
 /* #github
 */
 #github {
-  margin-top: -2.475em;
+  margin-top: -1.905em;
   fill: #E1D4C0;
   position: relative;
   top: 1.3125em;
-  transition: fill 0.5s ease; }
+  transition: fill 0.5s ease;
+  /* 1200px */ }
+  @media (min-width: 75em) {
+    #github {
+      top: 0.8125em; } }
 
 svg#github:hover {
   fill: #FF6600; }
@@ -2747,36 +2747,36 @@ body {
 
 /* Document level font adjustments 
 */
-.navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
+.navbar, #nav__main-menu, .about, .intro, .portfolio, .skills, .contact, .footer {
   /* 480px */
   /* 768 px */ }
   @media (max-width: 275px) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 10px;
       font-size: 0.625rem; } }
   @media (min-width: 30em) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 16px;
       font-size: 1rem; } }
   @media (min-width: 48em) {
-    .navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer {
+    .navbar, #nav__main-menu, .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 18px;
       font-size: 1.125rem; } }
 
-.about, .intro, .work, .skills, .contact, .footer {
+.about, .intro, .portfolio, .skills, .contact, .footer {
   /* 992px */
   /* 1200px */
   /* 1440px */ }
   @media (min-width: 62em) {
-    .about, .intro, .work, .skills, .contact, .footer {
+    .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 20px;
       font-size: 1.25rem; } }
   @media (min-width: 75em) {
-    .about, .intro, .work, .skills, .contact, .footer {
+    .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 24px;
       font-size: 1.5rem; } }
   @media (min-width: 90em) {
-    .about, .intro, .work, .skills, .contact, .footer {
+    .about, .intro, .portfolio, .skills, .contact, .footer {
       font-size: 28px;
       font-size: 1.75rem; } }
 

@@ -12,7 +12,7 @@
 
 /* Document level font adjustments 
 */
-.navbar, #nav__main-menu, .about, .intro, .work, .skills, .contact, .footer
+.navbar, #nav__main-menu, .about, .intro, .portfolio, .skills, .contact, .footer
 {
 	@include media(max-width, 275px) // Super Small Devices
 	{
@@ -28,7 +28,7 @@
 	}
 }
 
-.about, .intro, .work, .skills, .contact, .footer
+.about, .intro, .portfolio, .skills, .contact, .footer
 {
 	@include respond-to(sm)
 	{
