@@ -12,7 +12,7 @@
   @include rem(font-size, 16px);
   background: themeColor(four);
   border: none;
-  min-height: 60px;
+  min-height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -23,13 +23,13 @@
 */
 #brand
 {
-  padding: em(12) 0 0 em(5);
-  font-size: em(35);
+  padding: em(10) 0 0 em(5);
+  font-size: em(32);
   transition: color 0.5s ease;
   @include respond-to(sxs)
   {
-    font-size: em(36);
-    padding: em(11) 0 0 em(10);
+    font-size: em(32);
+    padding: em(10) 0 0 em(10);
   }
 }
 
@@ -86,23 +86,14 @@ a.navbar-brand:hover
 }
 .svg__container.one
 {
-  margin: em(16) em(75) 0 0;
+  margin: em(12) em(80) 0 0;
   width: em(39);
-  @include respond-to(xs)
-  {
-    margin: em(15) em(70) 0 0;
-    width: em(45);
-  }
 }
 
 .svg__container.two
 {
-  margin: em(6) em(15) 0 0;
+  margin: em(3) em(20) 0 0;
   width: em(52);
-  @include respond-to(xs)
-  {
-    margin: em(6) em(20) 0 0;
-  }
 }
 
 /* .paper-plane

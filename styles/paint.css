@@ -2238,7 +2238,7 @@ paper-tabs::shadow #selectionBar {
   font-size: 1rem;
   background: #104386;
   border: none;
-  min-height: 60px; }
+  min-height: 50px; }
 
 @media (min-width: 768px) {
   .navbar-header {
@@ -2247,14 +2247,14 @@ paper-tabs::shadow #selectionBar {
 /* #brand
 */
 #brand {
-  padding: 0.75em 0 0 0.3125em;
-  font-size: 2.1875em;
+  padding: 0.625em 0 0 0.3125em;
+  font-size: 2em;
   transition: color 0.5s ease;
   /* 480px */ }
   @media (min-width: 30em) {
     #brand {
-      font-size: 2.25em;
-      padding: 0.6875em 0 0 0.625em; } }
+      font-size: 2em;
+      padding: 0.625em 0 0 0.625em; } }
 
 a.navbar-brand:hover {
   color: #FF6600; }
@@ -2300,21 +2300,12 @@ a.navbar-brand:hover {
     left: 0; }
 
 .svg__container.one {
-  margin: 1em 4.6875em 0 0;
-  width: 2.4375em;
-  /* 768 px */ }
-  @media (min-width: 48em) {
-    .svg__container.one {
-      margin: 0.9375em 4.375em 0 0;
-      width: 2.8125em; } }
+  margin: 0.75em 5em 0 0;
+  width: 2.4375em; }
 
 .svg__container.two {
-  margin: 0.375em 0.9375em 0 0;
-  width: 3.25em;
-  /* 768 px */ }
-  @media (min-width: 48em) {
-    .svg__container.two {
-      margin: 0.375em 1.25em 0 0; } }
+  margin: 0.1875em 1.25em 0 0;
+  width: 3.25em; }
 
 /* .paper-plane
 */
