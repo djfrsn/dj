@@ -2323,9 +2323,6 @@ a.navbar-brand:hover {
   fill: #F5EDE3;
   transition: fill 0.5s ease; }
 
-a.paper-plane_a.nav-expander {
-  /* 768 px */ }
-
 /* .three-bars
 */
 .three-bars {
@@ -2338,8 +2335,7 @@ a.nav-expander {
   color: #333333;
   text-decoration: none;
   transition: right 0.3s ease-in-out 0s;
-  z-index: 12;
-  /* 768 px */ }
+  z-index: 12; }
 
 a.nav-expander:hover {
   cursor: pointer; }

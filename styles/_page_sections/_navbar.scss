@@ -113,15 +113,6 @@ a.navbar-brand:hover
   transition: fill 0.5s ease;
 }
 
-a.paper-plane_a.nav-expander
-{
-
-  @include respond-to(xs)
-  {
-
-  } 
-}
-
 /* .three-bars
 */
 .three-bars
@@ -137,17 +128,10 @@ a.nav-expander {
   color: $black;  text-decoration: none;
   transition: right 0.3s ease-in-out 0s;
   z-index: 12;
-  @include respond-to(xs)
-  {
-
-  }
 }
 
 a.nav-expander:hover {
   cursor: pointer;
-}
-
-a.nav-expander.fixed {
 }
 
 .nav-expanded a.nav-expander.fixed {
