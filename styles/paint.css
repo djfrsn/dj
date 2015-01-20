@@ -2618,9 +2618,7 @@ a#resume:hover {
   margin-top: -2.475em;
   fill: #E1D4C0;
   position: relative;
-  transition: fill 0.5s ease;
   top: 1.3125em;
-  width: 5.625em;
   transition: fill 0.5s ease; }
 
 svg#github:hover {
