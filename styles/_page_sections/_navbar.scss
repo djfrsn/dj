@@ -12,19 +12,61 @@
   @include rem(font-size, 16px);
   background: themeColor(four);
   border: none;
-  @include respond-to(sxs)
-  {
-  min-height: 50px;
-  }
-  @include respond-to(xs)
-  {
   min-height: 60px;
-  }
 }
 
 @media (min-width: 768px) {
   .navbar-header {
     float: right; } }
+
+/* #brand
+*/
+#brand
+{
+  padding: em(12) 0 0 em(5);
+  font-size: em(35);
+  transition: color 0.5s ease;
+  @include respond-to(sxs)
+  {
+    font-size: em(36);
+    padding: em(11) 0 0 em(10);
+  }
+}
+
+a.navbar-brand:hover
+{
+  color: themeColor(five);
+}
+
+/* #active__page_container
+*/
+#active__page_container
+{
+  color: themeColor(five);
+  background: themeColor(four);
+  border: none;
+  @include rem(margin-top, 10px);
+  @include rem(padding, 5px 10px);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: em(19);
+  -webkit-transform: translateX(-50%) translateY(-50%); 
+  transform: translateX(-50%) translateY(-50%); 
+  cursor: default;
+  @include respond-to(xs)
+  {
+    font-size: em(22);
+  }
+}
+
+/* #active__page
+*/
+#active__page
+{
+  color: themeColor(one);
+}
+
 
 /* .navbar-header.pull-right
 */
@@ -44,7 +86,7 @@
 }
 .svg__container.one
 {
-  margin: em(14) em(55) 0 0;
+  margin: em(16) em(75) 0 0;
   width: em(39);
   @include respond-to(xs)
   {
@@ -52,14 +94,14 @@
     width: em(45);
   }
 }
+
 .svg__container.two
 {
-  margin: em(6) em(5) 0 0;
+  margin: em(6) em(15) 0 0;
   width: em(52);
   @include respond-to(xs)
   {
-    margin: em(6) em(5) 0 0;
-    width: em(60);
+    margin: em(6) em(20) 0 0;
   }
 }
 
@@ -117,57 +159,4 @@ a.nav-expander.fixed {
 #nav__main-menu
 {
   border: none;
-}
-
-/* #brand
-*/
-#brand
-{
-	padding: em(10) 0 0 em(10);
-	font-size: em(30);
-  transition: color 0.5s ease;
-  @include respond-to(sxs)
-  {
-    font-size: em(30);
-    padding: em(10) 0 0 em(10);
-  }
-  @include respond-to(xs)
-  {
-    font-size: em(36);
-    padding: em(11) 0 0 em(11);
-  }
-}
-
-a.navbar-brand:hover
-{
-  color: themeColor(five);
-}
-
-/* #active__page_container
-*/
-#active__page_container
-{
-  color: themeColor(five);
-  background: themeColor(four);
-  border: none;
-  @include rem(margin-top, 10px);
-  @include rem(padding, 5px 10px);
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  font-size: em(19);
-  -webkit-transform: translateX(-50%) translateY(-50%); 
-  transform: translateX(-50%) translateY(-50%); 
-  cursor: default;
-  @include respond-to(xs)
-  {
-    font-size: em(22);
-  }
-}
-
-/* #active__page
-*/
-#active__page
-{
-  color: themeColor(one);
 }
