@@ -2248,6 +2248,10 @@ paper-tabs::shadow #selectionBar {
     .navbar {
       min-height: 60px; } }
 
+@media (min-width: 768px) {
+  .navbar-header {
+    float: right; } }
+
 /* .navbar-header.pull-right
 */
 .svg__container {
@@ -2279,6 +2283,21 @@ paper-tabs::shadow #selectionBar {
       margin: 0.375em 0.3125em 0 0;
       width: 3.75em; } }
 
+/* .paper-plane
+*/
+.paper-plane {
+  fill: #F5EDE3;
+  transition: fill 0.5s ease; }
+
+a.paper-plane_a.nav-expander {
+  /* 768 px */ }
+
+/* .three-bars
+*/
+.three-bars {
+  fill: #6699FF;
+  transition: fill 0.5s ease; }
+
 /* .nav-expander
 */
 a.nav-expander {
@@ -2293,25 +2312,6 @@ a.nav-expander:hover {
 
 .nav-expanded a.nav-expander.fixed {
   right: 10em; }
-
-/* .paper-plane
-*/
-.paper-plane {
-  fill: #F5EDE3;
-  transition: fill 0.5s ease; }
-
-a.paper-plane_a.nav-expander {
-  /* 768 px */ }
-
-@media (min-width: 768px) {
-  .navbar-header {
-    float: right; } }
-
-/* .three-bars
-*/
-.three-bars {
-  fill: #6699FF;
-  transition: fill 0.5s ease; }
 
 /* #nav__main-menu
 */
